@@ -2,6 +2,7 @@
 Answering Node - Final node in the agentic workflow
 """
 
+from typing import Dict, Any
 from ..state import AgenticLightRAGState
 from ...agents.answering_agent.answering_agent import AnsweringAgent
 from langchain_core.messages import HumanMessage, AIMessage
@@ -15,7 +16,7 @@ class AnsweringNode:
         """Initialize the answering node with answering agent."""
         self.answering_agent = AnsweringAgent()
     
-    async def process(self, state: AgenticLightRAGState) -> AgenticLightRAGState:
+    async def process(self, state: AgenticLightRAGState) -> Dict[str, Any]:
         """
         Process the question and context to generate an educational answer.
         
@@ -23,7 +24,7 @@ class AnsweringNode:
             state: Current state with question and context
             
         Returns:
-            AgenticLightRAGState: Updated state with final answer
+            Dict[str, Any]: Updated state fields with final answer
         """
         try:
             print(f"[AnsweringNode] Generating answer for: {state.question}")
@@ -51,34 +52,40 @@ class AnsweringNode:
                 messages=state.messages
             )
             
-            # Update state with the final answer
-            state.answer = answer_analysis.response.answer
+            # Get the final answer
+            answer = answer_analysis.response.answer
             
             # Add AI response to conversation
-            ai_message = AIMessage(content=state.answer)
-            state.messages.append(ai_message)
+            ai_message = AIMessage(content=answer)
+            updated_messages = state.messages + [ai_message]
             
-            print(f"[AnsweringNode] Answer generated - Length: {len(state.answer)} characters")
+            print(f"[AnsweringNode] Answer generated - Length: {len(answer)} characters")
             print(f"[AnsweringNode] Confidence: {answer_analysis.response.confidence_level}")
             
             if answer_analysis.response.learning_notes:
                 print(f"[AnsweringNode] Learning notes available")
             
-            return state
+            return {
+                "answer": answer,
+                "messages": updated_messages
+            }
             
         except Exception as e:
             print(f"[AnsweringNode] Error during answer generation: {e}")
             
             # Provide fallback answer
-            state.answer = f"""I apologize, but I encountered a technical issue while generating an answer for your question: "{state.question}". 
+            fallback_answer = f"""I apologize, but I encountered a technical issue while generating an answer for your question: "{state.question}". 
 
 Please try rephrasing your question or asking again. The system is designed to provide educational explanations on a wide range of topics."""
             
-            return state
+            return {
+                "answer": fallback_answer,
+                "messages": state.messages
+            }
 
 # HELPER FUNCTIONS
 
-async def run_answering_node(state: AgenticLightRAGState) -> AgenticLightRAGState:
+async def run_answering_node(state: AgenticLightRAGState) -> Dict[str, Any]:
     """
     Standalone function to run answering node.
     
@@ -86,7 +93,7 @@ async def run_answering_node(state: AgenticLightRAGState) -> AgenticLightRAGStat
         state: Input state
         
     Returns:
-        AgenticLightRAGState: Updated state
+        Dict[str, Any]: Updated state fields
     """
     node = AnsweringNode()
     return await node.process(state)

@@ -11,7 +11,10 @@
       "Bash(powershell:*)",
       "Bash(python:*)",
       "Bash(Remove-Item \"C:\\Users\\User\\Projects\\Self_Learning\\backend\\storage\\chromadb_instance\\query_retriever.py\" -Force)",
-      "Bash(Remove-Item \"C:\\Users\\User\\Projects\\Self_Learning\\backend\\agentic_system\\agentic_lightrag\\graph\\fast_workflow.py\" -Force)"
+      "Bash(Remove-Item \"C:\\Users\\User\\Projects\\Self_Learning\\backend\\agentic_system\\agentic_lightrag\\graph\\fast_workflow.py\" -Force)",
+      "Bash(gradio deploy:*)",
+      "Bash(move ultra_fast_workflow.py ultra_fast_workflow_backup.py)",
+      "Bash(move clean_ultra_fast_workflow.py ultra_fast_workflow.py)"
     ],
     "deny": [],
     "ask": []

@@ -1,53 +1,61 @@
 """
-Ultra-Fast Agentic LightRAG Workflow - Maximum Speed Version
+Ultra-Fast Agentic LightRAG Workflow - Clean LangGraph Implementation
 
-This workflow prioritizes speed by minimizing AI calls and using aggressive caching.
+This workflow provides a clean graph structure with all node logic separated into individual files.
 """
 
 from .state import AgenticLightRAGState
-from .nodes.answering_node import run_answering_node
-from .nodes.fast_retrieval_node import run_fast_retrieval_node
-from backend.storage.chromadb_instance.models.chroma_config import RetrievalConfig
-import weave
-import hashlib
+from .nodes.parameter_selection_node import ParameterSelectionNode
+from .nodes.fast_retrieval_node import FastRetrievalNode
+from .nodes.answering_node import AnsweringNode
 
-weave.init('LIGHT_RAG_AGENTIC_SYSTEM')
+import weave
+from typing import AsyncGenerator, Dict, Any
+from langgraph.graph import StateGraph, END, START
+
+weave.init('self_learning')
+
 
 class UltraFastAgenticLightRAGWorkflow:
     """
-    Ultra-fast workflow that minimizes AI calls and uses aggressive caching.
+    Ultra-fast LangGraph workflow with streaming capabilities and cached components.
+    
+    This class focuses purely on graph orchestration - all node logic is in separate files.
     """
     
     def __init__(self, cached_retriever=None, query_cache=None):
         """Initialize with cached components for maximum speed."""
         self.cached_retriever = cached_retriever
         self.query_cache = query_cache or {}
-    
-    def _get_query_hash(self, question: str) -> str:
-        """Get a hash for the question to use as cache key."""
-        return hashlib.md5(question.lower().strip().encode()).hexdigest()[:12]
-    
-    def _determine_retrieval_params(self, question: str) -> RetrievalConfig:
-        """Fast heuristic-based parameter selection instead of AI analysis."""
-        question_lower = question.lower()
         
-        # Simple heuristics for retrieval parameters
-        if any(word in question_lower for word in ['what is', 'define', 'definition']):
-            # Simple definitions - fewer results needed
-            return RetrievalConfig(top_k=5, enable_reranking=True)
-        elif any(word in question_lower for word in ['how', 'explain', 'describe']):
-            # Explanations - moderate results
-            return RetrievalConfig(top_k=8, enable_reranking=True)
-        elif any(word in question_lower for word in ['compare', 'difference', 'vs', 'versus']):
-            # Comparisons - more comprehensive results
-            return RetrievalConfig(top_k=12, enable_reranking=True)
-        else:
-            # Default balanced approach
-            return RetrievalConfig(top_k=8, enable_reranking=True)
+        # Initialize nodes with cached components
+        self.parameter_selection_node = ParameterSelectionNode()
+        self.fast_retrieval_node = FastRetrievalNode(cached_retriever)
+        self.answering_node = AnsweringNode()
+        
+        # Build the graph
+        self.graph = self._build_graph()
+    
+    def _build_graph(self) -> StateGraph:
+        """Build the LangGraph state graph with clean node separation."""
+        workflow = StateGraph(AgenticLightRAGState)
+        
+        # Add nodes - each node handles its own logic
+        workflow.add_node("parameter_selection", self.parameter_selection_node.process)
+        workflow.add_node("fast_retrieval", self.fast_retrieval_node.process)
+        workflow.add_node("answer_generation", self.answering_node.process)
+        
+        # Define edges - simple linear flow
+        workflow.add_edge(START, "parameter_selection")
+        workflow.add_edge("parameter_selection", "fast_retrieval")  
+        workflow.add_edge("fast_retrieval", "answer_generation")
+        workflow.add_edge("answer_generation", END)
+        
+        return workflow.compile()
     
     async def process_question(self, question: str) -> AgenticLightRAGState:
         """
-        Process a user question through the ultra-fast workflow.
+        Process a user question through the LangGraph workflow.
         
         Args:
             question: User's question to process
@@ -56,59 +64,70 @@ class UltraFastAgenticLightRAGWorkflow:
             AgenticLightRAGState: Final state with answer
         """
         print("=" * 50)
-        print(f"⚡ ULTRA-FAST WORKFLOW")
+        print(f"⚡ ULTRA-FAST LANGGRAPH WORKFLOW")
         print("=" * 50)
         print(f"📝 Question: {question}")
         print("-" * 50)
        
-        # Initialize state
-        state = AgenticLightRAGState(question=question, messages=[])
-        
         try:
-            # Skip query analysis - use fast heuristics instead
-            print("\n⚡ STEP 1: Fast Parameter Selection (No AI)")
-            retrieval_config = self._determine_retrieval_params(question)
-            print(f"   ✅ Heuristic Top-K: {retrieval_config.top_k}")
+            # Initialize state
+            initial_state = AgenticLightRAGState(question=question, messages=[])
             
-            # Step 2: Ultra-fast retrieval with cached components
-            print("\n🚄 STEP 2: Ultra-Fast Retrieval")
-            if self.cached_retriever:
-                retrieval_results = self.cached_retriever.search(question, retrieval_config)
-                
-                if retrieval_results.has_results:
-                    # Format context quickly
-                    context_parts = []
-                    for i, result in enumerate(retrieval_results.results, 1):
-                        context_parts.append(
-                            f"[Source {i}: {result.source_file} | Score: {result.score:.3f}]\n"
-                            f"{result.content}\n"
-                        )
-                    
-                    state.context = "\n" + "-" * 80 + "\n".join(context_parts)
-                    state.sources = retrieval_results.unique_sources
-                    
-                    print(f"   ⚡ Retrieved {len(retrieval_results.results)} results in {retrieval_results.retrieval_time_ms:.1f}ms")
-                else:
-                    state.context = f"No relevant context found for query: '{question}'"
-                    state.sources = []
-            else:
-                state.context = "No cached retriever available."
-                state.sources = []
-            
-            # Step 3: Fast answer generation
-            print("\n🎓 STEP 3: Fast Answer Generation")
-            state = await run_answering_node(state)
-            
-            if state.answer:
-                print(f"   ✅ Answer: {len(state.answer)} characters")
+            # Run through the graph
+            final_state = await self.graph.ainvoke(initial_state)
             
             print("\n" + "=" * 50)
             print("⚡ ULTRA-FAST COMPLETE")
             print("=" * 50)
             
-            return state
+            return final_state
             
         except Exception as e:
             print(f"\n❌ ULTRA-FAST ERROR: {type(e).__name__}: {e}")
-            state.answer = f"I encountered an error: {str(e)}. Please try rephrasing your question."
-            return state
+            # Return error state
+            error_state = AgenticLightRAGState(
+                question=question,
+                answer=f"I encountered an error: {str(e)}. Please try rephrasing your question.",
+                messages=[]
+            )
+            return error_state
+    
+    async def stream_question(self, question: str) -> AsyncGenerator[Dict[str, Any], None]:
+        """
+        Process a question with streaming updates for real-time responses.
+        
+        Args:
+            question: User's question to process
+            
+        Yields:
+            Dict[str, Any]: Streaming updates with partial results
+        """
+        print("=" * 50)
+        print(f"🌊 STREAMING LANGGRAPH WORKFLOW")
+        print("=" * 50)
+        print(f"📝 Question: {question}")
+        print("-" * 50)
+        
+        try:
+            # Initialize state
+            initial_state = AgenticLightRAGState(question=question, messages=[])
+            
+            # Stream through the graph
+            async for chunk in self.graph.astream(initial_state):
+                # Extract the current node and state
+                for node_name, node_state in chunk.items():
+                    yield {
+                        "node": node_name,
+                        "state": node_state,
+                        "question": question
+                    }
+                    
+        except Exception as e:
+            print(f"\n❌ STREAMING ERROR: {type(e).__name__}: {e}")
+            yield {
+                "node": "error",
+                "state": {
+                    "answer": f"I encountered an error: {str(e)}. Please try rephrasing your question."
+                },
+                "question": question
+            }

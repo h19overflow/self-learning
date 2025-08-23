@@ -9,3 +9,7 @@ wheels/
 # Virtual environments
 .venv
 .env
+
+# ChromaDB storage
+backend/storage/chromadb_storage/
+chromadb_storage/
