@@ -348,9 +348,13 @@ timeline
 
 ---
 
+---
+
 **Built with ❤️ by AI Researchers, for the Future of Knowledge**
 
 *🔬 Research • 🚀 Innovation • 🌟 Intelligence*
+
+</div>
 
 </div>#   s e l f - l e a r n i n g 
  
