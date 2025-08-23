@@ -1,0 +1,21 @@
+{
+  "playlists": [
+    {
+      "name": "LangGraph Complete Course",
+      "url": "https://youtube.com/playlist?list=PLSVEhWrZWDHQTBmWZufjxpw3s8sveJtnJ&si=WR7ROBUqwwwb26_w",
+      "description": "Complete LangGraph crash course for beginners",
+      "enabled": true
+    },
+    {
+      "name": "Advanced AI Concepts",
+      "url": "https://youtube.com/playlist?list=PLNIQLFWpQMRXmns-7UarmPIR6DN7bgEzZ&si=IU8qRNBfqFfwg5Oc",
+      "description": "Advanced AI and machine learning concepts",
+      "enabled": true
+    }
+  ],
+  "settings": {
+    "max_videos_per_playlist": null,
+    "language": "en",
+    "extract_all_enabled_playlists": true
+  }
+}

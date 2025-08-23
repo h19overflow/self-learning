@@ -1,0 +1,326 @@
+[
+    {
+        "type": "text",
+        "text": "365VDataScience ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "MACHINE LEARNING ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "COURSE NOTES – SECTION 6 ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "IT’S TIME TO DIG DEEPER ",
+        "text_level": 1,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "An initial linear combination and the added non-linearity form a layer. The layer is the building block of neural networks. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Minimal example (a simple neural network) ",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Neural networks ",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/1517e3f8f96e99d742875dd593c8235d4422e41dbbe1a7d4eb659a21f65484dc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/d4f922adae1da83cebae0de5083a16830bbdf187d3cb5c717fbe94214037686e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "In the minimal example we trained a neural network which had no depth. There were solely an input layer and an output layer. Moreover, the output was simply a linear combination of the input. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Neural networks step on linear combinations, but add a nonlinearity to each one of them. Mixing linear combinations and non-linearities allows us to model arbitrary functions. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "This is a deep neural network (deep net) with 5 layers. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Input layer ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Hidden layer 1 Hidden layer 2 Hidden layer 3 ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "How to read this diagram: ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A layer ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A unit (a neuron) ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Output laye X X V 双 双 KX X XX M A XX AT X N 1 ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Arrows represent mathematical transformations ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Hidden layer 1 Hidden layer 2 Hidden layer 3 ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The width of a layer is the number of units in that layer ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The width of the net is the number of units of the biggest layer ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The depth of the net is equal to the number of layers or the number of hidden layers. The term has different definitions. More often than not, we are interested in the number of hidden layers (as there are always input and output layers). ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Width ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "put layer Output layer 双 双 大 ? Depth ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The width and the depth of the net are called hyperparameters. They are values we manually chose when creating the net. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Why we need non-linearities to stack layers ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "You can see a net with no non-linearities: just linear combinations. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Two consecutive linear transformations are equivalent to a single one. ",
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/517e01150d3df8a46b35effe0cd454dd0acaa903b15593d997e3acb9946efa68.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Input ",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/3193d105de722342850676737ce63b75c71ccd835b30c4ed89946c6148429f57.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "In the respective lesson, we gave an example of temperature change. The temperature starts decreasing (which is a numerical change). Our brain is a kind of an ‘activation function’. It tells us whether it is cold enough for us to put on a jacket. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Putting on a jacket is a binary action: 0 (no jacket) or 1 ( jacket). ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "This is a very intuitive and visual (yet not so practical) example of how activation functions work. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Activation functions (non-linearities) are needed so we can break the linearity and represent more complicated relationships. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Moreover, activation functions are required in order to stack layers. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Activation functions transform inputs into outputs of a different kind. ",
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/2b4ac723b27ef8b3d6eab16a7f8e0c29b67cb1380a365dcc5935b7233ae05755.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Common activation functions ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/d205246234104a966e6de5d6302f2424702daa4a45afb3e25cfcba3a809d2d77.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Name</td><td>Formula</td><td>Derivative</td><td>Graph</td><td>Range</td></tr><tr><td>sigmoid (logistic function)</td><td>σ(a) = 1+-a</td><td>σ(@=σ(@（1-g(@））</td><td>1 0.5- 0 0</td><td>(0,1)</td></tr><tr><td>(hyperbTain tangent)</td><td>e-e-a tanh(@)=a+e-a</td><td>tan@=+-a)</td><td>1 01 0 £ -1</td><td> (-1,1)</td></tr><tr><td>(rectified inea unt)</td><td> relu(a) = max(0,a)</td><td>ro@_{.if≤0</td><td>▲</td><td>（0,8）</td></tr><tr><td> softmax</td><td>g(@）=</td><td></td><td>0 0</td><td>(0,1)</td></tr></table>",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "All common activation functions are: monotonic, continuous, and differentiable. These are important properties needed for the optimization. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Input layer ",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/afae07826051cb4bf429bf6452d0500a9511473f7bf8d04932fa3a85a113d5f3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The softmax activation transforms a bunch of arbitrarily large or small numbers into a valid probability distribution. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "While other activation functions get an input value and transform it, regardless of the other elements, the softmax considers the information about the whole set of numbers we have. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The values that softmax outputs are in the range from 0 to 1 and their sum is exactly 1 (like probabilities). ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Example: ",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "$\\pmb { \\mathrm { a } } = [ - 0 . 2 1 , 0 . 4 7 , 1 . 7 2 ]$   \n$\\mathsf { S o f t m a x } \\left( \\mathsf { a } \\right) = \\frac { e ^ { a _ { i } } } { \\sum _ { j } e ^ { a _ { j } } }$   \n$\\textstyle \\sum _ { j } e ^ { a _ { j } } = e ^ { - 0 . 2 1 } + e ^ { 0 . 4 7 } + e ^ { 1 . 7 2 } = 8$   \n$\\mathsf { s o f t m a x } \\left( \\mathsf { a } \\right) = \\bigl [ \\frac { e ^ { - 0 . 2 1 } } { 8 } , \\frac { e ^ { 0 . 4 7 } } { 8 } , \\frac { e ^ { 1 . 7 2 } } { 8 } \\bigr ]$   \n$y = [ 0 . 1 , 0 . 2 , 0 . 7 ] $ probability distribution ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The property of the softmax to output probabilities is so useful and intuitive that it is often used as the activation function for the final (output) layer. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "However, when the softmax is used prior to that (as the activation of a hidden layer), the results are not as satisfactory. That’s because a lot of the information about the variability of the data is lost. ",
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/ff1036e239b63670b30a96faeafed6c62a6840ff5d26c48dcc8d84715f3fd305.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Forward propagation is the process of pushing inputs through the net. At the end of each epoch, the obtained outputs are compared to targets to form the errors. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Backpropagation of errors is an algorithm for neural networks using gradient descent. It consists of calculating the contribution of each parameter to the errors. We backpropagate the errors through the net and update the parameters (weights and biases) accordingly. ",
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/adfd4c6cc847d1e5d60528724af78fa78af286c1cbffd1372d9c0e8d8812ffb9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$\\begin{array} { r } { \\frac { \\partial L } { \\partial w _ { i j } } = \\delta _ { j } x _ { i } \\mathrm { , w h e r e } \\delta _ { j } = \\sum _ { k } \\delta _ { k } w _ { j k } y _ { j } \\big ( 1 } \\end{array}$ − ???? ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "If you want to examine the full derivation, please make use of the PDF we made available in the section: Backpropagation. A peek into the Mathematics of Optimization. ",
+        "page_idx": 10
+    }
+]

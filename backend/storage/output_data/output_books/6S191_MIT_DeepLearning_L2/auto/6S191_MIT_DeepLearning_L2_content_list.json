@@ -1,0 +1,2113 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/92af9896b7afbc3899e270df3361c54f97abbeddea043d0df77c18d810603e20.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Deep Sequence Modeling ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Ava Amini MIT Introduction to Deep Learning January 6,2025 ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Given an image of a ball, can you predict where it will go next? ",
+        "text_level": 1,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Given an image of a ball, can you predict where it will go next? ",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/929a6322a0ae1475d8f6ad08bfdb1c81e808b07ed87f02516cc550e339e48d14.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Given an image of a ball, can you predict where it will go next? ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Given an image of a ball, can you predict where it will go next? ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "一",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Sequences in the Wild ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/00dc36d5fc938646c269e808d5248bcc1a74495659acebf6a666dc012c92ca9d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Sequences in the Wild ",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/852a6d5f346fe86318a68737a0558922a5aad0a5013f0afc9be14c9f039ad0d6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Sequence Modeling Applications ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/41de7ffdd602f2d2d2e32704585cc30ecc99cefee6b64a2d8ad3fc9602da3a7e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Neurons with Recurrence ",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The Perceptron Revisited ",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/712195b45870c54d156ed05a0d871b35b5a97e7c1a8aa05618f4b961128a95d6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Feed-Forward Networks Revisited ",
+        "text_level": 1,
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/f20f7f846f76aa688ad4e093517935079613bc74ceda1c64bf0ec920389fc6b4.jpg",
+        "image_caption": [
+            "xERm ",
+            "yeRn "
+        ],
+        "image_footnote": [],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Feed-Forward Networks Revisited ",
+        "text_level": 1,
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/97f8340f1912c099d937054c57e931d72ba003e659d625794266999a24334800.jpg",
+        "image_caption": [
+            "ytERn "
+        ],
+        "image_footnote": [],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "xtERm ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Handling Individual Time Steps ",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/f9e4b76662801c078d6d621f07932bd9c66322dd53e33291db71f7ceaa49e03c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Neurons with Recurrence ",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "image",
+        "img_path": "images/6216ce94bca82b8e56191bca7061fc3d8ea8fd544340b3375db81fa183e1a19d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Neurons with Recurrence ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "image",
+        "img_path": "images/118a936610fdb2df1e1f6dee7f0424ae9e1074e67104f4dd583830b836096d9c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Recurrent Neural Networks (RNNs) ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Recurrent Neural Networks (RNNs) ",
+        "text_level": 1,
+        "page_idx": 16
+    },
+    {
+        "type": "image",
+        "img_path": "images/1c3cfdbd514abed38e941d361033aa36852b890a2f35c2f547a99fe953f5fa34.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Apply a recurrence relation at every time step to process a sequence: ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "ht fw [xt ht-1   \ncell state function input old state with weights W ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Note: the same function and set of parameters are used at every time step ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "RNNs have a state, $h _ { t }$ ,that is updated at each time stepas asequence is processed ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "RNN Intuition ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "image",
+        "img_path": "images/e42a57c07e1853e303409705ab2845f71a0ab53c3b74c05cb0b38ba1bd8b6252.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "RNN Intuition ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "my_rnn=RNN() hidden_state=[0,0,0，0] ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "sentence=[\"I\",\"love\",\"recurrent\"，\"neural\"] ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "forword in sentence： prediction,hidden_state=my_rnn(word,hidden_state) ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "next_word_prediction=prediction #>>>\"networks!\" ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "RNN Intuition ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "my_rnn=RNN() output vector yt   \nhidden_state=[0,0，0，0]   \nsentence=[\"I\",\"love\"，\"recurrent\"，\"neural\"]   \nfor word in sentence: RNN prediction,hidden_state=my_rnn(word,hidden_state) recurrentcell ht 4   \nnext_wordprediction=prediction   \n#>>>\"networks!\" input vector xt ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "RNN State Update and Output ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "output vector yt RNN 6.S191 ht   \ninput vector Xt ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "RNN State Update and Output ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "image",
+        "img_path": "images/21df61502bb75bb263733c41dc7f7249d50869628f250271a75dd27fd6a9348c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Input Vector ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "RNN State Update and Output ",
+        "text_level": 1,
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Update Hidden State ",
+        "text_level": 1,
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "images/ecdd1cfe1ca2f3352705e22a41ab05ea297c2644c233c54975ecc9e21402bbeb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "ht=tanh(Whht-1+Wxhxt）",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Input Vector ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "RNN State Update and Output ",
+        "text_level": 1,
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Output Vector $\\hat { y } _ { t } = W _ { h y } ^ { T } h _ { t }$ ",
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "images/a1fc697d7c3a1850d156bc8381530919658238a5507e79ef21106ed2dbaff488.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Update Hidden State ",
+        "page_idx": 23
+    },
+    {
+        "type": "equation",
+        "img_path": "images/3f4e22a36416e798ae961a1ded3949a2661444dc66c5285d6b7f66ce9b036c3a.jpg",
+        "text": "$$\nh _ { t } = \\operatorname { t a n h } ( W _ { h h } ^ { T } h _ { t - 1 } + W _ { x h } ^ { T } x _ { t } )\n$$",
+        "text_format": "latex",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Input Vector ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "RNNs: Computational Graph Across Time ",
+        "text_level": 1,
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Yt   \nRNN Represent as computational graph unrolled across time M   \nxt ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "RNNs: Computational Graph Across Time ",
+        "text_level": 1,
+        "page_idx": 25
+    },
+    {
+        "type": "image",
+        "img_path": "images/a4a5d54dfb7219b5dadf5b37178b6cfe2d0ecb72e1e7ea7c830418de3604c2b0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "RNNs from Scratch in TensorFlow ",
+        "text_level": 1,
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "class MyRNNCell(tf.keras.layers.Layer)： def init(self,rnn_units，input_dim,output_dim)： super(MyRNNCell,self)._init_() ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "# Initialize weight matrices self.W_xh=self.add_weight([rnn_units,input_dim]) self.W_hh=self.add_weight([rnn_units,rnn_units]) self.W_hy=self.add_weight([output_dim,rnn_units]） ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "# Initialize hidden state to zeros self.h=tf.zeros([rnn_units,1]） ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "defcall(self,x)：",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Update the hidden state self.h=tf.math.tanh(self.w_hh\\*self.h+self.W_xh\\*x ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Compute the output output=self.W_hy\\*self.h ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Return the current output and hidden state returnoutput,self.h ",
+        "page_idx": 26
+    },
+    {
+        "type": "image",
+        "img_path": "images/248c7dbf0ce044105348b0f734138aa5907ad086be6d82441fd1719519b09b43.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "RNN Implementation:TensorFlow& PyTorch ",
+        "text_level": 1,
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "from tf.keras.layers import SimpleRNN model = SimpleRNN(rnn_units) ",
+        "page_idx": 27
+    },
+    {
+        "type": "image",
+        "img_path": "images/80033421b7960f977c7b4731378c2b63eb5c7a40d9ccfd2bea73377eb6ecdb7c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "from torch.nn import RNN model = RNN(input_size,rnn_units) ",
+        "page_idx": 27
+    },
+    {
+        "type": "image",
+        "img_path": "images/7cbfe0462a5b585b80ffc3465e926efcad5d3ab18a7dc97d2cad4e49051e3fb3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "RNNs for Sequence Modeling ",
+        "text_level": 1,
+        "page_idx": 28
+    },
+    {
+        "type": "image",
+        "img_path": "images/a133b1b7797fd9b66e9ab04791365eb187fefbb3e14112748307a8fbf8a22b06.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 28
+    },
+    {
+        "type": "image",
+        "img_path": "images/9e601dc16469feafc5b3b40240699a28057da9ead69cdb409337539813ff85b9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 28
+    },
+    {
+        "type": "image",
+        "img_path": "images/f6eec27d3d7b7cb3d70695c6ecc66cbec6aebf332fd76201f0c892a7bd96aa58.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 28
+    },
+    {
+        "type": "image",
+        "img_path": "images/119df517bf89f3eaf231907323dc69ff73601d718cc5683e5b8df1ac62205806.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "One to One   \n\"Vanilla\"NN   \nBinaryclassification ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Many to One Sentiment Classification ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "One to Many Text Generation Image Captioning ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Many to Many Translation&Forecasting MusicGeneration ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "... and many other architectures and applications ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "6.S191 Lab! ",
+        "text_level": 1,
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Sequence Modeling: Design Criteria ",
+        "text_level": 1,
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "To model sequences,we need to: ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "I．Handle variable-length sequences 2.Track long-term dependencies 3.Maintain information about order 4.Share parameters across the sequence ",
+        "page_idx": 29
+    },
+    {
+        "type": "image",
+        "img_path": "images/18a81f8ce1668f47066363d124ecb074c4ca8e373838553f285a40c10a8285ee.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Recurrent Neural Networks (RNNs) meet these sequence modeling design criteria ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "A Sequence Modeling Problem: Predict the Next Word ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "A Sequence Modeling Problem: Predict the Next Word ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "\"This morning ltook my cat for a walk\" ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "A Sequence Modeling Problem: Predict the Next Word ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "\"This morning l took my cat for a walk\" given these words ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "A Sequence Modeling Problem: Predict the Next Word ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "\"This morning l took my cat for a walk\" ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "given these words ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "predict the nextword ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "A Sequence Modeling Problem: Predict the Next Word ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "\"This morning l took my cat for a walk\" ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "given these words ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "predict the nextword ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Representing Language to a Neural Network ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "“deep” \"learning\" Neural networks cannot interpret words ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "< ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "[0.1] [0.9] 0.8 0.2 [0.6] [0.4] ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Neural networks require numerical inputs ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Encoding Language for a Neural Network ",
+        "text_level": 1,
+        "page_idx": 35
+    },
+    {
+        "type": "image",
+        "img_path": "images/7e7010c4b30ad3f65dec11968de91dda24f7af5468ea1b20bb2e069aed286ca9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "[0.1] [0.9] 0.8 0.2 [0.6] [0.4] ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Neural networks require numerical inputs ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Embedding: transform indexes into a vector of fixed size. ",
+        "text_level": 1,
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "this cat for my took 一 walk a morning ",
+        "page_idx": 35
+    },
+    {
+        "type": "image",
+        "img_path": "images/877a70d269621b51f7be042f556fa8eae819ee04c906cb31a56ee95e88ea7120.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "One-hot embedding Learned embedding \"cat\" $=$ [0,1,0,0,0.0] run walk dogcat ↑ day happy i-th index sun sad ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "1.Vocabulary: Corpus of words ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "2. Indexing: Word to index ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "3.Embedding: ",
+        "text_level": 1,
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Indexto fixed-sized vector ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Handle Variable Sequence Lengths ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "The food was great ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "VS. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "We visited a restaurant for lunch ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "VS. ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "We were hungry but cleaned the house before eating ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Model Long-Term Dependencies ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "\"France is where l grew up,but I now live in Boston.I speak fluent_ ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "J'aime 6.S191! ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "We need information from the distant past to accurately predict the correct word. ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Capture Differences in Sequence Order ",
+        "text_level": 1,
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "The food was good, not bad at ll. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "VS. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "The food was bad, not good at all. ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Sequence Modeling: Design Criteria ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "To model sequences,we need to: ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "I．Handle variable-length sequences 2.Track long-term dependencies 3.Maintain information about order 4.Share parameters across the sequence ",
+        "page_idx": 39
+    },
+    {
+        "type": "image",
+        "img_path": "images/a423a5ced561f0b8afb09b56b8a9d948f24814696bc25d1015f8cef401105e99.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Recurrent Neural Networks (RNNs) meet these sequence modeling design criteria ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Backpropagation Through Time (BPTT) ",
+        "text_level": 1,
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Recall: Backpropagation in Feed Forward Models ",
+        "text_level": 1,
+        "page_idx": 41
+    },
+    {
+        "type": "image",
+        "img_path": "images/ec0e6ccbe726dabfe19fb6acc8082a6b2c92de3dd35cf545607415f09cab3292.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Backpropagation algorithm: ",
+        "text_level": 1,
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Take the derivative (gradient) of the loss with respect to each parameter 2.Shift parameters in order to minimize loss ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "RNNs: Backpropagation Through Time ",
+        "text_level": 1,
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "→Forward pass LO L1 G- L3 ↑ ↑ yt D2 yt Wny Wry Wny Wny RNN N Whh Whh Whh Wxh Wxh Wxh↑ xt x0 x1 x2 xt ",
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "RNNs: Backpropagation Through Time ",
+        "text_level": 1,
+        "page_idx": 43
+    },
+    {
+        "type": "image",
+        "img_path": "images/1d7aa1a0a63475cea20146a3f97b790d4e5be63fa13411aa11861e7c819d610f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Standard RNN Gradient Flow ",
+        "text_level": 1,
+        "page_idx": 44
+    },
+    {
+        "type": "image",
+        "img_path": "images/61eb75ef6990de87770c165e33a2eaf75ced8b13fe80f643c9b46a44a5908b3e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Standard RNN Gradient Flow ",
+        "text_level": 1,
+        "page_idx": 45
+    },
+    {
+        "type": "image",
+        "img_path": "images/bd633241c58e8014ba85a3aebe99215d25bf5f82ad5717acd9ff4a6ba0aae282.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Computing the gradient wrt $h _ { 0 }$ involves many factors of $W _ { h h } +$ repeated gradient computation! ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Standard RNN Gradient Flow: Exploding Gradients ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "image",
+        "img_path": "images/031344a0e914c7b4fe6cd2e0d32c26ac8b79fcd8d1ad52a4ff8273bf2c3a2e17.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Computing the gradient wrt $h _ { 0 }$ involves many factors of $W _ { h h } +$ repeated gradient computation! ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Many values > I: exploding gradients Gradient clipping to scale big gradients ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Standard RNN Gradient Flow:Vanishing Gradients ",
+        "text_level": 1,
+        "page_idx": 47
+    },
+    {
+        "type": "image",
+        "img_path": "images/ee1626d6683d34cfbbaec4b277fdf4d3d3b48e5518ccb81ede1dc59a0f172250.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Computing the gradient wrt $h _ { 0 }$ involves many factors of $W _ { h h } +$ repeated gradient computation! ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Many values exploding gradients Gradient clipping to scale big gradients ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Many values<l: vanishing gradients 1.Activation function 2. Weight initialization 3. Networkarchitecture ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "The Problem of Long-Term Dependencies ",
+        "text_level": 1,
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Why are vanishing gradients a problem? ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Multiply many small numbers together Errors due to further back time steps have smallerand smaller gradients Bias parameters to capture short-term dependencies ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "The Problem of Long-Term Dependencies ",
+        "text_level": 1,
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Why are vanishing gradients a problem? ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Multiply many small numbers together ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "\"The cloudsare in the ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Errors due to further back time steps have smallerand smaller gradients ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Bias parameters to capture short-term dependencies ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "The Problem of Long-Term Dependencies ",
+        "text_level": 1,
+        "page_idx": 50
+    },
+    {
+        "type": "text",
+        "text": "\"The cloudsare in the ",
+        "page_idx": 50
+    },
+    {
+        "type": "text",
+        "text": "Why are vanishing gradients a problem? ",
+        "page_idx": 50
+    },
+    {
+        "type": "text",
+        "text": "Multiply many small numbers together ",
+        "page_idx": 50
+    },
+    {
+        "type": "text",
+        "text": "Errors due to further back time steps have smallerand smaller gradients ",
+        "page_idx": 50
+    },
+    {
+        "type": "image",
+        "img_path": "images/220ec6a9fc39d42e0b9e30190efe6be93561cf3fc598742e2632383306b899a1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 50
+    },
+    {
+        "type": "text",
+        "text": "Bias parameters to capture short-term dependencies ",
+        "page_idx": 50
+    },
+    {
+        "type": "text",
+        "text": "The Problem of Long-Term Dependencies ",
+        "text_level": 1,
+        "page_idx": 51
+    },
+    {
+        "type": "text",
+        "text": "\"The cloudsare in the ",
+        "page_idx": 51
+    },
+    {
+        "type": "text",
+        "text": "Why are vanishing gradients a problem? ",
+        "page_idx": 51
+    },
+    {
+        "type": "text",
+        "text": "Multiply many small numbers together ",
+        "page_idx": 51
+    },
+    {
+        "type": "image",
+        "img_path": "images/65f84aabf9740d8ba4af20688baa55b4762c03a92a2b923af52ecf469a673e1d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 51
+    },
+    {
+        "type": "text",
+        "text": "Errors due to further back time steps have smallerand smaller gradients ",
+        "page_idx": 51
+    },
+    {
+        "type": "text",
+        "text": "“Igrewup inFrance,...andlspeakfluent_ 11 ",
+        "page_idx": 51
+    },
+    {
+        "type": "text",
+        "text": "Bias parameters to capture short-term dependencies ",
+        "page_idx": 51
+    },
+    {
+        "type": "text",
+        "text": "The Problem of Long-Term Dependencies ",
+        "text_level": 1,
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "\"The cloudsare in the ",
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "Why are vanishing gradients a problem? ",
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "Multiply many small numbers together ",
+        "page_idx": 52
+    },
+    {
+        "type": "image",
+        "img_path": "images/da9495b330dc951462f076b3cd6fcea9a4d7aa5c37cf6258f656434219570c53.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "Errors due to further back time steps have smallerand smaller gradients ",
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "\"Igrew up inFrance,..andlspeakfluent_ 11 ",
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "Bias parameters to capture short-term dependencies ",
+        "page_idx": 52
+    },
+    {
+        "type": "image",
+        "img_path": "images/bc38aa88166cbc7833705f3860595311723ee8832840cedd2c9eaab91d4b30ac.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "Gating Mechanisms in Neurons ",
+        "text_level": 1,
+        "page_idx": 53
+    },
+    {
+        "type": "text",
+        "text": "ldea: use gates to selectively add or remove information within each recurrent unit with ",
+        "page_idx": 53
+    },
+    {
+        "type": "image",
+        "img_path": "images/6a9cb855383a1e6b3b8c8c5132ca696d0fba93a1ef5b13d9f1f90e1961048454.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 53
+    },
+    {
+        "type": "text",
+        "text": "Long Short Term Memory (LSTMs) networks rely on a gated cell to track information throughout many time steps. ",
+        "page_idx": 53
+    },
+    {
+        "type": "text",
+        "text": "RNN Applications & Limitations ",
+        "text_level": 1,
+        "page_idx": 54
+    },
+    {
+        "type": "text",
+        "text": "Example Task: Music Generation ",
+        "text_level": 1,
+        "page_idx": 55
+    },
+    {
+        "type": "image",
+        "img_path": "images/dd24388a5bb86d4e955e14a8b7a2df6099dfebef1c67dc6b7df2e5f0d53c7853.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 55
+    },
+    {
+        "type": "text",
+        "text": "Input: sheet music ",
+        "page_idx": 55
+    },
+    {
+        "type": "text",
+        "text": "Output: next character in sheet music ",
+        "page_idx": 55
+    },
+    {
+        "type": "image",
+        "img_path": "images/f47577fff668b0cd81715dd89ac5522aeb92723014020a9e327e671e0e3ea45b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 55
+    },
+    {
+        "type": "text",
+        "text": "Example Task: Sentiment Classification ",
+        "text_level": 1,
+        "page_idx": 56
+    },
+    {
+        "type": "image",
+        "img_path": "images/72a6314f579439253cea00a0bf8d6e9a1d52baf55f21c1081ebef8e271488618.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 56
+    },
+    {
+        "type": "text",
+        "text": "Input: sequence of words ",
+        "page_idx": 56
+    },
+    {
+        "type": "text",
+        "text": "Output: probability of having positive sentiment ",
+        "page_idx": 56
+    },
+    {
+        "type": "text",
+        "text": "loss=tstmacroseroyiits(yied) ",
+        "page_idx": 56
+    },
+    {
+        "type": "text",
+        "text": "Example Task: Sentiment Classification ",
+        "text_level": 1,
+        "page_idx": 57
+    },
+    {
+        "type": "image",
+        "img_path": "images/29d38bc4e5327885e6afacda294cbe59c6d8e7877c3642e9a450a4a39b25acfd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "Tweet sentiment classification ",
+        "text_level": 1,
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "lvar Hagendoorn @lvarHagendoorn ",
+        "page_idx": 57
+    },
+    {
+        "type": "image",
+        "img_path": "images/b93565154cf34ec55d89745a00caec858dcdea3e8e4df5e04d20acc434ea08b2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "The@MIT Introductionto #DeepLearning is definitely one of the best courses of its kind currentlyavailableonline   \nintrotodeeplearning.com ",
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "12:45 PM - 12 Feb 2018 ",
+        "page_idx": 57
+    },
+    {
+        "type": "image",
+        "img_path": "images/76709cc2d564359acc12e46f7e71960c81e20aabcf29f251b6e616b84431417b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "Angels-Cave @AngelsCave ",
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "Replying to @Kazuki2048 ",
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "lwouldn’tmind a bit of snow right now.We haven'thadany inmybitof theMidlandsthis winter!:( ",
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "2:19 AM - 25 Jan 2019 ",
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "Limitations of Recurrent Models ",
+        "text_level": 1,
+        "page_idx": 58
+    },
+    {
+        "type": "image",
+        "img_path": "images/cc662ac3e8c4dff9dc1375ea1838f3d6e77d44d4d564c2af27f29b90501a955d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 58
+    },
+    {
+        "type": "text",
+        "text": "Limitations of RNNs ",
+        "page_idx": 58
+    },
+    {
+        "type": "text",
+        "text": "Y ",
+        "page_idx": 58
+    },
+    {
+        "type": "text",
+        "text": "Encoding bottleneck ",
+        "page_idx": 58
+    },
+    {
+        "type": "image",
+        "img_path": "images/68cf57071ee767968d04ba41aca17bfc8af93342334abf13c0363c35364262ea.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 58
+    },
+    {
+        "type": "text",
+        "text": "Slow, no parallelization ",
+        "page_idx": 58
+    },
+    {
+        "type": "text",
+        "text": "Not long memory ",
+        "page_idx": 58
+    },
+    {
+        "type": "text",
+        "text": "Goal of Sequence Modeling ",
+        "text_level": 1,
+        "page_idx": 59
+    },
+    {
+        "type": "text",
+        "text": "RNNs:recurrence to model sequence dependencies ",
+        "page_idx": 59
+    },
+    {
+        "type": "text",
+        "text": "Sequence of outputs ",
+        "page_idx": 59
+    },
+    {
+        "type": "text",
+        "text": "Sequence of features ",
+        "page_idx": 59
+    },
+    {
+        "type": "image",
+        "img_path": "images/01406eaf1b9a22d19637993c94fcc0f761ac37cae798625b88f2fc6597adf201.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 59
+    },
+    {
+        "type": "text",
+        "text": "Sequence of inputs ",
+        "page_idx": 59
+    },
+    {
+        "type": "image",
+        "img_path": "images/d2cb76ed5f3589e9e5559bba4ef99a8cf07f406823bf9ec8fce6fcae4adbb9e8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 59
+    },
+    {
+        "type": "text",
+        "text": "Goal of Sequence Modeling ",
+        "text_level": 1,
+        "page_idx": 60
+    },
+    {
+        "type": "text",
+        "text": "RNNs:recurrence to model sequence dependencies ",
+        "page_idx": 60
+    },
+    {
+        "type": "text",
+        "text": "Limitations of RNNs ",
+        "text_level": 1,
+        "page_idx": 60
+    },
+    {
+        "type": "text",
+        "text": "Y ",
+        "page_idx": 60
+    },
+    {
+        "type": "text",
+        "text": "Encoding bottleneck ",
+        "page_idx": 60
+    },
+    {
+        "type": "image",
+        "img_path": "images/9bf11a0f378ec27cb05579b5ad8a759876e5423847cf26da3449f9fce7a72613.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 60
+    },
+    {
+        "type": "text",
+        "text": "Slow,no parallelization ",
+        "page_idx": 60
+    },
+    {
+        "type": "image",
+        "img_path": "images/22c810b6ee716bc4e6b35137676ac28f5113acaea51b8ee66476deacd1e5812c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 60
+    },
+    {
+        "type": "text",
+        "text": "Not long memory ",
+        "page_idx": 60
+    },
+    {
+        "type": "text",
+        "text": "Goal of Sequence Modeling ",
+        "text_level": 1,
+        "page_idx": 61
+    },
+    {
+        "type": "text",
+        "text": "Can we eliminate the need for recurrence entirely? ",
+        "page_idx": 61
+    },
+    {
+        "type": "text",
+        "text": "Desired Capabilities ",
+        "page_idx": 61
+    },
+    {
+        "type": "text",
+        "text": "Continuous stream ",
+        "page_idx": 61
+    },
+    {
+        "type": "image",
+        "img_path": "images/d797e3cd016e5c4d5a55f15b0814ee3d53bbd1b7b7618a84ccf6c00a58aa7674.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 61
+    },
+    {
+        "type": "text",
+        "text": "Parallelization ",
+        "page_idx": 61
+    },
+    {
+        "type": "text",
+        "text": "Long memory ",
+        "page_idx": 61
+    },
+    {
+        "type": "image",
+        "img_path": "images/836c1fc3c85305d3e1667db36626edd4e457ad6651a37f84f5cd5c6bb09010e8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 61
+    },
+    {
+        "type": "text",
+        "text": "Goal of Sequence Modeling ",
+        "text_level": 1,
+        "page_idx": 62
+    },
+    {
+        "type": "text",
+        "text": "Can we eliminate the need for recurrence entirely? ",
+        "page_idx": 62
+    },
+    {
+        "type": "text",
+        "text": "Desired Capabilities ",
+        "page_idx": 62
+    },
+    {
+        "type": "text",
+        "text": "Continuous stream ",
+        "page_idx": 62
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 62
+    },
+    {
+        "type": "text",
+        "text": "Long memory ",
+        "page_idx": 62
+    },
+    {
+        "type": "image",
+        "img_path": "images/3440c47dd2e67542fd7c8591934fd37fa42c0770b12cb86adde3ae651a1ddae5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 62
+    },
+    {
+        "type": "text",
+        "text": "Goal of Sequence Modeling ",
+        "text_level": 1,
+        "page_idx": 63
+    },
+    {
+        "type": "text",
+        "text": "Idea l: Feed everything into densenetwork ν××× No recurrence X Not scalable X No order X No long memory ",
+        "page_idx": 63
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 63
+    },
+    {
+        "type": "text",
+        "text": "Can we eliminate the need for recurrence entirely? ",
+        "page_idx": 63
+    },
+    {
+        "type": "image",
+        "img_path": "images/9383ad47e9667bc4c20fe10e9e7cebc44a1cb9c894be8d917da98bf552f7c59d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 63
+    },
+    {
+        "type": "text",
+        "text": "Idea: ldentify and attend to what's important ",
+        "page_idx": 63
+    },
+    {
+        "type": "text",
+        "text": "Attention Is All You Need ",
+        "text_level": 1,
+        "page_idx": 64
+    },
+    {
+        "type": "text",
+        "text": "Intuition Behind Self-Attention ",
+        "text_level": 1,
+        "page_idx": 65
+    },
+    {
+        "type": "text",
+        "text": "Attending to the most important parts of an input. ",
+        "page_idx": 65
+    },
+    {
+        "type": "image",
+        "img_path": "images/08d82d3a2cc875d4d0701de8f1ee8ee3f8be0f71a6bdfcd0f977d288be620af3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 65
+    },
+    {
+        "type": "text",
+        "text": "A Simple Example: Search ",
+        "text_level": 1,
+        "page_idx": 66
+    },
+    {
+        "type": "image",
+        "img_path": "images/c2ded86e04204d9887a0d48e15d0d04377ded54163496750288bf190f16a5e73.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 66
+    },
+    {
+        "type": "text",
+        "text": "Understanding Attention with Search ",
+        "text_level": 1,
+        "page_idx": 67
+    },
+    {
+        "type": "image",
+        "img_path": "images/e23bc0f376a6f68eb7fec26e4c69e1a64b65a41cea42c132ee67f613fa8ea1e4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 67
+    },
+    {
+        "type": "text",
+        "text": "Understanding Attention With Search ",
+        "text_level": 1,
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "YouTube ",
+        "text_level": 1,
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "deep learning ",
+        "text_level": 1,
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "Query (Q) ",
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "GIANT SEA TURTLES·AMAZING CORAL REEFFISH·12 HOURS of THE BESTRELAX MUSIC ",
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "MIT6.S191(2020):Introduction toDeep Learning 1M views - 1 year agc ",
+        "page_idx": 68
+    },
+    {
+        "type": "image",
+        "img_path": "images/43f38862de58c832be6ed85cf6b063862bb10cbd3b33fe5b4023a38ffe965e09.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "Alexander Amini ",
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "Key (K2) ",
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "MIT Introduction to Deep Leaming 6.S191: ILecture 1 Foundations of Deep Learning Lecturer Amini January 2020 For.. ",
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "Value (M) ",
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "2.Extract values based onattention: Return the values highestattention ",
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "Learning Self-Attention with Neural Networks ",
+        "text_level": 1,
+        "page_idx": 69
+    },
+    {
+        "type": "text",
+        "text": "Goal: identify and attend to most important features in input. ",
+        "page_idx": 69
+    },
+    {
+        "type": "text",
+        "text": "一. Encode position information",
+        "page_idx": 69
+    },
+    {
+        "type": "text",
+        "text": "2. Extract querykeyluef ",
+        "page_idx": 69
+    },
+    {
+        "type": "text",
+        "text": "3. Compute attention weighting ",
+        "page_idx": 69
+    },
+    {
+        "type": "text",
+        "text": "4.Extract features with high attention ",
+        "page_idx": 69
+    },
+    {
+        "type": "image",
+        "img_path": "images/72c886bfd1a728f87a0d061dd3cb0ed5c6eaf2667aa6760ca3132c0ca63ba4fc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 69
+    },
+    {
+        "type": "text",
+        "text": "Data is fed in all at once! Need to encode position information to understand order. ",
+        "page_idx": 69
+    },
+    {
+        "type": "text",
+        "text": "Learning Self-Attention With Neural Networks ",
+        "text_level": 1,
+        "page_idx": 70
+    },
+    {
+        "type": "text",
+        "text": "Goal: identify and attend to most important features in input. ",
+        "page_idx": 70
+    },
+    {
+        "type": "text",
+        "text": ". Encode position information ",
+        "page_idx": 70
+    },
+    {
+        "type": "text",
+        "text": "x He tossed the tennis ball to serve   \nembedding 日0日日日日日 +   \ninformation position $p _ { 0 }$ $p _ { 1 }$ $p _ { 2 }$ ← $p _ { 3 }$ $p _ { 4 }$ $p _ { 5 }$ $p _ { 6 }$ Position-aware encoding ",
+        "page_idx": 70
+    },
+    {
+        "type": "text",
+        "text": "Data is fed in all at once! Need to encode position information to understand order. ",
+        "page_idx": 70
+    },
+    {
+        "type": "text",
+        "text": "Learning Self-Attention with Neural Networks ",
+        "text_level": 1,
+        "page_idx": 71
+    },
+    {
+        "type": "text",
+        "text": "Goal: identify and attend to most important features in input. ",
+        "page_idx": 71
+    },
+    {
+        "type": "text",
+        "text": "1. Encode position information   \n2. Extract query,key,value forarch   \n3. Compute attention weighting   \n4 Extract features with high attention ",
+        "page_idx": 71
+    },
+    {
+        "type": "image",
+        "img_path": "images/639203c4759832844ab94bb2d6d0e799a776d0221429f0540002db132f536603.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 71
+    },
+    {
+        "type": "text",
+        "text": "Learning Self-Attention with Neural Networks ",
+        "text_level": 1,
+        "page_idx": 72
+    },
+    {
+        "type": "text",
+        "text": "Goal: identify and attend to most important features in input. ",
+        "page_idx": 72
+    },
+    {
+        "type": "text",
+        "text": "I.Encode position information 2. Extract query,key,value forsarch 3. Compute attention weighting ",
+        "page_idx": 72
+    },
+    {
+        "type": "text",
+        "text": "4.Extract features with high attention ",
+        "page_idx": 72
+    },
+    {
+        "type": "text",
+        "text": "Attention score: compute pairwise similarity between each query and key ",
+        "page_idx": 72
+    },
+    {
+        "type": "text",
+        "text": "How to compute similarity between two sets of features? ",
+        "page_idx": 72
+    },
+    {
+        "type": "image",
+        "img_path": "images/8545014ba88f84f5ff5cbdf71374274448860748b3becc03c2a252121f791842.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 72
+    },
+    {
+        "type": "text",
+        "text": "Also known as the \"cosine similarity\" ",
+        "page_idx": 72
+    },
+    {
+        "type": "text",
+        "text": "Learning Self-Attention with Neural Networks ",
+        "text_level": 1,
+        "page_idx": 73
+    },
+    {
+        "type": "text",
+        "text": "Goal: identify and attend to most important features in input. ",
+        "page_idx": 73
+    },
+    {
+        "type": "text",
+        "text": "I.Encode position information 2. Extract query,key,value forsarch 3. Compute attention weighting ",
+        "page_idx": 73
+    },
+    {
+        "type": "text",
+        "text": "4.Extract features with high attention ",
+        "page_idx": 73
+    },
+    {
+        "type": "text",
+        "text": "Attention score: compute pairwise similarity between each query and key ",
+        "page_idx": 73
+    },
+    {
+        "type": "text",
+        "text": "How to compute similarity between two sets of features? ",
+        "page_idx": 73
+    },
+    {
+        "type": "image",
+        "img_path": "images/ade16a319dfeb5247bd5cc0a80997c4503c6601dd313e816325c02616e77e9d0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 73
+    },
+    {
+        "type": "text",
+        "text": "Also knownas the\"cosine similarity\" ",
+        "page_idx": 73
+    },
+    {
+        "type": "text",
+        "text": "Learning Self-Attention with Neural Networks ",
+        "text_level": 1,
+        "page_idx": 74
+    },
+    {
+        "type": "text",
+        "text": "Goal: identify and attend to most important features in input. ",
+        "page_idx": 74
+    },
+    {
+        "type": "text",
+        "text": "I.Encode position information 2.Extract query,key,vaue forsarch 3. Compute attention weighting 4 Extract features with high attention ",
+        "page_idx": 74
+    },
+    {
+        "type": "text",
+        "text": "Attention weighting: where to attend to! How similar is the key to the query? ",
+        "page_idx": 74
+    },
+    {
+        "type": "image",
+        "img_path": "images/913ba64b35004356bdb7b774bf62c69e2575d2cfbaf41ff750bc9ad1875225d8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 74
+    },
+    {
+        "type": "text",
+        "text": "(Q·KT softmax (scaling ",
+        "page_idx": 74
+    },
+    {
+        "type": "text",
+        "text": "Attention weighting ",
+        "page_idx": 74
+    },
+    {
+        "type": "text",
+        "text": "Learning Self-Attention with Neural Networks ",
+        "text_level": 1,
+        "page_idx": 75
+    },
+    {
+        "type": "text",
+        "text": "Goal: identify and attend to most important features in input. ",
+        "page_idx": 75
+    },
+    {
+        "type": "text",
+        "text": "I.Encode position information 2.Extract query,key,value forarch 3 Compute attention weighting 4.Extract features with high attention ",
+        "page_idx": 75
+    },
+    {
+        "type": "text",
+        "text": "Last step: self-attend to extract features ",
+        "page_idx": 75
+    },
+    {
+        "type": "image",
+        "img_path": "images/02a0ca0f865870cecbf68effb8097e516cd80e8936e0fe14e996a90a3a24d235.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 75
+    },
+    {
+        "type": "equation",
+        "img_path": "images/958ebf46df622e729576354d1e4aa5665003be8a1ba5f606649c8f4bab1f5583.jpg",
+        "text": "$$\n{ \\ s o f t m a x } \\ \\left( { \\frac { Q \\cdot K ^ { T } } { s c a l i n g } } \\right) \\cdot V = A ( Q , K , V )\n$$",
+        "text_format": "latex",
+        "page_idx": 75
+    },
+    {
+        "type": "text",
+        "text": "Learning Self-Attention with Neural Networks ",
+        "text_level": 1,
+        "page_idx": 76
+    },
+    {
+        "type": "text",
+        "text": "Goal: identify and attend to most important features in input. ",
+        "page_idx": 76
+    },
+    {
+        "type": "text",
+        "text": "I.Encode position information 2.Extractquery,key,value forsarch 3 Compute attention weighting 4.Extract features with high atention ",
+        "page_idx": 76
+    },
+    {
+        "type": "text",
+        "text": "These operations form a self-attention head that can plug into a larger network. Each head attends toa different part of input. ",
+        "page_idx": 76
+    },
+    {
+        "type": "image",
+        "img_path": "images/a694e0e3352411122f9c17b429eac7772ff3c10979f9df42006d6eb009e205ee.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 76
+    },
+    {
+        "type": "text",
+        "text": "Learning Self-Attention with Neural Networks ",
+        "text_level": 1,
+        "page_idx": 77
+    },
+    {
+        "type": "text",
+        "text": "Goal: identify and attend to most important features in input. ",
+        "page_idx": 77
+    },
+    {
+        "type": "text",
+        "text": "I.Encode position information 2. Extract query,key,value forsarch 3. Compute attention weighting 4.Extract features with high atention ",
+        "page_idx": 77
+    },
+    {
+        "type": "image",
+        "img_path": "images/c0ff45e99d6452a782e14c58e504b5a2ed066e639030546cea658acfd4fb3259.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 77
+    },
+    {
+        "type": "text",
+        "text": "Attention is the foundational building block of the Transformer architecture. ",
+        "page_idx": 77
+    },
+    {
+        "type": "text",
+        "text": "Applying Multiple Self-Attention Heads ",
+        "text_level": 1,
+        "page_idx": 78
+    },
+    {
+        "type": "image",
+        "img_path": "images/d89affab97565cbe20e27fa78771668c3b3b08ebecf9fcd7c2744cb794ed17ae.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 78
+    },
+    {
+        "type": "text",
+        "text": "Self-Attention Applied ",
+        "text_level": 1,
+        "page_idx": 79
+    },
+    {
+        "type": "text",
+        "text": "Language Processing ",
+        "text_level": 1,
+        "page_idx": 79
+    },
+    {
+        "type": "image",
+        "img_path": "images/bd9a205ea71351a93b462e87836c8d8707cea7819981dbd7fc3ab185dfdcee56.jpg",
+        "image_caption": [
+            "An armchair in the shape of anavocado "
+        ],
+        "image_footnote": [],
+        "page_idx": 79
+    },
+    {
+        "type": "image",
+        "img_path": "images/f2c61b9a0b4485fb409664efe55ff5e7fff1d9b02b63f3482a0c6f7263b1ca21.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 79
+    },
+    {
+        "type": "image",
+        "img_path": "images/730463c7add316edeb61f82b10f797257ada9862b2f0434aed27120a4e9f5bd7.jpg",
+        "image_caption": [
+            "ComputerVision "
+        ],
+        "image_footnote": [],
+        "page_idx": 79
+    },
+    {
+        "type": "text",
+        "text": "Biological Sequences ",
+        "page_idx": 79
+    },
+    {
+        "type": "text",
+        "text": "Transformers: BERT,GPT ",
+        "page_idx": 79
+    },
+    {
+        "type": "text",
+        "text": "Devlinetal.,NAACL2019   \nBrownetal.,NeurlPS2020 ",
+        "page_idx": 79
+    },
+    {
+        "type": "text",
+        "text": "6.S191 Laband Lectures! ",
+        "text_level": 1,
+        "page_idx": 79
+    },
+    {
+        "type": "text",
+        "text": "Protein Structure Models ",
+        "text_level": 1,
+        "page_idx": 79
+    },
+    {
+        "type": "text",
+        "text": "Jumperetal.,Nature 2021   \nLinetal.,Science2023 ",
+        "page_idx": 79
+    },
+    {
+        "type": "text",
+        "text": "Vision Transformers Dosovitskiyetal.,IC2020 ",
+        "page_idx": 79
+    },
+    {
+        "type": "text",
+        "text": "Deep Learning for Sequence Modeling: Summary ",
+        "text_level": 1,
+        "page_idx": 80
+    },
+    {
+        "type": "text",
+        "text": "2.Model sequences via a recurrence relation I.RNNs are well suited for sequence modeling tasks 91   \n3.Training RNNs with backpropagation through time   \n4.Models for music generation,classification,machine translation,and more   \n5. Self-attention to model sequences without recurrence   \n6.Self-attention is the basis for many large language models - stay tuned! ",
+        "page_idx": 80
+    },
+    {
+        "type": "text",
+        "text": "6.S19l: Introduction to Deep Learning ",
+        "text_level": 1,
+        "page_idx": 81
+    },
+    {
+        "type": "text",
+        "text": "Lab I: Deep Learning in Python and Music Generation with RNNs ",
+        "page_idx": 81
+    },
+    {
+        "type": "text",
+        "text": "Link to download labs: http://introtodeeplearning.com#schedule ",
+        "page_idx": 81
+    },
+    {
+        "type": "text",
+        "text": "1.Open the lab in Google Colab Startexecuting code blocks and flling in the #TODOs 3.Need help? Find a TAVinstructor! ",
+        "page_idx": 81
+    }
+]

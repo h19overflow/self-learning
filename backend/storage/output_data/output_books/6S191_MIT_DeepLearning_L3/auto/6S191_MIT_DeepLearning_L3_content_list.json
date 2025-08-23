@@ -1,0 +1,1534 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/4fc7668b12332ba47330381375693f4edec5e5ad912ae6d6163ed5673748384a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Deep Computer Vision ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "AlexanderAmini MIT Introduction to Deep Learning January 7,2025 ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/c5b63a8adb9ca404d739e3a3a6282f93fd98dbe65e5d75b2039d2587fd170c0c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "“To know what is where by looking.\" ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "To discover from images what is present in the world,where things are, what actions are taking place, to predict and anticipate events in the world ",
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/be618dcae1c52ac3b069358b7393a74e06cfa34e91b919d8959e725572fbbb28.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The rise and impact of computer vision ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Robotics ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Accessibility ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Biology&Medicine ",
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/6832584e194d8134246ab2fe786f32ef60ea7376885634d1b63fccdd94b729c2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/d14f2313d6ab5ad9cd824adebd26669190924505a906e0a22446201691ec65dc.jpg",
+        "image_caption": [
+            "Mobile computing "
+        ],
+        "image_footnote": [],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/718f863fbad1ed257bdd2ca8b8cac6e498fd5f49ed20e90cfd543cce062b947b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Impact: Facial Detection & Recognition ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/67a26c8e1acb40834b785c89921a0ef67287e0049dc3c39bad6e7d456af0c665.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Impact: Self-Driving Cars ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/1c28b7cb9d02fac00f2c69f169b717e1502477f5548266bd98b8769633ed0412.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/099125ddcf2acb0c00dead5a0b8ed3e49b42dd1b8c91dd1a86151edcd8604c68.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Impact: Medicine,Biology, Healthcare ",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Breast cancer COVID-19 □ A Skin cancer 1 ",
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/2db547dd9737ca8c9a4de434b05c5da4a7ac526453489b096c3ac6a51db4d134.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Impact: Accessibility ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/a430fde351c50061670786ebbf72faaabc70fc1a1e1280541e00651008d18605.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "What Computers \"See” ",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Images are Numbers ",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "6.S19 ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Images are Numbers ",
+        "text_level": 1,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "157153174168150152129151172161155156   \n155182163 74 75 62 33 17 110210180154   \n180180 50 14 34 6 10 33 48 105159181   \n206109 5 124131111120204166 15 56180   \n194 68137251 237299239 228227 87 71201   \n172105207233233214220239228 9874206   \n188 179209185215211158139 75 20169   \n189 97165 84 1016813411316222168   \n19916819119315822717814318210535190   \n205174155252236231 149178228 4395234   \n190216116149236187 85150 79 38218241   \n190224147108227210127102 35101255224   \n190214173 66103143 95 50 2109249215   \n187 196235 75 1 81 47 6 217255211   \n13 202237145 12108200138243236   \n195206 206123207177 121 123200175 1 95218 ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Images are Numbers ",
+        "text_level": 1,
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "157 153 174168 150 152 129 151 172 161 155156   \n155182163 74 75 62 33 17 110 210 180 154   \n180 180 50 14 84 6 10 33 48 105 159181   \n206 109 5 124191 111 120 204 166 15 56180   \n194 68 137 251 297 299 239 228 227 87 71 201   \n172106207 233 233 214 220 239228 98 74206   \n188 88179209 185215211 158 139 75 20 169   \n189 97165 84 10 168 134 11 31 62 22148   \n199168191 153 158227178 143 182 105 36190   \n205174155252 236 231 149178 228 43 95234   \n160 216116149236 187 85 150 79 38218241   \n190224147 108227 210 127 102 35 101255224   \n190214173 66 103143 95 50 2 109249215   \n187 196235 75 81 47 217255 211   \n13 202237145 12108 200138243236   \n195 206123207 177 121 123 200 175 13 96218 ",
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/d030ba362d02b4578f244a18e9443bd2d26c34978af1b4258e1f69768eb4fd61.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "What the computer sees ",
+        "text_level": 1,
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "157 153 174 168 150 152 129 151 172 161 155 156   \n155182163 7 75 62 33 17110 210180154   \n180180 50 14 34 6 10 3 48 106159 181   \n206 109 5124 131 11 120204166 15 56 180   \n194 68 137251 237 239 239 228 227 87 201   \n172 105207233 233 214220239 228 98 74206   \n188 88179 209 185215211 158139 75 20 169   \n189 97165 84 10168134 1 31 62 22148   \n199168191 193158227178143182106 36190   \n206174155252236231 149178228 43 95234   \n190216116149236187 86150 79 38218241   \n190224 147 108227 210 127102 36101 224   \n190214173 66103143 50 2109 249 215   \n187196235 75 1 81 47 0 6217255211   \n183202237145 12108200138243236   \n195206123207177 121 123200 175 13 96 218 ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "An image is just a matrixof numbers [0,255]! i.e., $1 0 8 0 \\times 1 0 8 0 \\times 3$ foran RGB image ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Tasks in Computer Vision ",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/3a705daa57473924aad628aab03b62d43286c2a788ec3bd78bc7520a8a7fc196.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "-Regression: output variable takes continuous value -Classification:output variable takes class label.Can produce probability of belonging toa particular class ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "High Level Feature Detection ",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Let's identify key features in each image category ",
+        "page_idx": 13
+    },
+    {
+        "type": "image",
+        "img_path": "images/127fdde54a7a665b3ba956aac828c43fef4c78f2455f57fc261e534cd0a3f963.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 13
+    },
+    {
+        "type": "image",
+        "img_path": "images/e39e795ccfd27c4b2707bd86841e54d8b1904f37e6395d28c09c161b549e595b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 13
+    },
+    {
+        "type": "image",
+        "img_path": "images/874ed503f1b869faa60a9828566e7af6643db9ec6765b7a569325394654071ab.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Nose, Eyes, Mouth ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Wheels, License Plate, Headlights ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Door, Windows, Steps ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Manual Feature Extraction ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Problems? ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Manual Feature Extraction ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "image",
+        "img_path": "images/b492639fc9fa0e8b748df19bdbf814f765f77f7407117e3d2879b374f6daa0c5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Manual Feature Extraction ",
+        "text_level": 1,
+        "page_idx": 16
+    },
+    {
+        "type": "image",
+        "img_path": "images/e621e8c89a893aff8f52efb30b982f693a48072e45f30795b8f8390c36f7e790.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Learning Feature Representations ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Can we learn a hierarchy of features directly from the data instead of hand engineering? ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Mid level features ",
+        "page_idx": 17
+    },
+    {
+        "type": "image",
+        "img_path": "images/893b4c7826d5c193ce7da90b5424fb80663113102085060669bdb07a8396a44c.jpg",
+        "image_caption": [
+            "Low level features ",
+            "Edges,dark spots "
+        ],
+        "image_footnote": [],
+        "page_idx": 17
+    },
+    {
+        "type": "image",
+        "img_path": "images/3a52deb6680205f07290796058ca074c43e975ac3c7c53963a22915bc7b2a15f.jpg",
+        "image_caption": [
+            "High level features ",
+            "Facial structure "
+        ],
+        "image_footnote": [],
+        "page_idx": 17
+    },
+    {
+        "type": "image",
+        "img_path": "images/88a43210b26c8320bbb6f4124fc0af0a8e64041d56c1c6969a684d858cbde5f3.jpg",
+        "image_caption": [
+            "Eyes,ears, nose "
+        ],
+        "image_footnote": [],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Learning Visual Features ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Fully Connected Neural Network ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "O0000o000 ....... 9 ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Fully Connected Neural Network ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Input: ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "·2Dimage ·Vector of pixel values ",
+        "page_idx": 20
+    },
+    {
+        "type": "image",
+        "img_path": "images/bb8710dffc23b62db2400b9b5f5573b2a0cd5fb002b7a1b11689dd8322386315.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Fully Connected: ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Connect neuron in hidden layer to all neurons in input layer No spatial information! And many,many parameters! ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Fully Connected Neural Network ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Input: ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "·2Dimage ·Vector of pixel values ",
+        "page_idx": 21
+    },
+    {
+        "type": "image",
+        "img_path": "images/a33719365e3701cc0125f702ef1084a52f0a6a3201e3ffbf3ebdc5481ae0f76f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Fully Connected: ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Connect neuron in hidden layer to all neurons in input layer No spatial information! And many, many parameters! ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "How can we use spatial structure in the input to inform the architecture of the network? ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Using Spatial Structure ",
+        "text_level": 1,
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Input: 2D image. Array of pixel values ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Idea: connect patches of input to neurons in hidden layer. Neuron connected to region of input.Only \"sees\"thesevalues. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Using Spatial Structure ",
+        "text_level": 1,
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "images/baad310308bfe09c4568c5c512b62034dae0109639fd0640d66bd9c6e350aa26.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Connect patch in input layer to a single neuron in subsequent layer. Usea sliding window to define connections. How can we weight the patch to detect particular features? ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Feature Extraction with Convolution ",
+        "text_level": 1,
+        "page_idx": 24
+    },
+    {
+        "type": "image",
+        "img_path": "images/82713b4961373813eb7a90e8f9f696acbf2c00f7473d3456fbf3550ca7a4b73f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Filter of size 4x4:I6 different weights Apply this same filter to 4x4 patches in input Shift by2 pixels for next patch ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "This\"patchy\"operation is convolution ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "I)Apply a set of weights-a filter-to extract local features ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "2) Use multiple filters to extract different features ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "3) Spatiallyshare parameters of each fiter ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Feature Extraction and Convolution A Case Study ",
+        "text_level": 1,
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Xor X? ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "1-1-1-1-1-1-1-1-1 ？ -1-1-1-1-1-1-1-1 -1   \n-1 1111111 1 -1 -1 -1 1 -1 1 -1 -1   \n111111111 -1 1 -1-1 -1 11 -1 -1 -1   \n11 11101111 聘 -1 -1 -1   \n1111111-1-1 -1 1 1 1-1 -1 -1   \n-1 110101010 -1 1 1 -1 -1   \n111-1-1-11-1-1 -1 -1 -1-1 1 -1   \n-1 1 1-1-1-1-11 -1 -1 1 -1 -1 -1 -1 -1 -1   \n-1-111-1-11-1-1 -1 -1-1-1 -1 -1-1 -1 -1 ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Image is representedas matrixof pixel values..and computersare literal! We want to beabletoclassify an $\\times$ asan $\\times$ even if it'ssfted,shrunk,rotated,deormed. ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Features of X ",
+        "text_level": 1,
+        "page_idx": 27
+    },
+    {
+        "type": "image",
+        "img_path": "images/293b2b7838468087fcc7bbc864f2c643c786d2e5cd3c0d85419a0ecff8c1fc78.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Filters to Detect X Features ",
+        "text_level": 1,
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "filters ",
+        "page_idx": 28
+    },
+    {
+        "type": "image",
+        "img_path": "images/e4652e681716558f047958fbf9641eac76e7162c2872d53efd9dfe1365458f88.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "The Convolution Operation ",
+        "text_level": 1,
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "-1-1 X □ =1 19 element wise   \n-1 □ multiply add outputs -1 -1-1 1 1 -1 -1 -1 1 1 -1 1 -1 -1 1 1 -1 1 -1 1 -1 -1 1 1 1 -1 1 -1 1 -1 -1 -1 -1 -1 -1|-1 1 -1 -1 -1 -1 1 1 1 9 -1 -1 -1 1 -1 1 -1 -1 -1 -1 -1 1 -1 1 -1 1 -1 -1 1 1 1 1 -1 -1 -1 -1 -1 1 1 -1-1-1-1-1-1-1-1-1 ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "The Convolution Operation ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Suppose we want to compute the convolution ofa 5x5 image and a $3 { \\times } 3$ filter: ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "1 1 1 0 0   \n0 1 1 1 0 1 0 1   \n0 0 1 1 1 0 1 0   \n0 0 1 1 0 1 0 1   \n0 1 1 0 0 filter   \nimage ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "We slide the $3 { \\times } 3$ fiter over the input image,element-wise multiplyand add the outputs. ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "The Convolution Operation ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "We slide the $3 { \\times } 3$ fiter over the input image,element-wise multiplyandadd the outputs: ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "1 1 0 0   \n01 30 1 0 1 0 1 4   \n02 1 11 X 0 1 0   \n0 0 1 1 0 1 0 1   \n0 1 1 0 0 filter feature map ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "The Convolution Operation ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "We slide the $3 { \\times } 3$ fiter over the input image,element-wise multiplyandadd theoutputs: ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "1 11   \n10 1 0 1 43   \n0 101 10 0 1 0   \n0 0 11 1 1 0 1   \n0 1 0 0 fiter feature map ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "The Convolution Operation ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "We slide the $3 { \\times } 3$ fiter over the input image,element-wise multiplyandadd theoutputs: ",
+        "page_idx": 33
+    },
+    {
+        "type": "image",
+        "img_path": "images/83bb365549d9dc4aecac37f4e1b4517e53112397025906c02eed40cb87a7209c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "The Convolution Operation ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "We slide the $3 { \\times } 3$ fiter over the input image,element-wise multiplyandadd theoutputs: ",
+        "page_idx": 34
+    },
+    {
+        "type": "image",
+        "img_path": "images/8f583413e2f5db80477a9b13fadde3fb187578a6a1d47d9ddbb0e4b6ebd22d4d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "The Convolution Operation ",
+        "text_level": 1,
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "We slide the 3x3 flterover the input image,element-wise multiplyandadd the outputs: ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "1 1 1 0 0   \n0 11 1 1 0 1 4 3 4   \n0 1 1 1 0 1 0 2 4   \n0 101 0 1 0 1   \n0 1 1 0 0 filter feature map ",
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "The Convolution Operation ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "We slide the $3 { \\times } 3$ fiter over the input image,element-wise multiplyandadd theoutputs: ",
+        "page_idx": 36
+    },
+    {
+        "type": "image",
+        "img_path": "images/ff3b501dacc5f0bb0ada39f4329b59fecd2b250def3debc307311ed112403572.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "The Convolution Operation ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "We slide the 3x3 flterover the input image,element-wise multiply,andadd the outputs: ",
+        "page_idx": 37
+    },
+    {
+        "type": "image",
+        "img_path": "images/028c5ba211e642b8765f821efa5190cda4b61743647cb6128c72ab56d28f44c6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "The Convolution Operation ",
+        "text_level": 1,
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "We slide the $3 { \\times } 3$ fiter over the input image,element-wise multiplyandadd theoutputs: ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "1 1 11 0 0   \n1 1 0 1 0 1 4 3 4   \n0 011 1 0 1 0 2 4 3   \n0 0110 1 0 1 2 3   \n0 1,10 0 filter feature map ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "The Convolution Operation ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "We slide the $3 { \\times } 3$ fiter over the input image,element-wise multiplyandadd theoutputs: ",
+        "page_idx": 39
+    },
+    {
+        "type": "image",
+        "img_path": "images/45a0db83586ba8c179ecc918f56aa07e45c72dd62502d82721327bf00e1d9006.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Producing Feature Maps ",
+        "text_level": 1,
+        "page_idx": 40
+    },
+    {
+        "type": "image",
+        "img_path": "images/6523d2b8ebfbb0a066ac10e9d7af75c9b6439574dee939514393df8aee89e91f.jpg",
+        "image_caption": [
+            "Original "
+        ],
+        "image_footnote": [],
+        "page_idx": 40
+    },
+    {
+        "type": "image",
+        "img_path": "images/6314ee7454005d33cbca845faf1fcba6a5b8ead84738f9ca52908a4ecd24f9fe.jpg",
+        "image_caption": [
+            "Sharpen "
+        ],
+        "image_footnote": [],
+        "page_idx": 40
+    },
+    {
+        "type": "image",
+        "img_path": "images/85b69113e72b9bfb432f0d98daa322529f412241bf3a1173de72224fa36e35e8.jpg",
+        "image_caption": [
+            "Edge Detect "
+        ],
+        "image_footnote": [],
+        "page_idx": 40
+    },
+    {
+        "type": "image",
+        "img_path": "images/2efdc237ce392c8036c0351f10dfc6113cccdf0fa5f783c35ec142a35dec74b8.jpg",
+        "image_caption": [
+            "\"Strong\" Edge Detect "
+        ],
+        "image_footnote": [],
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Feature Extraction with Convolution ",
+        "text_level": 1,
+        "page_idx": 41
+    },
+    {
+        "type": "image",
+        "img_path": "images/d9814c28740a70bad4c261b1e15acd5d9bbac291dff7f33067d108901d7b18c9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "I) Apply a set of weights -a filter-to extract local features 2) Use multiple filters to extract diferent features 3) Spatially share parameters of each filter ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Convolutional Neural Networks (CNNs) ",
+        "text_level": 1,
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "CNNs for Classification ",
+        "text_level": 1,
+        "page_idx": 43
+    },
+    {
+        "type": "image",
+        "img_path": "images/964295e2a660694a126141fc2ff81192966c514d696dda3ea3b7a9dbc52b2436.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "tf.keras.layers.Conv2D ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "I. Convolution: Apply fiters to generate feature maps. ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "tf.keras.activations.\\* ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "2. Non-linearity: Often ReLU. ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "torch.nn.Conv2d   \ntorch.nn.ReLU..   \ntorch.nn.MaxPool2d ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "tf.keras.layers.MaxPool2D ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "3.Pooling: Downsampling operation on each feature map. ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Train model with image data. Learn weights of filters in convolutional layers. ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Convolutional Layers: Local Connectivity ",
+        "text_level": 1,
+        "page_idx": 44
+    },
+    {
+        "type": "image",
+        "img_path": "images/682b0e662659bd55792e9f13425fda1a2fe0fbe270e2a896e506b742a2bf7a4f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "1Ftf.keras.layers.Conv2D torch.nn.Conv2d ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "For a neuron in hidden layer: ",
+        "text_level": 1,
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Take inputs from patch Compute weighted sum Apply bias ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Convolutional Layers: Local Connectivity ",
+        "text_level": 1,
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "1Ftf.keras.layers.Conv2D torch.nn.Conv2d ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "For a neuron in hidden layer: ",
+        "text_level": 1,
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Take inputs from patch Compute weighted sum Apply bias ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "4   \n4x4 filter:matrix MM   \nof weights Wij WijXi+p,j+q+b forneuron (p.q) inhidden layer ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "l) applying a window of weights 2) computing linear combinations 3) activating with non-linear function ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "CNNs: Spatial Arrangement of Output Volume ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "image",
+        "img_path": "images/25679bfb37b0c8ecdc1b5b2fd6ba70643e60df6f48fefa4964a8722aad445b30.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Layer Dimensions: $h x \\ w x d$ ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "where h and ware spatial dimensions d (depth) $=$ number of filters ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Stride: Filter step size ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Receptive Field: ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Locations in input image that a nodeispath connected to ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Introducing Non-Linearity ",
+        "text_level": 1,
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "-Applyafter every convolution operation (i.e.,after convolutional layers)   \n-ReLU: pixel-by-pixel operation that replaces all negative values by zero.Non-linear operation! ",
+        "page_idx": 47
+    },
+    {
+        "type": "image",
+        "img_path": "images/9b32a4a840d67cd4b0c19a1498b06af7f8875b2cc7d665a3bfc54533c4369a47.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Rectified Linear Unit (ReLU) ",
+        "page_idx": 47
+    },
+    {
+        "type": "image",
+        "img_path": "images/966a7f7af4e842f18aabf0521801508433bad569cac70f51ee83bdfd89415e9b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Pooling ",
+        "text_level": 1,
+        "page_idx": 48
+    },
+    {
+        "type": "image",
+        "img_path": "images/0f8eed8afaad70e0328c33f3cac8dd18bc48711887cd6cfd4756865215c138ea.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 48
+    },
+    {
+        "type": "table",
+        "img_path": "images/d243ccba24aa515b775e6c306992e162a8bcc5872320f868f6a413c30ccfce6e.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1</td><td>1</td><td>2</td><td>4</td></tr><tr><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>3</td><td>2</td><td>1</td><td>0</td></tr><tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></table>",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "max pool with 2x2 filters and stride 2 ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "tf.keras.layers.MaxPool2D(pool_size=(2,2)，strides=21F  \ntorch.nn.MaxPool2d(kernel_size=(2,2)，stride-2",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "6 8   \n3 4 ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "I） Reduced dimensionality 2) Spatial invariance ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "y ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "How else can we downsample and preserve spatial invariance? ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Representation Learning in Deep CNNs ",
+        "text_level": 1,
+        "page_idx": 49
+    },
+    {
+        "type": "image",
+        "img_path": "images/3602e58eb1e9f44dd6f45ff96881b700673f3ef88debc1bfc8ea7279e600a8f9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "CNNs for Classfication: Feature Learning ",
+        "text_level": 1,
+        "page_idx": 50
+    },
+    {
+        "type": "text",
+        "text": "！ CAR TRUCK VAN BICYCLE INPUT CONVOLUTION+RELU POOLING FEATURELEARNING CLASSIFICATION ",
+        "page_idx": 50
+    },
+    {
+        "type": "text",
+        "text": "I.Learn features in input image through convolution 2.Introduce non-linearity through activation function (real-world data is non-linear!) 3.Reduce dimensionality and preserve spatial invariance with pooling ",
+        "page_idx": 50
+    },
+    {
+        "type": "text",
+        "text": "CNNs for Classification: Class Probabilities ",
+        "text_level": 1,
+        "page_idx": 51
+    },
+    {
+        "type": "image",
+        "img_path": "images/30f54a38b319bdb6ccf3489db8515b0681404ce1e1df3c2bd6166ec1d6efc5fe.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 51
+    },
+    {
+        "type": "text",
+        "text": "CONVand POOL layers output high-level features of input Fully connected layer uses these features for classifying input image Express outputas probability of image belonging toaparticularclass ",
+        "page_idx": 51
+    },
+    {
+        "type": "text",
+        "text": "eyi softmax(yi)= £ey ",
+        "page_idx": 51
+    },
+    {
+        "type": "text",
+        "text": "Putting it all together: CNN inTensorFlow1F ",
+        "text_level": 1,
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "import tensorflowastf def generate_model()： model-tf.keras.Sequential( #first convolutional layer tf.keras.layers.Conv2D(32,filter_size=3,activation-'relu') tf.keras.layers.MaxPool2D(pool_size-2,strides=2), ",
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "second convolutional layer tf.keras.layers.Conv2D(64,filter_size=3,activation-'relu') tf.keras.layers.MaxPool2D(pool_size-2,strides=2), ",
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "H H V- SOTRAX KTID FLATURE LIARNINO CLASSIFICATION ",
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "# fully connected classifier   \ntf.keras.layers.Flatten(),   \ntf.keras.layers.Dense(l024,activation-'relu'),   \ntf.keras.layers.Dense(10,activation-softmax')#10 outputs ",
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "Puting it all together: CNN in PyTorch ",
+        "text_level": 1,
+        "page_idx": 53
+    },
+    {
+        "type": "text",
+        "text": "import torch",
+        "page_idx": 53
+    },
+    {
+        "type": "text",
+        "text": "defgenerate_model()： model nn.Sequential([ #first and second convolutional layer ",
+        "page_idx": 53
+    },
+    {
+        "type": "text",
+        "text": "torch.nn.Conv2d(in_channels3,out_channels32,filter_size3),   \ntorch.nn.ReLU(),   \ntorch.nn.MaxPool2d(kernel_size-2,stride-2),   \ntorch.nn.Conv2d(in_channels-32,out_channels-64,filter_size-3)，   \ntorch.nn.ReLU()，   \ntorch.nn.MaxPool2d(kernel_size-2,stride-2),   \n# fully connected classifier   \ntorch.nn.Flatten(),   \ntorch.nn.Linear(64\\*6\\*6,1024),# flattened dim after 2 conv layers   \ntorch.nn.ReLU(),   \ntorch.nn.Linear（1024,10),#10outputs ",
+        "page_idx": 53
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 53
+    },
+    {
+        "type": "image",
+        "img_path": "images/63274c7fa1f94df3305a89b009402e60597bf0bf8766490607fecbb66927cf3a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 53
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 53
+    },
+    {
+        "type": "text",
+        "text": "An Architecture for Many Applications ",
+        "text_level": 1,
+        "page_idx": 54
+    },
+    {
+        "type": "text",
+        "text": "An Architecture for Many Applications ",
+        "text_level": 1,
+        "page_idx": 55
+    },
+    {
+        "type": "image",
+        "img_path": "images/8a4ccd9c69b1b6a14ca3cd7214c305bae1a7d145f1bc15082514a2bae40b26e0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 55
+    },
+    {
+        "type": "text",
+        "text": "Classification: Breast Cancer Screening ",
+        "text_level": 1,
+        "page_idx": 56
+    },
+    {
+        "type": "text",
+        "text": "International evaluation ofan Al systemfor breastcancer screening nature ",
+        "page_idx": 56
+    },
+    {
+        "type": "image",
+        "img_path": "images/1469da835384391db2029a5d2e31b01252cd4601a47db699ced6f99b641418ee.jpg",
+        "image_caption": [
+            "CNN-based system outperformed expert radiologistsat detecting breast cancer from mammograms "
+        ],
+        "image_footnote": [],
+        "page_idx": 56
+    },
+    {
+        "type": "image",
+        "img_path": "images/ab09a025b0ae8f42ce99affb23ef3b94450da5649553cda58abb50a176f85eb5.jpg",
+        "image_caption": [
+            "Breast cancer case missed by radiologist but detected by Al "
+        ],
+        "image_footnote": [],
+        "page_idx": 56
+    },
+    {
+        "type": "text",
+        "text": "Object Detection ",
+        "text_level": 1,
+        "page_idx": 57
+    },
+    {
+        "type": "image",
+        "img_path": "images/26e25a7ed4b54e61e4f03f7992c0ca49a410150bc2e82bc8914cb2b3d1b5b891.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "Object Detection ",
+        "text_level": 1,
+        "page_idx": 58
+    },
+    {
+        "type": "image",
+        "img_path": "images/4a20ef35d25d3b43ec4a688cd9cedeb6209c5210a912be3f0d2a70c773953045.jpg",
+        "image_caption": [
+            "Image x "
+        ],
+        "image_footnote": [],
+        "page_idx": 58
+    },
+    {
+        "type": "text",
+        "text": "Naive Solution to Object Detection ",
+        "text_level": 1,
+        "page_idx": 59
+    },
+    {
+        "type": "image",
+        "img_path": "images/314ec2ae6d0cc99adfbf2d1a0f8895d10312c1eca9843a3dc160560f20089545.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 59
+    },
+    {
+        "type": "text",
+        "text": "Problem: Way too manyinputs! This results in too many scales,positions, sizes! ",
+        "page_idx": 59
+    },
+    {
+        "type": "text",
+        "text": "Object Detection with R-CNNs ",
+        "text_level": 1,
+        "page_idx": 60
+    },
+    {
+        "type": "text",
+        "text": "R-CNN algorithm: Find regions that we think have objects. Use CNN to classify. ",
+        "page_idx": 60
+    },
+    {
+        "type": "image",
+        "img_path": "images/15ab3b37d9e21b1b68b328d00b18dd32be43e5e13093b8aacae78a00684f4f8e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 60
+    },
+    {
+        "type": "text",
+        "text": "warped region aeroplane? no. 44 →person？yes. CNN tvmonitor? no.   \n2. Extract region 3. Compute 4. Classify   \nproposals (\\~2k) CNN features regions ",
+        "page_idx": 60
+    },
+    {
+        "type": "text",
+        "text": "1. Input image ",
+        "page_idx": 60
+    },
+    {
+        "type": "text",
+        "text": "Problems: 1) Slow! Many regions; time intensive inference. 2) Brittle! Manually defined region proposals. ",
+        "page_idx": 60
+    },
+    {
+        "type": "text",
+        "text": "Faster R-CNN Learns Region Proposals ",
+        "text_level": 1,
+        "page_idx": 61
+    },
+    {
+        "type": "text",
+        "text": "Feature extractionover proposed regions ",
+        "page_idx": 61
+    },
+    {
+        "type": "text",
+        "text": "Image input directly into convolutional featureextractor Fast! Only input image once! ",
+        "page_idx": 61
+    },
+    {
+        "type": "image",
+        "img_path": "images/5b4801228e903ce62f2a31abe62b1a8d8bb99b278847d20d4406da85036f9659.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 61
+    },
+    {
+        "type": "text",
+        "text": "Classification of regions→ object detection ",
+        "page_idx": 61
+    },
+    {
+        "type": "text",
+        "text": "Region proposal network to learncandidateregions Learned,data-driven ",
+        "page_idx": 61
+    },
+    {
+        "type": "text",
+        "text": "Semantic Segmentation: Fully Convolutional Networks ",
+        "text_level": 1,
+        "page_idx": 62
+    },
+    {
+        "type": "text",
+        "text": "FCN: Fully Convolutional Network. Network designed withall convolutional layers, with downsampling and upsampling operations ",
+        "page_idx": 62
+    },
+    {
+        "type": "image",
+        "img_path": "images/d9661b8d0c7f2bb5178b1be60855a1db46634def6f1dbd5db20b041c449ac611.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 62
+    },
+    {
+        "type": "text",
+        "text": "Predictions: HxW ",
+        "page_idx": 62
+    },
+    {
+        "type": "text",
+        "text": "Continuous Control: Navigation from Vision ",
+        "text_level": 1,
+        "page_idx": 63
+    },
+    {
+        "type": "image",
+        "img_path": "images/7ee8c505c4d313f5b3a017bcec673797325112ae9e226c62d2a3818b4588ff6a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 63
+    },
+    {
+        "type": "text",
+        "text": "End-to-End Framework for Autonomous Navigation ",
+        "text_level": 1,
+        "page_idx": 64
+    },
+    {
+        "type": "text",
+        "text": "Entire model is trained end-to-end without any human labelling or annotations ",
+        "page_idx": 64
+    },
+    {
+        "type": "image",
+        "img_path": "images/1fd035ba12f8a03977af779a220b20df7a5d2465e497d38f8c6c099630208b5c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 64
+    },
+    {
+        "type": "image",
+        "img_path": "images/1e37458a83d46d66db80faca3940d9696d54f8a0adfeba3fa44983eb31990eb9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 65
+    },
+    {
+        "type": "text",
+        "text": "Deep Learning for ComputerVision: Impact ",
+        "text_level": 1,
+        "page_idx": 66
+    },
+    {
+        "type": "image",
+        "img_path": "images/5bc5e314a577db69d315acc522e60c8be7161e95413e222ed6dfd1ac73bcf3f4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 66
+    },
+    {
+        "type": "text",
+        "text": "Deep Learning for Computer Vision: Summary ",
+        "text_level": 1,
+        "page_idx": 67
+    },
+    {
+        "type": "text",
+        "text": "Foundations ",
+        "text_level": 1,
+        "page_idx": 67
+    },
+    {
+        "type": "text",
+        "text": "CNNs ",
+        "text_level": 1,
+        "page_idx": 67
+    },
+    {
+        "type": "text",
+        "text": "Applications ",
+        "text_level": 1,
+        "page_idx": 67
+    },
+    {
+        "type": "text",
+        "text": "·Why computer vision? ·Representing images ·Convolutions for feature extraction ",
+        "page_idx": 67
+    },
+    {
+        "type": "text",
+        "text": "·CNN architecture ·Application to classification ImageNet ",
+        "page_idx": 67
+    },
+    {
+        "type": "text",
+        "text": "Segmentation,image captioning, control Security, medicine, robotics ",
+        "page_idx": 67
+    },
+    {
+        "type": "image",
+        "img_path": "images/aea0cb28d0c1878c87ae395ffbc63bdd34e5fcd40aa4c14e7b6e90c637baec6a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 67
+    },
+    {
+        "type": "image",
+        "img_path": "images/2456a1411b7d73f20b10b48c099edf35c4a35335b4d3afce59b0624878adf349.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 67
+    },
+    {
+        "type": "image",
+        "img_path": "images/00ae4a7e20e4d70a8ca971bbfea8720f1594bcda96572eb92d9651ef742159a5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 67
+    },
+    {
+        "type": "image",
+        "img_path": "images/eab2a3573dea4942d2fef32f1e4aa1adf57d2024c0c36254f4e50583b96ee7cf.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "MIT 6.S191 Introduction to Deep Learning Lab 2: Facial Detection Systems ",
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "Link to download labs: introtodeeplearning.com#schedule github.com/MITDeepLearning/introtodeeplearning ",
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "1.Open the lab in Google Colab Start executing code blocksand filing in the #TODOs 3. Need help? Come to 32-123! ",
+        "page_idx": 68
+    },
+    {
+        "type": "image",
+        "img_path": "images/073e72f06c01e562ab4e6cd2697208d883d069005b90788e1e4fe1333801ec3d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 69
+    },
+    {
+        "type": "text",
+        "text": "Introduction to Deep Learning ",
+        "text_level": 1,
+        "page_idx": 69
+    },
+    {
+        "type": "text",
+        "text": "Announcements and Reminders ",
+        "text_level": 1,
+        "page_idx": 69
+    }
+]

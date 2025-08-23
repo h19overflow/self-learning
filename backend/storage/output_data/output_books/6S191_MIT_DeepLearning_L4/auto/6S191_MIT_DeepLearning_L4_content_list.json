@@ -1,0 +1,1858 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/49fa30c07e3454c86837706b255e13a14f348a173b70c73733337d8f1d1fa44b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Deep Generative Modeling ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Ava Amini MIT Introduction to Deep Learning January 7,2025 ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which face is real? ",
+        "text_level": 1,
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/03c34a6eafdf2a032bba16941ad1161a098d00d4c4ffa8101853cfcff9e6efdc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Supervised vs unsupervised learning ",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Supervised Learning ",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Data: (x,y) $x$ is data,yis label ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Unsupervised Learning ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Data: x x is data, no labels! ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Goal: Learn function to map ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Examples: Classification, regression,object detection, semantic segmentation,etc. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Goal: Learn some hidden or underlying structure of the data ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Examples: Clustering, feature or dimensionality reduction,etc. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Supervised vs unsupervised learning ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Supervised Learning ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Data: (x,y) $x$ is data,y is label ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Goal: Learn function to map ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Examples: Classfication, regression,object detection, semantic segmentation, etc. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Unsupervised Learning ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Data: x ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "$x$ is data, no labels! ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Goal:Learn the hidden or underlying structure of the data ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Examples: Clustering,feature or dimensionality reduction,etc. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Generative modeling ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Goal: Take as input training samples from some distribution and learna model that represents that distribution ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Density Estimation ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Sample Generation ",
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/fa8e1cacba8b7421f360a0f0a09095a8ca58e849336e2664657110e600637abc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/f22c10974e68fe4deb4dd820e712fea734ab346bf4760543c1f4703502cda078.jpg",
+        "image_caption": [
+            "Input samples ",
+            "Training data $\\sim P _ { d a t a } ( x )$ "
+        ],
+        "image_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/3294077820a45f16f61f90e177eb4299f15b6debc6585f44112bb8912873ef74.jpg",
+        "image_caption": [
+            "Generated samples ",
+            "Generated $\\sim P _ { m o d e l } ( x )$ "
+        ],
+        "image_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "How can we learn $P _ { m o d e l } ( x )$ similar to $P _ { d a t a } ( x ) !$ ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Why generative models? Debiasing ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Capable of uncovering underlying features in a dataset ",
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/a3df06f64c9109c8e29f0a817c6380ba17c2d4902ba40c211cf7697a7949e03b.jpg",
+        "image_caption": [
+            "Homogeneous skin color,pose "
+        ],
+        "image_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/ee87d0985e3e4ebaaf736d6afb3266a03ba99e813b1dd1c0938fadc8553c6b21.jpg",
+        "image_caption": [
+            "Diverse skincolor,pose,illumination "
+        ],
+        "image_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Howcan we use this information to create fairand representative datasets? ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Why generative models? Outlier detection ",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "·Problem: How can we detect when we encounter something new or rare? ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "·Strategy:Leverage generative models, detect outliers in thedistribution ·Use outliers during training to improveevenmore! ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "$95 \\%$ of Driving Data: (l) sunny,(2) highway,(3) straight road ",
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/bf2f715d3ab5b4b97816b0a6fa848073757c3c2cce09bb52890ad352c438423a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Detect outliers to avoid unpredictable behavior when training ",
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/ba95ce0db56abdc7ea10ec3f151b30cc83cfb30e0b83ae083a72a271484b2400.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Why generative models? Sample generation ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Generative models learn probability distributions Sampling from that distribution→ newdata instances Backbone of Generative Al: generate language,images,and more ",
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/fd8f8573158669edce220d83ff6b9bdeb7d59aefa01e77909707c96d6ffffcec.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/2611ad13edabcddd257ef7ca0b80f4e93c9525d46c4314389acb3a3cb52a9360.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Latent variable models ",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/56865d3bc8c55161ad0673ec20efce60fc3fffe23d8f6a61a9f2646af822de11.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/7aac9c9b8bc1f3257a098380d77935f3ffec95b6e520ffeee467ccd4485ad09a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "What is a latent variable? ",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/2cace8dd0e00d21b8ba03548a9f52cbe55914f3e2ab8a4272c5dfbd1fece574f.jpg",
+        "image_caption": [
+            "Myth of the Cave "
+        ],
+        "image_footnote": [],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "What is a latent variable? ",
+        "text_level": 1,
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/4e18b2c6e2c76325ba297f30766a0089fbd2cf4dca9ddb12746208fc00d49eee.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Can we learn the true explanatory factors,e.g.latent variables,from only observed data? ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Autoencoders ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Autoencoders: background ",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Unsupervised approach for learninga lower-dimensional feature representation fromunlabeledtrainingdata ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Why do we care about a low-dimensional z? ",
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/0400978cf562cd40755fbeb7c5ceac75deaf2383cc2c462ad2e0a30288101688.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "\"Encoder\"learns mapping fromthedata, $_ x$ ,to alow-dimensional latent space,z ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Autoencoders: background ",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "How can we learn this latent space? Train the model to use these features to reconstruct the original data ",
+        "page_idx": 13
+    },
+    {
+        "type": "image",
+        "img_path": "images/20c36356c8203c09397d6228b120b81f6bd8b2f86dd08cd6f9ecb986aa26d89c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 13
+    },
+    {
+        "type": "image",
+        "img_path": "images/6c7d080e022521bd61083793c6d62adb199c7d7b93f73ea144b60eb60ee7e9e9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "\"Decoder\" learns mapping back from latent space,z, toareconstructedobservation,x ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Autoencoders: background ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "How can we learn this latent space? Train the model to use these features to reconstruct the original data ",
+        "page_idx": 14
+    },
+    {
+        "type": "image",
+        "img_path": "images/5bc3aac33a3e2434eb4f8f9c37d40a2c818bf61c6745f8bf421dc3aaa1587d2d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Autoencoders: background ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "How can we learn this latent space? Train the model to use these features to reconstruct the original data ",
+        "page_idx": 15
+    },
+    {
+        "type": "image",
+        "img_path": "images/117d84ae8b7d94f1638135500a79181e05c27ac8a41372222bda3abaebfa5db0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Dimensionality of latent space → reconstruction quality ",
+        "text_level": 1,
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Autoencoding is a form of compression! Smaller latent space willforcea larger training bottleneck ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "2D latent space 5D latent space Ground Truth 。 979 79 7093167 20 00 q 9 9 9 702316 266173 005425 04 414739 1502504 99 9 40246 。 99 977 5029989 9 5025 9 7 30299 4 963959 34 0 73 -940 6 3454 9 591539 7397 41 -7390 7 4 1 2 4 573 。 中 3 9 50 7 9994 337 2 23 N 8 7 6 3 66 y 1 S 44 3 38 6 C 19 3 6 1 1 q 3 1 1 6 9 g 3 4 1 ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Autoencoders for representation learning ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Bottleneck hidden layer forces network to learn a compressed latent representation ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Reconstruction loss forces the latent representation to capture (or encode) as much \"information\"about the data as possible ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Autoencoding = Automaticall encoding data;\"Auto\"= self-encoding ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Variational Autoencoders (VAEs) ",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Traditional autoencoders ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "image",
+        "img_path": "images/715b4c6e2a7eb65ec2dade666b93628932fd386a82017ac794c10fda37b5cc82.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "VAEs: key difference with traditional autoencoder ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "image",
+        "img_path": "images/8e3f5ebb277d3be00b986ae82a58c5815440faeea70050951684ff8b719dfdbf.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "VAEs: key difference with traditional autoencoder ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "mean vector 2 x X 2 standard deviation vector ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Variational autoencoders are a probabilistic twist on autoencoders! ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Sample from the meanand standard deviation to compute latent sample ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "VAE optimization ",
+        "text_level": 1,
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "images/7af5e2e3fb01f69ecf836c78cf3bfc87d06697bc2b095eff83348202077c4da6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "VAE optimization ",
+        "text_level": 1,
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "images/82280b7be67da011435be6173b8386ecc0c17131adae41c98e5d6b0169cd83d0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "$\\mathcal { L } ( \\phi , \\theta , x ) = ($ (reconstruction loss) $^ +$ (regularization term) ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "VAE optimization ",
+        "text_level": 1,
+        "page_idx": 24
+    },
+    {
+        "type": "image",
+        "img_path": "images/ebaaabc6d69ff9a806aae04e939cba8817c5748be9265cffcd9bbeec46713ca2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "L(Φ,0,x) = (reconstructio los) $^ +$ (regularization term) ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "VAE optimization ",
+        "text_level": 1,
+        "page_idx": 25
+    },
+    {
+        "type": "image",
+        "img_path": "images/83147a6fa689eacea68f017bcc9b4435c2e925b90e5cb96dc191f4c4ff2b2855.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "VAE optimization ",
+        "text_level": 1,
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Inferred latent Fixed prior on distribution latent distribution D(q(zix) p(2)) 2 x X 2 M Encoder computes: $q _ { \\Phi } ( \\mathbf { z } | x )$ Decoder computes: $p _ { \\theta } ( \\mathbf { x } | z )$ (Φ,0,x)= (reconstruction loss) +(regularization term) ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Priors on the latent distribution ",
+        "text_level": 1,
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "D（q（2lx)=p(2）)） Inferred latent Fixed prior on distribution latent distribution ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Common choice of prior-Normal Gaussian: ",
+        "text_level": 1,
+        "page_idx": 27
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d071541541a3cc90bf9c1acbbc87a53a29a18dec6c8d77f3751374c02f187d2e.jpg",
+        "text": "$$\np ( z ) = \\mathcal { N } ( \\mu = 0 , \\sigma ^ { 2 } = 1 )\n$$",
+        "text_format": "latex",
+        "page_idx": 27
+    },
+    {
+        "type": "image",
+        "img_path": "images/341a45482a022f2679167b3d3b6c989cbf4ddf6af0b06f99781008ff47e100a2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Encourages encodingsto distribute encodings evenlyaround the center of the latent space Penalize the network whenit tries to\"cheat'byclustering points inspecific regions (i.e.,bymemorizing the data) ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Priors on the latent distribution ",
+        "text_level": 1,
+        "page_idx": 28
+    },
+    {
+        "type": "image",
+        "img_path": "images/c95ad0b40496653dac03e1eac0941dfd73a34e1387b2a4da7c4c42901d60c5de.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Common choice of prior-Normal Gaussian: ",
+        "text_level": 1,
+        "page_idx": 28
+    },
+    {
+        "type": "image",
+        "img_path": "images/23ef41d1a17afbdd8ea82fb05516a44c9f1ac727a69eb4950b63d7603f11ed1d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 28
+    },
+    {
+        "type": "equation",
+        "img_path": "images/3bb0314c4405fb7a7a4dcb681fe1d4f6e4733929237cb0fb81f9df1363d8756d.jpg",
+        "text": "$$\np ( z ) = \\mathcal { N } ( \\mu = 0 , \\sigma ^ { 2 } = 1 )\n$$",
+        "text_format": "latex",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Encourages encodingsto distribute encodings evenlyaround the center of the latent space Penalize the network when ittriesto\"cheat\"byclustering points in specific regions (i.e.,bymemorizing the data) ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Intuition on regularization and the Normal prior ",
+        "text_level": 1,
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "What properties do we want to achieve from regularization? ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "I.Continuity: points that are close in latent space similar content after decoding 2.Completeness: sampling from latent space → \"meaningful\"content after decoding ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Point in latent space not meaningfully decoded   \nClose in latent space,but   \nnot similarly decoded 2 Points close in latent space,similarlyand meaningfully decoded Not regularized Regularized ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Intuition on regularization and the Normal prior ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "I.Continuity:points that are close in latent space similar content after decoding 2.Completenes:sampling from latent space→\"meaningful\"content after decoding ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Encoding as a distribution does not guarantee these properties! ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Normal prior→ continuity $^ +$ completeness ",
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Intuition on regularization and the Normal prior ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "I.Continuity:points that are close in latent space similar content after decoding 2.Completenes: sampling from latent space→ \"meaningful\"content after decoding ",
+        "page_idx": 31
+    },
+    {
+        "type": "image",
+        "img_path": "images/7d4074d60d2078885283467939b5de7c3ebf92e2a4e1ea98ffde236fe5202197.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "Regularization with Normal prior helps enforce continuity & completeness in the latent space. ",
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "VAE computation graph ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "image",
+        "img_path": "images/01e142cff8bfe31ecedb2b3d90f0d6ce5154c9d3c124af63fc96c516a92f00c0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "L(Φ,0,x)= (reconstruction loss) $^ +$ (regularization term) ",
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "VAE computation graph ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Problem: We cannot backpropagate gradients through sampling layers! ",
+        "page_idx": 33
+    },
+    {
+        "type": "image",
+        "img_path": "images/f797539c6cc67c30a3b1b2cece98a7181fb322f95250563617d26b5d4259e34e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "L(Φ,0,x)= (reconstruction loss) $^ +$ (regularization term) ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Reparametrizing the sampling layer ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "D μ 6 十 ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Key Idea: ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Consider the sampled latent vector z asa sum of ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "a fixed $\\mu$ vector, and fixed $\\sigma$ vector, scaled by random constantsdrawn from the prior distribution ",
+        "page_idx": 34
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d222e154c8ccaf11f87fa40980c144f6d503ff7a7b732a972127c988cfb91d71.jpg",
+        "text": "$$\n\\Rightarrow z = \\mu + \\sigma \\odot \\varepsilon\n$$",
+        "text_format": "latex",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Reparametrizing the sampling layer ",
+        "text_level": 1,
+        "page_idx": 35
+    },
+    {
+        "type": "image",
+        "img_path": "images/55ae958881d83f4992f105e88c508e7562f855a11dd569a1fe80dcfe30d837cf.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Reparametrizing the sampling layer ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Backprop f Deterministic node $z \\sim q _ { \\phi } ( \\mathbf { z } | x )$ Z S $\\frac { \\partial f } { \\partial z }$ Z z=g(Φ,x,ε） MT x Φ x \\~N(0,1) Original form Reparametrized form ",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "VAEs: Latent perturbation ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Slowly increase or decreasea single latentvariable Keepall othervariables fixed ",
+        "page_idx": 37
+    },
+    {
+        "type": "image",
+        "img_path": "images/4f358688bfc65f98ff21c8f035dda42bc967213dbc4fa50cb6f2d91a62482296.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Head pose ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Different dimensions of z encodes different interpretable latent features ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "VAEs: Latent perturbation ",
+        "text_level": 1,
+        "page_idx": 38
+    },
+    {
+        "type": "image",
+        "img_path": "images/8552f18c1913e043fb1bbae831f6ddd608c80b8ff41828bebfd81115a7d17c7a.jpg",
+        "image_caption": [
+            "Head pose "
+        ],
+        "image_footnote": [],
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "ldeally, we want latent variables that are uncorrelated with each other ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Enforce diagonal prior on the latent variables to encourage independence ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Disentanglement ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Latent space disentanglement with β-VAEs ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "βtYAdatdsvAE loss: ",
+        "page_idx": 39
+    },
+    {
+        "type": "equation",
+        "img_path": "images/19ff86576c0bae9658f52a46b69332df7bf92d3a73022bb1efa15dc8e2588b80.jpg",
+        "text": "$$\n\\begin{array} { r l } { , \\mathbf { z } , \\beta ) = \\mathbb { E } _ { q _ { \\phi } ( \\mathbf { z } | \\mathbf { x } ) } [ \\log p _ { \\theta } ( \\mathbf { x } | \\mathbf { z } ) ] - } & { { } \\ln _ { I } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "L(q(z|x)  p(z)) ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Reconstruction term ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Regularization term ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "$\\beta >$ l: constrain latentbottleneck,encourage efficient latent encoding disentanglement Head rotation (azimuth) ",
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Smile also changing! ",
+        "page_idx": 39
+    },
+    {
+        "type": "image",
+        "img_path": "images/d36700d62fbabf59ee9d3306a0c2fbbc86780997a7a3f91b014be6a7a099787a.jpg",
+        "image_caption": [
+            "Smile relatively constant! ",
+            "β-VAE $( \\beta = 2 5 0 )$ "
+        ],
+        "image_footnote": [],
+        "page_idx": 39
+    },
+    {
+        "type": "image",
+        "img_path": "images/8a00206128a0a771a3aff91aa75daaaf83fca378ff5636e4723353f51f632270.jpg",
+        "image_caption": [
+            "Standard VAE $( \\beta = 1 )$ "
+        ],
+        "image_footnote": [],
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Why latent variable models? Debiasing ",
+        "text_level": 1,
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Capable of uncovering underlying latent variables in a dataset ",
+        "page_idx": 40
+    },
+    {
+        "type": "image",
+        "img_path": "images/1324371e2269b92fa089095a988cf9f15cc630383ec37b363cc3c35590395bfd.jpg",
+        "image_caption": [
+            "Homogeneous skin color,pose "
+        ],
+        "image_footnote": [],
+        "page_idx": 40
+    },
+    {
+        "type": "image",
+        "img_path": "images/8d030b2007b206983b512ea09fb66c3e5de7976ea6705e00b087dde3aef99389.jpg",
+        "image_caption": [
+            "Diverseskincolor,pose,illumination "
+        ],
+        "image_footnote": [],
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "How can we use latent distributions to create fair and representative datasets? ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "VAE summary ",
+        "text_level": 1,
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "I. Compress representation of world to something we can use to learn ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "6. S Z x ",
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "VAE summary ",
+        "text_level": 1,
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "I. Compress representation of world to something we can use to learn 2.Reconstruction allows for unsupervised learning (no labels!) ",
+        "page_idx": 42
+    },
+    {
+        "type": "image",
+        "img_path": "images/4c2fa025675029d0cfd510714196c8b97f1423735a1c750fb681da8e5fef318d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "VAE summary ",
+        "text_level": 1,
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "I. Compress representation of world to something we can use to learn 2.Reconstruction allows for unsupervised learning (no labels!) 3.Reparameterization trick to train end-to-end ",
+        "page_idx": 43
+    },
+    {
+        "type": "image",
+        "img_path": "images/01e6eeb74971ec70723a028930a6b8ea6596c5fabcc59da0fb0f6f0863a7d8eb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "VAE summary ",
+        "text_level": 1,
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "I. Compress representation of world to something we can use to learn 2.Reconstruction allows for unsupervised learning (no labels!) 3.Reparameterization trick to train end-to-end 4.Interpret hidden latent variables using perturbation ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "VAE summary ",
+        "text_level": 1,
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "I. Compress representation of world to something we can use to learn   \n2.Reconstruction allows for unsupervised learning (no labels!)   \n3. Reparameterization trick to train end-to-end   \n4.Interpret hidden latent variables using perturbation   \n5.Generating new examples ",
+        "page_idx": 45
+    },
+    {
+        "type": "image",
+        "img_path": "images/ebfb6a97bc817fca44cd60c6125c71254be7361663691814dd1ea57d5d45c148.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Generative Adversarial Networks (GANs) ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "What if we just want to sample? ",
+        "text_level": 1,
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Idea: don't explicitly model densityand instead just sample to generate new instances. ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Problem: want to sample from complex distribution-can't do this directly! ",
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Solution: sample from something simple (e.g., noise), learna transformation to the data distribution. ",
+        "page_idx": 47
+    },
+    {
+        "type": "image",
+        "img_path": "images/8b4e43fab46b6230c7a5a0bb5cf53931ff88780b732975aca8fe3d9280118f4e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 47
+    },
+    {
+        "type": "image",
+        "img_path": "images/4692fc7e471768ac926839aed4b0ecfbf6426d014983c21d2b5b6626f49b5f71.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 47
+    },
+    {
+        "type": "image",
+        "img_path": "images/fba7f5f4c47124f300a19b2fe88f37f240bdb567884279f137418e4cbdebc7df.jpg",
+        "image_caption": [
+            "\"fake\"sample from learned representationof datadistribution "
+        ],
+        "image_footnote": [],
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Generative Adversarial Networks (GANs) ",
+        "text_level": 1,
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Generative Adversarial Networks (GANs) area way to make a generative model by having two neural networks compete with each other. ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Thediscriminator tries to identifyreal data from fakescreatedby thegenerator. ",
+        "page_idx": 48
+    },
+    {
+        "type": "image",
+        "img_path": "images/d9250c59482f93e793d6c672448c6026b5b469f805aa73e987122c15e94c4230.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Generator starts from noise to try to create an imitation of the data. ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Generator 6.S MIT . Fake data ",
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 50
+    },
+    {
+        "type": "text",
+        "text": "Discriminator looks at both real data and fake data created by the generator. ",
+        "page_idx": 50
+    },
+    {
+        "type": "text",
+        "text": "Discriminator Generator 6.S MIT ",
+        "page_idx": 50
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 51
+    },
+    {
+        "type": "text",
+        "text": "Discriminator looks at both real data and fake data created by the generator. ",
+        "page_idx": 51
+    },
+    {
+        "type": "text",
+        "text": "Discriminator Generator 6.S MIT Real data Fake data ",
+        "page_idx": 51
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "Discriminator tries to predict what's real and what's fake. ",
+        "page_idx": 52
+    },
+    {
+        "type": "image",
+        "img_path": "images/f6a8136608c8fc9dd2421c66250d7c66ffaf6f03279d0206c023709ff2ff6e5a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 53
+    },
+    {
+        "type": "text",
+        "text": "Discriminator tries to predict what's real and what's fake. ",
+        "page_idx": 53
+    },
+    {
+        "type": "image",
+        "img_path": "images/9490ceff9414c9ad95bdf79940ada99d9ab7c438943578a269a8836231963b51.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 53
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 54
+    },
+    {
+        "type": "text",
+        "text": "Discriminator tries to predict what's real and what's fake. ",
+        "page_idx": 54
+    },
+    {
+        "type": "image",
+        "img_path": "images/81d9f82cae5255137e8c151c61292121795eaccc7a922b8bf17588bea3df7c04.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 54
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 55
+    },
+    {
+        "type": "text",
+        "text": "Discriminator tries to predict what's real and what's fake. ",
+        "page_idx": 55
+    },
+    {
+        "type": "image",
+        "img_path": "images/f3f41fba7081fa4d1adfc7520355308598ee3bd0ac749d94bf20ae7e7a906560.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 55
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 56
+    },
+    {
+        "type": "text",
+        "text": "Generator tries to improve its imitation of the data. ",
+        "page_idx": 56
+    },
+    {
+        "type": "image",
+        "img_path": "images/5119c203098eaf426c592bf5e43df43134745cb6bf95cd2b314cf6ac3723eda1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 56
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "Generator tries to improve its imitation of the data. ",
+        "page_idx": 57
+    },
+    {
+        "type": "image",
+        "img_path": "images/37064c89d17494df16e861786aa117c82d368f89878c3c233ba9b9453a8501c0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 58
+    },
+    {
+        "type": "text",
+        "text": "Generator tries to improve its imitation of the data. ",
+        "page_idx": 58
+    },
+    {
+        "type": "image",
+        "img_path": "images/04b033033e6e575e195b20979b145661ef5d0bf630999a1c69e1c93cad37aa48.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 58
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 59
+    },
+    {
+        "type": "text",
+        "text": "Discriminator tries to predict what's real and what's fake. ",
+        "page_idx": 59
+    },
+    {
+        "type": "image",
+        "img_path": "images/2d07bf60f06f15e41418dd655831952d4f3dd5dc0414cdb422d19001ea614455.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 59
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 60
+    },
+    {
+        "type": "text",
+        "text": "Discriminator tries to predict what's real and what's fake. ",
+        "page_idx": 60
+    },
+    {
+        "type": "image",
+        "img_path": "images/1bbb5c8caefc329f31448fa0638f3e46933c96667fafacd0aba6721b424bc97e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 60
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 61
+    },
+    {
+        "type": "text",
+        "text": "Discriminator tries to predict what's real and what's fake. ",
+        "page_idx": 61
+    },
+    {
+        "type": "image",
+        "img_path": "images/df06802392af31d6aafc9b1272d0c45b3c7a4d11edd2dbbc809ca1ab61dcab4f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 61
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 62
+    },
+    {
+        "type": "text",
+        "text": "Discriminator tries to predict what's real and what's fake. ",
+        "page_idx": 62
+    },
+    {
+        "type": "image",
+        "img_path": "images/30c48522c893cdc904ce72f9231f94f56ca2ef00bee6d8bbe2d0ed67c244848b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 62
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 63
+    },
+    {
+        "type": "text",
+        "text": "Generator tries to improve its imitation of the data. ",
+        "page_idx": 63
+    },
+    {
+        "type": "image",
+        "img_path": "images/2af0d7dd61a5ab657ad58d5b3fe311782a29edd0fe6f48b2b70987af6b5d5937.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 63
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 64
+    },
+    {
+        "type": "text",
+        "text": "Generator tries to improve its imitation of the data. ",
+        "page_idx": 64
+    },
+    {
+        "type": "image",
+        "img_path": "images/7cb2b9d9845a1e7c874bc0f6320320da7bdd5ebd2cc1e4a6b569d40e9d72bd61.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 64
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 65
+    },
+    {
+        "type": "text",
+        "text": "Generator tries to improve its imitation of the data. ",
+        "page_idx": 65
+    },
+    {
+        "type": "image",
+        "img_path": "images/eac5b589997ef92405ffe6615122147306fde8ac6ef536191426f7a2d62216fa.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 65
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind GANs ",
+        "text_level": 1,
+        "page_idx": 66
+    },
+    {
+        "type": "text",
+        "text": "Discriminator tries to identify real data from fakes created by the generator. Generator triesto create imitations of data to trick the discriminator. ",
+        "page_idx": 66
+    },
+    {
+        "type": "text",
+        "text": "$P ( r e a l ) = 1$ Scriminator C Generator 6 MT Real data Fake data ",
+        "page_idx": 66
+    },
+    {
+        "type": "text",
+        "text": "Training GANs ",
+        "text_level": 1,
+        "page_idx": 67
+    },
+    {
+        "type": "image",
+        "img_path": "images/d6ba6150bb18b409dc1dce4fe292625eafff63e040760ea74d6d75c1a07e9933.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 67
+    },
+    {
+        "type": "text",
+        "text": "Training:adversarial objectives for Dand G Global optimum: G reproduces the true data distribution ",
+        "page_idx": 67
+    },
+    {
+        "type": "text",
+        "text": "Training GANs: loss function ",
+        "text_level": 1,
+        "page_idx": 68
+    },
+    {
+        "type": "image",
+        "img_path": "images/11cffc80cbffeb34b3e2a1dbb50587a2fca327125058359f6013378fa36b68c1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "arg max Ez,x[ log D(G(z))+ log(1 - D(x))] D ",
+        "page_idx": 68
+    },
+    {
+        "type": "text",
+        "text": "Training GANs: loss function ",
+        "text_level": 1,
+        "page_idx": 69
+    },
+    {
+        "type": "text",
+        "text": "G tries to synthesize fake images that fool D noise Z G ",
+        "page_idx": 69
+    },
+    {
+        "type": "text",
+        "text": "arg min Ez,x[ log D(G(z))+ log(1- D(x)] G ",
+        "page_idx": 69
+    },
+    {
+        "type": "text",
+        "text": "Training GANs: loss function ",
+        "text_level": 1,
+        "page_idx": 70
+    },
+    {
+        "type": "image",
+        "img_path": "images/b825accee8862521970c5b4d97de203de7197567183dd17033fa21798534aa2d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 70
+    },
+    {
+        "type": "text",
+        "text": "G tries to synthesize fake images that fool the bestD ",
+        "page_idx": 70
+    },
+    {
+        "type": "text",
+        "text": "arg min max Ez,x[ log D(G(z))+ log(1 - D(x)) ] G D ",
+        "page_idx": 70
+    },
+    {
+        "type": "text",
+        "text": "Generating new data with GANs ",
+        "text_level": 1,
+        "page_idx": 71
+    },
+    {
+        "type": "image",
+        "img_path": "images/6e7c5cca51c64ec0b6d0c7bf477246fe7a26616fa9e8fdf15dd35fd998aad120.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 71
+    },
+    {
+        "type": "text",
+        "text": "After training, use generator network to createnewdata that's never been seen before. ",
+        "page_idx": 71
+    },
+    {
+        "type": "text",
+        "text": "GANs are distribution transformers ",
+        "text_level": 1,
+        "page_idx": 72
+    },
+    {
+        "type": "image",
+        "img_path": "images/b25a7dc4f409cbbe5c4546d57ae331503e4d4252fde588bc3fc127e960cc6aa5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 72
+    },
+    {
+        "type": "text",
+        "text": "GANs are distribution transformers ",
+        "text_level": 1,
+        "page_idx": 73
+    },
+    {
+        "type": "image",
+        "img_path": "images/72513e609b82dd1e20c73f588bcd6da4019e0e867fa0bfc3f89bb4c04bf2c04d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 73
+    },
+    {
+        "type": "text",
+        "text": "GANs are distribution transformers ",
+        "text_level": 1,
+        "page_idx": 74
+    },
+    {
+        "type": "image",
+        "img_path": "images/a0e70da5fa2b4e73a506f189676b187f88f70c4fbf3b3543efb850aa63fd0d59.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 74
+    },
+    {
+        "type": "text",
+        "text": "GANs: Advances and Applications ",
+        "text_level": 1,
+        "page_idx": 75
+    },
+    {
+        "type": "text",
+        "text": "Progressive growing of GANs ",
+        "text_level": 1,
+        "page_idx": 76
+    },
+    {
+        "type": "image",
+        "img_path": "images/e82d497ac967e1f9300d9cbeb55021497c3f3e2dee790e815cf7ace9692a4ff6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 76
+    },
+    {
+        "type": "text",
+        "text": "Progressive growing of GANs: results ",
+        "text_level": 1,
+        "page_idx": 77
+    },
+    {
+        "type": "image",
+        "img_path": "images/c35ebe84a3b80098b5f430cc549afd47bc308721ba4f103cce12cfe23127e546.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 77
+    },
+    {
+        "type": "text",
+        "text": "Conditional GANs ",
+        "text_level": 1,
+        "page_idx": 78
+    },
+    {
+        "type": "text",
+        "text": "What if we want to control the nature of the output,by conditioning on a label? ",
+        "page_idx": 78
+    },
+    {
+        "type": "image",
+        "img_path": "images/eefb43aa76a62f18a3ce6bfd8a5b1d418edc8cf4626990237335d30ab94b8c13.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 78
+    },
+    {
+        "type": "text",
+        "text": "Conditional GANs and pix2pix: paired translation ",
+        "text_level": 1,
+        "page_idx": 79
+    },
+    {
+        "type": "text",
+        "text": "X ",
+        "page_idx": 79
+    },
+    {
+        "type": "text",
+        "text": "G(x) ",
+        "page_idx": 79
+    },
+    {
+        "type": "image",
+        "img_path": "images/44c5fb8a1f2d10677e8803aa5cc36437816fc7f9baca08db3e4abd975b88c551.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 79
+    },
+    {
+        "type": "text",
+        "text": "Real or fake pair？",
+        "page_idx": 79
+    },
+    {
+        "type": "text",
+        "text": "The discriminator,D,classifies between fakeand real pairs. Thegenerator, G,learns to fool the discriminator. ",
+        "page_idx": 79
+    },
+    {
+        "type": "text",
+        "text": "Applications of paired translation ",
+        "text_level": 1,
+        "page_idx": 80
+    },
+    {
+        "type": "text",
+        "text": "Labelsto StreetScene input output MIT 6.S191 ",
+        "page_idx": 80
+    },
+    {
+        "type": "text",
+        "text": "Paired translation: results ",
+        "text_level": 1,
+        "page_idx": 81
+    },
+    {
+        "type": "text",
+        "text": "Map→Aerial View ",
+        "page_idx": 81
+    },
+    {
+        "type": "text",
+        "text": "AerialView→Map ",
+        "page_idx": 81
+    },
+    {
+        "type": "image",
+        "img_path": "images/a1d7bb2138e431a0eb78aabc43454d0f23ed930a189238acb3d927adfcd0019b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 81
+    },
+    {
+        "type": "image",
+        "img_path": "images/037b8d05376557bdac6db192794965bac086ea209908551592c096d3ece5d4ea.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 81
+    },
+    {
+        "type": "text",
+        "text": "CycleGAN: domain transformation ",
+        "text_level": 1,
+        "page_idx": 82
+    },
+    {
+        "type": "text",
+        "text": "CycleGAN learns transformations across domains with unpaired data. ",
+        "page_idx": 82
+    },
+    {
+        "type": "text",
+        "text": "Dx Dy   \nG   \nX Y   \nF ",
+        "page_idx": 82
+    },
+    {
+        "type": "image",
+        "img_path": "images/e9ef899c9887d217a6b43e5e198ea77bc2c20e22ac1c54a43f8ddaf715ea89c1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 82
+    },
+    {
+        "type": "text",
+        "text": "Distribution transformations ",
+        "text_level": 1,
+        "page_idx": 83
+    },
+    {
+        "type": "text",
+        "text": "GANs: ",
+        "page_idx": 83
+    },
+    {
+        "type": "image",
+        "img_path": "images/fe3ae73ca9ad64b0bbed535c7c18559a420d0d0fae0228ae1bc82a067f2ab3fb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 83
+    },
+    {
+        "type": "text",
+        "text": "Gaussian noise target data manifold ",
+        "page_idx": 83
+    },
+    {
+        "type": "image",
+        "img_path": "images/7d57af9f299b392da8df05f2234d34704e4865d9310ca7311dcd844a6101f63a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 83
+    },
+    {
+        "type": "text",
+        "text": "data manifold X→data manifold Y ",
+        "page_idx": 83
+    },
+    {
+        "type": "text",
+        "text": "CycleGAN: transforming speech ",
+        "text_level": 1,
+        "page_idx": 84
+    },
+    {
+        "type": "image",
+        "img_path": "images/97da8a7e40d7d9663d4b6f94a0e70ad31099c1c652ba81c2cf487403262ede90.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 84
+    },
+    {
+        "type": "image",
+        "img_path": "images/97c6014a67116b49c99808cc45946ebd55da41872792bb9134856b672895f4b0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 85
+    },
+    {
+        "type": "text",
+        "text": "Deep Generative Modeling: Summary ",
+        "text_level": 1,
+        "page_idx": 86
+    },
+    {
+        "type": "text",
+        "text": "AutoencodersandVariational Autoencoders (VAEs) ",
+        "text_level": 1,
+        "page_idx": 86
+    },
+    {
+        "type": "text",
+        "text": "Learn lower-dimensional latent space and sample to generate input reconstructions ",
+        "page_idx": 86
+    },
+    {
+        "type": "text",
+        "text": "Generative Adversarial Networks (GANs) Competing generator and discriminator networks ",
+        "page_idx": 86
+    },
+    {
+        "type": "image",
+        "img_path": "images/6ec102a0de60085e1d8a51a3a3c96597dd45a52410cdd36a843795387d55d6f0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 86
+    },
+    {
+        "type": "text",
+        "text": "Diffusion Models ...more to come in Lectures 6 and Io! ",
+        "text_level": 1,
+        "page_idx": 87
+    },
+    {
+        "type": "image",
+        "img_path": "images/b862005b62b2578dc141c18c1928bc1841b3e2f4e765fbc903c9dd2e4666da0e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 87
+    },
+    {
+        "type": "image",
+        "img_path": "images/9dcacef6fc6514b7c2b9a2d3af54245e82a786a89a3ab9e0bf96265b6e0847f3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 88
+    },
+    {
+        "type": "text",
+        "text": "MIT   \nIntroduction to Deep Learning   \nLab 2: Facial Detection Systems   \nLink to download labs:   \nintrotodeeplearning.com#schedule   \ngithub.com/MITDeepLearning/introtodeeplearning ",
+        "page_idx": 88
+    },
+    {
+        "type": "text",
+        "text": "1.Open the lab in Google Colab Start executing code blocksand filling in the #TODOs 3.Need help? Come to 32-123! ",
+        "page_idx": 88
+    }
+]

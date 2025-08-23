@@ -1,0 +1,258 @@
+[
+    {
+        "type": "text",
+        "text": "365VDataScience ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "PROBABILITY FOR STATISTICS AND DATA SCIENCE ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Introduction to Probability: Cheat Sheet ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Probability Formula | Sample Space | Expected Values | Complements ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/77951dd7bc738e15393d2bab69422a6f1cbf03550306f96ca5efebdf4b0a7b34.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "You are here because you want to comprehend the basics of probability before you can dive into the world of statistics and machine learning. Understanding the driving forces behind key statistical features is crucial to reaching your goal of mastering data science. This way you will be able to extract important insight when analysing data through supervised machine learning methods like regressions, but also fathom the outputs unsupervised or assisted ML give you. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Bayesian Inference is a key component heavily used in many fields of mathematics to succinctly express complicated statements. Through Bayesian Notation we can convey the relationships between elements, sets and events. Understanding these new concepts will aid you in interpreting the mathematical intuition behind sophisticated data analytics methods. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Distributions are the main way we lie to classify sets of data. If a dataset complies with certain characteristics, we can usually attribute the likelihood of its values to a specific distribution. Since many of these distributions have elegant relationships between certain outcomes and their probabilities of occurring, knowing key features of our data is extremely convenient and useful. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Probability is the likelihood of an event occurring. This event can be pretty much anything – getting heads, rolling a 4 or even bench pressing 225lbs. We measure probability with numeric values between 0 and 1, because we like to compare the relative likelihood of events. Observe the general probability formula. ",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/57e2137e7c3f2432abf704228f020441aef27fb3dbf0a0b829c2b5bad48bba4f.jpg",
+        "text": "$$\n\\mathsf { P } ( \\mathsf { X } ) { = } \\frac { P r e f e r r e d o u t c o m e s } { S a m p l e S p a c e }\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Probability Formula: ",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• The Probability of event X occurring equals the number of preferred outcomes over the number of outcomes in the sample space. Preferred outcomes are the outcomes we want to occur or the outcomes we are interested in. We also call refer to such outcomes as “Favorable”.   \n• Sample space refers to all possible outcomes that can occur. Its “size” indicates the amount of elements in it. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "If two events are independent: ",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The probability of them occurring simultaneously equals the product of them occurring on their own. ",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/69accb48daeb77b93a488c846387a611e0a3bdc893dd2491153158d4194f6d27.jpg",
+        "text": "$$\n\\mathsf { P } ( \\mathsf { A } \\odot ) = \\mathsf { P } ( \\mathsf { A } ) \\mathrm { ~ . ~ } \\mathsf { P } ( \\odot )\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Trial – Observing an event occur and recording the outcome. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Experiment – A collection of one or multiple trials. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Experimental Probability – The probability we assign an event, based on an experiment we conduct. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Expected value – the specific outcome we expect to occur when we run an experiment. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Example: Trial ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Example: Experiment ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Flipping a coin and recording the outcome. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Flipping a coin 20 times and recording the 20 individual outcomes. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "In this instance, the experimental probability for getting heads would equal the number of heads we record over the course of the 20 outcomes, over 20 (the total number of trials). ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The expected value can be numerical, Boolean, categorical or other, depending on the type of the event we are interested in. For instance, the expected value of the trial would be the more likely of the two outcomes, whereas the expected value of the experiment will be the number of time we expect to get either heads or tails after the 20 trials. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Expected value for categorical variables. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Expected value for numeric variables. ",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "img_path": "images/83e5c75226b8cea3a5122998c458a50f237f75093577d09102e9ee93af548b94.jpg",
+        "text": "$$\nE ( X ) = n \\times p\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "img_path": "images/102fb15cc6c1b987176f324ec02eada2d44e8705b0d8c4d210a65c9a830f85c2.jpg",
+        "text": "$$\nE ( X ) = \\sum _ { i = 1 } ^ { n } x _ { i } \\times p _ { i }\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "What is a probability frequency distribution?: ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A collection of the probabilities for each possible outcome of an event. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Why do we need frequency distributions?: ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "We need the probability frequency distribution to try and predict future events when the expected value is unattainable. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "What is a frequency?: ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Frequency is the number of times a given value or outcome appears in the sample space. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "What is a frequency distribution table?: ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The frequency distribution table is a table matching each distinct outcome in the sample space to its associated frequency. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "How do we obtain the probability frequency distribution from the frequency distribution table?: ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "By dividing every frequency by the size of the sample space. (Think about the “favoured over all” formula.) ",
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/a3c806b8c37a99461c08a20577a83d306dc3cf268a9d6824b9241e71d28c8896.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Sum</td><td>Frequency</td><td>Probability</td></tr><tr><td>2</td><td>1</td><td>1/36</td></tr><tr><td>了</td><td>2</td><td>1/18</td></tr><tr><td>4</td><td>3</td><td>1/12</td></tr><tr><td>5</td><td>4</td><td>1/9</td></tr><tr><td>6</td><td>5</td><td>5/36</td></tr><tr><td>7</td><td>6</td><td>1/6</td></tr><tr><td>8</td><td>5</td><td>5/36</td></tr><tr><td>9</td><td>4</td><td>1/9</td></tr><tr><td>10</td><td>3</td><td>1/12</td></tr><tr><td>11</td><td>2</td><td>1/18</td></tr><tr><td>12</td><td>1</td><td>1/36</td></tr></table>",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The complement of an event is everything an event is not. We denote the complement of an event with an apostrophe. ",
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/ba46daddafbef960714d3b797a84d5f93b2aab715f099bbf2c6bdcbaa3801d3d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Characteristics of complements: ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "• Can never occur simultaneously. • Add up to the sample space. $( \\mathsf { A } + \\mathsf { A } ^ { \\prime } =$ Sample space) Their probabilities add up to 1. $( \\mathsf { P } ( \\mathsf { A } ) + \\mathsf { P } ( \\mathsf { A } ^ { \\prime } ) = 1 )$ • The complement of a complement is the original event. $( ( \\mathsf { A } ^ { \\prime } ) ^ { \\prime } = \\mathsf { A } )$ ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Example: ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "• Assume event A represents drawing a spade, so $\\mathsf { P } ( \\mathsf { A } ) = 0 . 2 5$ .   \n• Then, A’ represents not drawing a spade, so drawing a club, a diamond or a heart. $\\mathsf { P } ( \\mathsf { A } ^ { \\prime } ) = 1 - \\mathsf { P } ( \\mathsf { A } ) ,$ , so $\\mathsf { P } ( \\mathsf { A } ^ { \\prime } ) = 0 . 7 5 .$ . ",
+        "page_idx": 5
+    }
+]

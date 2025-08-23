@@ -1,0 +1,77 @@
+@startuml ChromaDB_Retrieval_Simplified
+allowmixing
+
+title ChromaDB Retrieval Architecture (Simplified)
+
+package "ChromaDB Instance" {
+    class ChromaDBManager {
+        +search(query, top_k)
+        +search_by_source(query, source)
+        +get_collection_info()
+        +list_source_files()
+        +ingest_chunks(chunks)
+        +reset_collection()
+    }
+
+    class ChromaIngestionEngine {
+        +ingest_chunks_from_file(file_path)
+        +ingest_chunks_batch(chunks)
+        +create_collection()
+        +reset_collection()
+    }
+
+    class ChromaRetriever {
+        +search(query, top_k, threshold)
+        +search_by_source(query, source, top_k)
+        +list_source_files()
+        +get_chunks_from_source(source)
+    }
+}
+
+package "Models" {
+    class ChromaConfig {
+        +persist_directory
+        +collection_name
+        +embedding_model
+        +embedding_device
+    }
+
+    class RetrievalConfig {
+        +top_k
+        +score_threshold
+        +source_file
+    }
+
+    class SearchResult {
+        +content
+        +document_id
+        +score
+        +source_file
+    }
+
+    class RetrievalResults {
+        +results
+        +query
+        +total_results
+        +search_time_ms
+    }
+}
+
+package "External" {
+    database "ChromaDB Storage"
+    class SentenceTransformer
+}
+
+' Relationships
+ChromaDBManager --> ChromaIngestionEngine
+ChromaDBManager --> ChromaRetriever
+ChromaDBManager --> ChromaConfig
+ChromaRetriever --> RetrievalConfig
+ChromaRetriever --> RetrievalResults
+RetrievalResults --> SearchResult
+ChromaIngestionEngine --> "ChromaDB Storage"
+ChromaRetriever --> "ChromaDB Storage"
+ChromaIngestionEngine --> SentenceTransformer
+ChromaRetriever --> SentenceTransformer
+
+@enduml

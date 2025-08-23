@@ -1,0 +1,71 @@
+Permutations represent the number of different possible ways we can arrange a number of elements.
+
+![](images/d1a8dae16ae5389047136ab0335e2bb8b0159c1ceed987997de47828a07c1644.jpg)
+
+Characteristics of Permutations:
+
+• Arranging all elements within the sample space. • No repetition. • $P ( n ) = n \times ( n - 1 ) \times ( n - 2 ) \times \cdots \times 1 = n !$ (Called “n factorial”)
+
+# Example:
+
+• If we need to arrange 5 people, we would have $\mathsf { P } ( 5 ) = \mathsf { 1 } 2 0$ ways of doing so.
+
+Factorials express the product of all integers from 1 to n and we denote them with the “!” symbol.
+
+$$
+n ! = n \times ( n - 1 ) \times ( n - 2 ) \times \cdots \times 1
+$$
+
+# Key Values:
+
+• $0 ! = 1 .$ . If $\mathsf { n } { < } 0 ,$ n! does not exist.
+
+Rules for factorial multiplication. (For $\mathsf { n } { \geqslant } 0$ and $\mathsf { n } { \boldsymbol { \mathbf { \mathit { \varepsilon } } } } \mathsf { k } )$
+
+$( n + k ) ! = n ! \times ( n + 1 ) \times \cdots \times ( n + k )$ $( n - k ) ! = { \frac { n ! } { ( n - k + 1 ) \times \cdots \times ( n - k + k ) } } = { \frac { n ! } { ( n - k + 1 ) \times \cdots \times n } }$ $\begin{array} { r } { { \frac { n ! } { k ! } } = { \frac { k ! \times ( k + 1 ) \times \cdots \times n } { k ! } } = ( k + 1 ) \times \cdots \times n } \\ { k ! } \end{array}$
+
+Examples: $\mathsf { n } = 7 , \mathsf { k } = 4$ • $( 7 + 4 ) ! = 1 1 ! = 7 ! \times 8 \times 9 \times 1 0 \times 1 1$ $\begin{array} { l } { { \cdot \ ( 7 - 4 ) ! = 3 ! = \frac { 7 ! } { 4 \times 5 \times 6 \times \times 7 } } } \\ { { \cdot \ \frac { 7 ! } { 4 ! } = \ 5 \times 6 \times 7 } } \end{array}$
+
+Variations represent the number of different possible ways we can pick and arrange a number of elements.
+
+![](images/f824843696b13afc2e59f63721025a345437681cf633d9b866d56f5e9519e7e7.jpg)
+
+# Intuition behind the formula. (With Repetition)
+
+• We have n-many options for the first element. We still have n-many options for the second element because repetition is allowed. We have n-many options for each of the pmany elements. $n \times n \times n \dots n = n ^ { p }$
+
+Intuition behind the formula. (Without Repetition)
+
+• We have n-many options for the first element. We only have (n-1)-many options for the second element because we cannot repeat the value for we chose to start with. We have less options left for each additional element.   
+• $\begin{array} { r } { n \times ( n - 1 ) \times ( n - 2 ) \ldots ( n - p + 1 ) = { \frac { n ! } { ( n - p ) ! } } } \end{array}$
+
+Combinations represent the number of different possible ways we can pick a number of elements.
+
+![](images/dcd6d691a348c167ac93cd4a1c93796f8bdd17c81fe7e7a0906433a3034e071e.jpg)
+
+# Characteristics of Combinations:
+
+• Takes into account double-counting. (Selecting Johny, Kate and Marie is the same as selecting Marie, Kate and Joh   
+• All the different permutations of a single combination are different variations. $C = { \frac { V } { P } } = { \frac { n ! / ( n - p ) ! } { p ! } } \ = { \frac { n ! } { ( n - p ) ! p ! } }$   
+• Combinations are symmetric, so $C _ { p } ^ { n } = C _ { n - p } ^ { n } ,$ since selecting p elements is the same as omitting n-p elements.
+
+Combinations represent the number of different possible ways we can pick a number of elements.
+
+![](images/4e37dda9ffe7088ca09b91a248d6456f20baf7bef71138d80a73d5a48a13acbe.jpg)
+
+Characteristics of Combinations with separate sample spaces:
+
+• The option we choose for any element does not affect the number of options for the other elements.   
+• The order in which we pick the individual elements is arbitrary.   
+• We need to know the size of the sample space for each individual element. $( n _ { 1 } , n _ { 2 } \ldots n _ { p } )$
+
+To win the lottery, you need to satisfy two distinct independent events:
+
+• Correctly guess the “Powerball” number. (From 1 to 26) • Correctly guess the 5 regular numbers. (From 1 to 69)
+
+![](images/592dbb7044b2e2a7320b0c14c8aa71c1e896951213603fd9d9539a245dd66a35.jpg)
+
+# Intuition behind the formula:
+
+• We consider the two distinct events as a combination of two elements with different sample sizes. • One event has a sample size of 26, the other has a sample size of $C _ { 5 } ^ { 6 9 }$ .   
+• Using the “favoured over all” formula, we find the probability of any single ticket winning equals $1 / ( \frac { 6 9 ! } { 6 4 ! 5 ! } \times 2 6 )$ .

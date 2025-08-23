@@ -1,0 +1,576 @@
+![](images/6c0cbd40eb855831aaf5a54cde330669d465564380605337d6089e8afd7c24f7.jpg)
+
+# DeepReinforcement Learning
+
+AlexanderAmini MIT Introduction to Deep Learning January 8,2025
+
+# Learning in Dynamic Environments
+
+\$19 MIT
+
+# Reinforcement Learning: Robots, Games,the World
+
+Robotics
+
+![](images/a674c2aa08a317670be1e6e04780955c378c1b8cc2685df7e789152300620b63.jpg)
+
+Game Play and Strategy
+
+![](images/c40d334de5342b4884fe6894989eed3cc637267586558d0c5642c8adbd37207b.jpg)
+
+# Classes of Learning Problems
+
+# Supervised Learning
+
+Data: $( x , y )$ $_ x$ isdata,yis label
+
+Goal: Learn function to map
+
+$$
+x  y
+$$
+
+Apple example:
+
+![](images/62570afc8102a89366c149120dfc6120f34435905d35a96e8aaa00cf56285b8a.jpg)
+
+This thing is an apple.
+
+# Classes of Learning Problems
+
+# Supervised Learning
+
+# Unsupervised Learning
+
+Data: $( x , y )$ $_ x$ isdata,yis label
+
+Goal: Learn function to map
+
+$$
+x  y
+$$
+
+Data: x $_ x$ is data,no labels!
+
+Apple example:
+
+![](images/56e535e303e7c1df8f45a85c470982c6db07dd8a09006aeba53ce14b07a00a0a.jpg)
+
+This thing is an apple.
+
+Goal: Learn underlying structure ■
+
+Apple example:
+
+![](images/762b1c31248f3b3f19f59c0ba6011983611abddc9a8fbe146cc2d56a55946591.jpg)
+
+This thing is like the other thing.
+
+# Classes of Learning Problems
+
+# Supervised Learning
+
+Data: $( x , y )$ $_ x$ isdata,yis label
+
+Goal: Learn function to map
+
+$$
+x  y
+$$
+
+Apple example:
+
+![](images/2c233215d113a57ad0352f11dfb94296b2c429e5b10ce55bf6c6c952d889a261.jpg)
+
+This thing is an apple.
+
+# Unsupervised Learning
+
+Data: x $_ x$ is data,no labels!
+
+Goal: Learn underlying structure ■
+
+Apple example:
+
+![](images/13bc90f572d5fc91a17d725ddbcf1b9ee31977f17261c2e237c686b65f85e4ba.jpg)
+
+This thing is like the other thing.
+
+# Reinforcement Learning
+
+Data: state-action pairs
+
+Goal: Maximize future rewards over many time steps
+
+Apple example:
+
+![](images/648f0c77e4c030d75ef6c1b53188b6d83dd2dc80bf190e1dc6e6b72bddd33fc7.jpg)
+
+Eat this thing because it will keep you alive.
+
+# Classes of Learning Problems
+
+Supervised Learning Unsupervised Learning
+
+# Reinforcement Learning
+
+RL: our focus today.
+
+Data: state-action pairs
+
+Goal:Maximize future rewards over many time steps
+
+Apple example:
+
+![](images/c35fb98f366c86e4cc312474c4d121aa53b3efdc2e2c45519539af96efd4474d.jpg)
+
+Eat this thing because it will keep you alive.
+
+# Reinforcement Learning (RL): Key Concepts
+
+![](images/7928fd94ca1c374439749dbccdc927daa67113a91016d4403bcc0551803d9fc4.jpg)
+
+Agent: takes actions.
+
+# Reinforcement Learning (RL): Key Concepts
+
+8 S AGENT 6
+
+![](images/22ae18e64173e6bad1ee09b41a58db9428c40c20e40ff32fbeb9ec5d0c7167f9.jpg)
+
+Environment: the world in which the agent exists and operates.
+
+# Reinforcement Learning (RL): Key Concepts
+
+![](images/548991fbb8490e2189182045196d30fb95306fcf7b2434b1d49c20d18c3cd129.jpg)
+
+Action: a move the agent can make in the environment. Action space A: the set of possible actions an agent can make in the environment
+
+# Reinforcement Learning (RL): Key Concepts
+
+![](images/b3d9acabb07dda88aefb8cc37f329b5dac0f821c49ee372c26d9060bdf03ad16.jpg)
+
+Observations: of the environment after taking actions.
+
+# Reinforcement Learning (RL): Key Concepts
+
+![](images/718f752764935f5512c39f07002913bbb0eba02e0bdac3aa9de0346a738b3a24.jpg)
+
+State: a situation which the agent perceives.
+
+# Reinforcement Learning (RL): Key Concepts
+
+![](images/05f92c2a6b9c89fe5ccfed81d7c0c826cc13dd36027dd4d1258b46d6d723ee80.jpg)
+
+Reward:feedback that measures the success or failure of the agent's action.
+
+# Reinforcement Learning (RL): Key Concepts
+
+![](images/50ebcbf68fa9ca029504c448894cea4eae5ba43a5b492cad529b8223c936cd13.jpg)
+
+# Reinforcement Learning (RL): Key Concepts
+
+![](images/b96441863cd732fce432e75d887eaf3ce95ea9cc361c0b7113722deb54f9aa5d.jpg)
+
+# Reinforcement Learning (RL): Key Concepts
+
+![](images/71fa7f2727ebfc7ae1cb5eaa119050e2affe197009d82491f998b0b9e7fcc41f.jpg)
+
+# Reinforcement Learning (RL): Key Concepts
+
+![](images/b30645f172b95a2617056adcda67693df3e77b868437c53882bd9bb1743a0b91.jpg)
+
+# Defining the Q-function
+
+Total reward, $R _ { t }$ ,is the discounted sum of all rewards obtained from time t
+
+$$
+Q ( s _ { t } , a _ { t } ) = \mathbb { E } [ R _ { t } | s _ { t } , a _ { t } ]
+$$
+
+The Q-function captures the expected total future reward an agent in state,s,can receive by executing a certain action, a
+
+How to take actions given a Q-function?
+
+$$
+\begin{array} { r l } & { Q ( s _ { t } , a _ { t } ) = \mathbb E [ R _ { t } | s _ { t } , a _ { t } ] } \\ & { \quad \quad \quad \quad \quad \quad \quad \quad \quad } \\ & { ( \mathrm { s t a t e } , \mathrm { a c t i o n } ) } \end{array}
+$$
+
+Ultimately, theagent needsapolicy $\pmb { \pi } ( \pmb { s } )$ ,to infer the best action to take at its state, s
+
+Strategy: the policy should choose an action that maximizes future reward
+
+$$
+\pi ^ { * } ( s ) = \operatorname { a r g m a x } _ { a } Q ( s , a )
+$$
+
+# Deep Reinforcement Learning Algorithms
+
+Value Learning
+
+Policy Learning
+
+Find Q(s,a)
+
+Find π(s)
+
+a = argmaxQ(s,a)
+
+Sample a\~π(s)
+
+# Deep Reinforcement Learning Algorithms
+
+Value Learning
+
+PolicyLearning
+
+Find Q(s,a)
+
+a = argmaxQ(s,a)
+
+Find π(s)
+
+Sample a\~π(s)
+
+# Digging deeper into the Q-function
+
+Example:Atari Breakout
+
+![](images/5812026c74fdcb1e2e51007828038a6a947ecea0eefd6be3a0ee25e3617d5dac.jpg)
+
+It can be very difficult for humans to accurately estimate Q-values
+
+![](images/dc1828ae781ebc4910a91b6e91b45da84345a5309759ada37fbecc2e27311f1a.jpg)
+
+# Digging deeper into the Q-function
+
+Example:Atari Breakout-Middle
+
+![](images/4f4ff67f6cdd7a3cec86f0d9372422fcdf186e3a1df2dc64e7dd63ebdf86a56e.jpg)
+
+It can be very difficult for humans to accurately estimate Q-values
+
+![](images/c3fdf4a0e6b475c8b81cdabd2f78e1f9efc0e997d45d639727f1668545c62bc5.jpg)
+
+# Digging deeper into the Q-function
+
+Example:Atari Breakout - Side
+
+![](images/a40bf6397519b78f8461fe5cb7c860b46ac61662c3a50571f185a76e95c66afe.jpg)
+
+It can be very difficult for humans to accurately estimate Q-values
+
+![](images/01a7eeab63d97c84845f0014e72a212c2f0de596381cc010a93b0ec3d57b4996.jpg)
+
+# Deep Q Networks (DQN)
+
+How can we use deep neural networks to model Q-functions?
+
+![](images/39b2132c7cd08b0c1a59a3f79534cd69697ba9622f649e97c34f0f5d5123f15f.jpg)
+
+# Deep Q Networks (DQN)
+
+How can we use deep neural networks to model Q-functions?
+
+Action+ State→ State→Expected Return for Each Action Expected Return   
+state,s Deep Q(s,a) Deep $\begin{array} { r } { \left\{ { \begin{array} { l } { \rho ( s , a _ { 1 } ) } \\ { \rho ( s , a _ { 2 } ) } \\ { \rho ( s , a _ { n } ) } \end{array} } \right. } \end{array}$ NN   
+"move state,s   
+action, a   
+Input Agent Output Input Agent Output
+
+# Deep Q Networks (DQN):Training
+
+How can we use deep neural networks to model Q-functions?
+
+Action+State→ State→Expected Return for Each Action Expected Return   
+state,s Deep NN Q(s，a) Deep $\begin{array} { r } { \{ { \begin{array} { l } { { \vec { \mathbf { \sigma } } } Q ( s , a _ { 1 } ) } \\ { \qquad Q ( s , a _ { 2 } ) } \\ { \qquad } \\ { \qquad \{ { \begin{array} { l } { \qquad } \\ { \qquad } \\ { \qquad } \end{array} }  } \end{array} } } \end{array}$ NN   
+"move   
+right" state,s   
+action,a   
+Input Agent Output Input Agent Output
+
+Vhathappens if we takeall thebest actions? Maximize target return→train theagent
+
+# Deep Q Networks (DQN):Training
+
+How can we use deep neural networks to model Q-functions?
+
+Action+ State→ State→Expected Return for Each Action Expected Return   
+state,s Deep NN Q(s,a) Deep $\begin{array} { r } { \left\{ { \begin{array} { l } { \rho ( s , a _ { 1 } ) } \\ { \rho ( s , a _ { 2 } ) } \\ { \rho ( s , a _ { n } ) } \end{array} } \right. } \end{array}$ NN   
+"move 6 state,s   
+action,a   
+Input Agent Output Input Agent Output N target (r +y max Q(s',a)) Tae llthe es ations
+
+# Deep Q Networks (DQN):Training
+
+How can we use deep neural networks to model Q-functions?
+
+Action+State→ State→Expected Return for EachAction Expected Return   
+state,s Deep Q(s,a） Deep $\begin{array} { r } { \{ { \begin{array} { l } { { \vec { \mathbf { \sigma } } } Q ( s , a _ { 1 } ) } \\ { \qquad Q ( s , a _ { 2 } ) } \\ { \qquad } \\ { \qquad \{ { \begin{array} { l } { \qquad } \\ { \qquad } \\ { \qquad } \end{array} }  } \end{array} } } \end{array}$ NN   
+"move 6 state,s   
+action,a   
+Input Agent Output Input Agent Output MT target predicted Network (r+ymaxQ(s',a')) Q(s,a) prediction
+
+# Deep Q Networks (DQN):Training
+
+How can we use deep neural networks to model Q-functions?
+
+Action+ State→ State→Expected Return for Each Action Expected Return   
+state,s Deep NN Q(s,a) Deep $\begin{array} { r } { \{ { \begin{array} { l } { { \vec { \mathbf { \sigma } } } Q ( s , a _ { 1 } ) } \\ { \qquad Q ( s , a _ { 2 } ) } \\ { \qquad } \\ { \qquad \{ { \begin{array} { l } { \qquad } \\ { \qquad } \\ { \qquad } \end{array} }  } \end{array} } } \end{array}$ NN   
+"move   
+right" state,s   
+action,a   
+Input Agent Output Input Agent Output NY target predicted 人 (+( Q-Loss
+
+# Deep Q Network Summary
+
+Jse NN to learn Q-function and then use to infer the optimal policy, $\pi ( s )$
+
+![](images/6b0fc213744216229caff2604f4968789b4c258c2f59b4cb206fd0aa617ce93b.jpg)  
+Send action back to environment and receive next state
+
+# DQN Atari Results
+
+![](images/0ad51ca6ad235cdf3acd41ff51943affc5a06538bfd335b393284bd993ea55ae.jpg)
+
+# DQN Atari Results
+
+![](images/7a32c0452de6b913106fab6827a539c84237d823b1dfd99b7fed451396b6f1ab.jpg)
+
+# Downsides of Q-learning
+
+# Complexity:
+
+· Can model scenarios where the action space is discrete and smal ·Cannot handle continuous action spaces
+
+# Flexibility:
+
+·Policyis deterministicallycomputed from the Qfunction by maximizing the reward→cannot learn stochastic policies
+
+# To address these,consider a new class of RL training algorithms: Policy gradient methods
+
+# Deep Reinforcement Learning Algorithms
+
+Policy Learning
+
+![](images/084e33cb501fab922fd60be9b6291b3f786c834fbabd9da9427d68b2cd90228c.jpg)
+
+Find π(s) Sample a\~π(s)
+
+# Deep Q Networks (DQN)
+
+DQN: Approximate Q-function and use to infer the optimal policy， $\pi ( s )$
+
+![](images/b378a238eecfab3437d4773e07954ff311f7341605e38ff8268a6de75220eb73.jpg)
+
+# Policy Gradient (PG): Key Idea
+
+DQN: Approximate Q-function and use to infer the optimal policy， π(s)
+
+Policy Gradient: Directly optimize the policy $\pi ( s )$
+
+![](images/7793a2505b9811fd5c623c6dfc638b34d2e8c30b9a48550b1cfb4c0810b9e1af.jpg)
+
+# Discrete vs Continuous Action Spaces
+
+Discrete action space: which direction should 丨 move?
+
+←x→
+
+![](images/f1eda3f72f2ea62a540841aeb0821e3b60e9e97a8114bfc86c597c8a312f59d1.jpg)
+
+# Discrete vs Continuous Action Spaces
+
+Discrete action space: which direction should l move?
+
+Continuousaction space: how fast should lmove?
+
+0.m/s
+
+![](images/0a688618a8a03e51c2dbe32e681a89b9e3d46f70b53449dfc65a041c21e9fc24.jpg)
+
+# Policy Gradient (PG): Key Idea
+
+Policy Gradient: Enables modeling of continuous action space
+
+![](images/0ef1a57a9139d2785a9acbb8ab97b274044a8b03b014bca75f06c30ede992b4e.jpg)
+
+# Training Policy Gradients: Case Study
+
+Reinforcement Learning Loop:
+
+Case Study- Self-Driving Cars
+
+![](images/1834e039bb7eb9c23a86f4b332a9f03f1d9948cd2159c9fb3029058a0f8d4323.jpg)
+
+Agent: vehicle
+
+State: camera,lidar, etc
+
+Action:steering wheel angle
+
+Reward:distance traveled
+
+# Training Policy Gradients
+
+# Training Algorithm
+
+I. Initialize the agent 2. Run a policy until termination 3. Record all states,actions, rewards 4. Decrease probability of actions that resulted in lowreward 5. Increase probability of actions that resulted in high reward
+
+![](images/4d38c05d1a139cc29ffe565fa0bcf74b72bea4f7c8a71c53c4fbd4a88bd9559c.jpg)
+
+# Training Policy Gradients
+
+# Training Algorithm
+
+I. Initialize the agent 2. Run a policy until termination 3. Record all states,actions,rewards 4. Decrease probability of actions that resulted in lowreward 5. Increase probability of actions that resulted in high reward
+
+![](images/bd4702d2c40cddae2b5aa27cc711a26fef7da945892a8b60b8a702950412feff.jpg)
+
+# Training Policy Gradients
+
+# Training Algorithm
+
+I. Initialize the agent 2. Run a policy until termination 3. Record all states,actions, rewards 4. Decrease probability of actions that resulted in lowreward 5. Increase probability of actions that resulted in high reward
+
+# Training Policy Gradients
+
+# Training Algorithm
+
+I. Initialize the agent
+
+2. Run a policy until termination
+
+3. Record all states,actions,rewards
+
+4. Decrease probability of actions that resulted in lowreward 5. Increase probability of actions that resulted in high reward
+
+11111 1-- 1111- 1111111一
+
+# Training Policy Gradients
+
+# Training Algorithm
+
+I. Initialize the agent
+
+2. Run a policy until termination
+
+3. Record all states,actions,rewards
+
+4. Decrease probability of actions that resulted in low reward 5. Increase probability of actions that resulted in high reward
+
+log-likelihoodofaction
+
+$$
+{ \mathbf l o s } s = - \log { \mathrm P ( a _ { t } | s _ { t } ) } R _ { t }
+$$
+
+reward
+
+Gradient descent update: w'=w-Vloss w'= w +VlogP(atlst) Rt Policy gradient!
+
+# Reinforcement Learning in Real Life
+
+# Training Algorithm
+
+I. Initialize the agent
+
+2. Run a policy until termination
+
+3. Record all states,actions,rewards
+
+4. Decrease probability of actions that resulted in lowreward
+
+5. Increase probability of actions that resulted in high reward
+
+A9
+
+# Data-driven Simulation for Autonomous Vehicles
+
+VISTA: Photorealistic and high-fidelity simulator for training and testing self-driving cars
+
+![](images/14707bf50a5f20231e32c90d52584ebf73a30f567d7cc432c1d600fc1d419b2f.jpg)
+
+# Deploying End-to-End RL for Autonomous Vehicles
+
+![](images/b297b30075eded7d7778d51e686150fc9db33683026df0d1b7fe5183ea4dcae2.jpg)
+
+Policy Gradient RLagent trained entirelywithin VISTAsimulator
+
+![](images/aa4a2fba181023ae6524391ec33a91382c464b02c8ef5a20a86a2a101b7c6dde.jpg)
+
+End-to-end agent directly deployed into the real-world
+
+![](images/235ded7a5d0e996383439caa2917012ec6778ef38110c24245c4eaf9ff5f9019.jpg)
+
+Firstfull-scaleautonomous vehicle trained using RL entirely in simulationand deployed inreal life!
+
+# Deep Reinforcement Learning Applications
+
+# Reinforcement Learning and the Game of Go
+
+![](images/bfd1484a3990e4a23f7a9571692f08b2c9f3368e53bfd52d8cf00e15a07a8559.jpg)
+
+# The Game of Go
+
+Aim: Get more board territory than your opponent.
+
+![](images/2ace7c31af44d098325ce24683af4f0b99d58b6565934ca4caa004e7aa407588.jpg)
+
+<table><tr><td>Board Size nxn</td><td>Positions 3n²</td><td>% Legal</td><td>Legal Positions</td></tr><tr><td></td><td>3</td><td>33.33%</td><td></td></tr><tr><td>2×2</td><td>81</td><td>70.37%</td><td>57</td></tr><tr><td>3×3</td><td>19.683</td><td>64.40%</td><td>12.675</td></tr><tr><td>4x4</td><td>43,046,721</td><td>56.49%</td><td>24,318,165</td></tr><tr><td>5×5</td><td>847,288,609,443</td><td>48.90%</td><td>414,295,148.741</td></tr><tr><td>9×9</td><td>4.434264882×1038</td><td>23.44%</td><td>1.03919148791×1038</td></tr><tr><td>13×13</td><td>4.300233593×1080</td><td>8.66%</td><td>3.72497923077×1079</td></tr><tr><td>19×19</td><td>1.740896506×10172</td><td>1.20%</td><td>2.08168199382×10170</td></tr></table>
+
+Greater number of legal board positions than atoms in the universe.
+
+# AlphaGo Beats Top Human Player at Go
+
+Human expert Supervised Learning RL positions policynetwork policy network Self-play data Valuenetwork 一送 Self Self 一送 Play Play MIT IT 6
+
+# AlphaGo Beats Top Human Player at Go
+
+![](images/e2eebf7f512b5492cb8bc6781bc0a805d6d72e2aea72707d53f116edd4d106aa.jpg)
+
+# AlphaGo Beats Top Human Player at Go
+
+Humanexpert Supervised Learning RL positions policynetwork policynetwork Self-play data Valuenetwork Classification Regression X Sel Play Self I) Initial training:humandata 2) Self-play and reinforcement learning →super-human performance
+
+# AlphaGo Beats Top Human Player at Go
+
+![](images/79e43d4f08fc22b01d5c6b17615e062d1b23ab8441e3f45455af945b0f947be6.jpg)
+
+# AlphaZero: RL from Self-Play
+
+5kT 9 ? 4k s19 3k 0 2k AlphaZero M 1k 0 0 100k 200k 300k 400k 500k 600k 700k Training Steps
+
+# Deep Reinforcement Learning: Summary
+
+# Foundations
+
+# Q-Learning
+
+# Policy Gradients
+
+·Agents acting in environment   
+·State-action pairs→ maximize futurerewards   
+·Discounting
+
+·Qfunction:expected total reward givens,a ·Policy determined by selectingaction that maximizes Q function
+
+8 ·Learn and optimize the policy directly Applicable to continuousaction spaces
+
+![](images/1c11e4efbff9e8d49bce47bd577551180693126f6221e745ed47692636d54eb0.jpg)
+
+?
+
+![](images/688e222a68081373cce34819edc424c587f3996572fcf407ae647ece3dd1e331.jpg)
+
+# T-Shirts Coming Tomorrow!
+
+SYLLABUS: bit.ly/6sl91-syllabus
+
+1.Project sign-ups dueTMRW I/9 II:59pm ET
+
+2. Lab competitionsand prizes! EXTENDED DEADLINE: Friday I/10 I1:00am ET
+
+3.Project and lab submission links on syllabus!
+
+4.RESUMEDROP to sponsoring companies! introtodeeplearning.com/jobs.html

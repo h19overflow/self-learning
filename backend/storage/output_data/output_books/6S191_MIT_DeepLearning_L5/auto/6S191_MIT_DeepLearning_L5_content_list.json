@@ -1,0 +1,1546 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/6c0cbd40eb855831aaf5a54cde330669d465564380605337d6089e8afd7c24f7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "DeepReinforcement Learning ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "AlexanderAmini MIT Introduction to Deep Learning January 8,2025 ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Learning in Dynamic Environments ",
+        "text_level": 1,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\$19 MIT ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Reinforcement Learning: Robots, Games,the World ",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Robotics ",
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/a674c2aa08a317670be1e6e04780955c378c1b8cc2685df7e789152300620b63.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Game Play and Strategy ",
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/c40d334de5342b4884fe6894989eed3cc637267586558d0c5642c8adbd37207b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Classes of Learning Problems ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Supervised Learning ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Data: $( x , y )$ $_ x$ isdata,yis label ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Goal: Learn function to map ",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "img_path": "images/29b0c44eac18b518b8d17f28ba3c766cfc236659b8031e6698be01629cb060f2.jpg",
+        "text": "$$\nx  y\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Apple example: ",
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/62570afc8102a89366c149120dfc6120f34435905d35a96e8aaa00cf56285b8a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "This thing is an apple. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Classes of Learning Problems ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Supervised Learning ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Unsupervised Learning ",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Data: $( x , y )$ $_ x$ isdata,yis label ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Goal: Learn function to map ",
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "img_path": "images/afe0431692b58341b242e2f50cde02542dc43fcc7cc2429319452bbf8c2b7e7b.jpg",
+        "text": "$$\nx  y\n$$",
+        "text_format": "latex",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Data: x $_ x$ is data,no labels! ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Apple example: ",
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/56e535e303e7c1df8f45a85c470982c6db07dd8a09006aeba53ce14b07a00a0a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "This thing is an apple. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Goal: Learn underlying structure ■ ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Apple example: ",
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/762b1c31248f3b3f19f59c0ba6011983611abddc9a8fbe146cc2d56a55946591.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "This thing is like the other thing. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Classes of Learning Problems ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Supervised Learning ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Data: $( x , y )$ $_ x$ isdata,yis label ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Goal: Learn function to map ",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "img_path": "images/cbd9f0a22b8b41857f54b6801452a05bc3f83b10f0e1812445bcbe3f959698c7.jpg",
+        "text": "$$\nx  y\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Apple example: ",
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/2c233215d113a57ad0352f11dfb94296b2c429e5b10ce55bf6c6c952d889a261.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "This thing is an apple. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Unsupervised Learning ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Data: x $_ x$ is data,no labels! ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Goal: Learn underlying structure ■ ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Apple example: ",
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/13bc90f572d5fc91a17d725ddbcf1b9ee31977f17261c2e237c686b65f85e4ba.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "This thing is like the other thing. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Reinforcement Learning ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Data: state-action pairs ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Goal: Maximize future rewards over many time steps ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Apple example: ",
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/648f0c77e4c030d75ef6c1b53188b6d83dd2dc80bf190e1dc6e6b72bddd33fc7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Eat this thing because it will keep you alive. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Classes of Learning Problems ",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Supervised Learning Unsupervised Learning ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Reinforcement Learning ",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "RL: our focus today. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Data: state-action pairs ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Goal:Maximize future rewards over many time steps ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Apple example: ",
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/c35fb98f366c86e4cc312474c4d121aa53b3efdc2e2c45519539af96efd4474d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Eat this thing because it will keep you alive. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Reinforcement Learning (RL): Key Concepts ",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/7928fd94ca1c374439749dbccdc927daa67113a91016d4403bcc0551803d9fc4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Agent: takes actions. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Reinforcement Learning (RL): Key Concepts ",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "8 S AGENT 6 ",
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/22ae18e64173e6bad1ee09b41a58db9428c40c20e40ff32fbeb9ec5d0c7167f9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Environment: the world in which the agent exists and operates. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Reinforcement Learning (RL): Key Concepts ",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/548991fbb8490e2189182045196d30fb95306fcf7b2434b1d49c20d18c3cd129.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Action: a move the agent can make in the environment. Action space A: the set of possible actions an agent can make in the environment ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Reinforcement Learning (RL): Key Concepts ",
+        "text_level": 1,
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/b3d9acabb07dda88aefb8cc37f329b5dac0f821c49ee372c26d9060bdf03ad16.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Observations: of the environment after taking actions. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Reinforcement Learning (RL): Key Concepts ",
+        "text_level": 1,
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/718f752764935f5512c39f07002913bbb0eba02e0bdac3aa9de0346a738b3a24.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "State: a situation which the agent perceives. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Reinforcement Learning (RL): Key Concepts ",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "images/05f92c2a6b9c89fe5ccfed81d7c0c826cc13dd36027dd4d1258b46d6d723ee80.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Reward:feedback that measures the success or failure of the agent's action. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Reinforcement Learning (RL): Key Concepts ",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "image",
+        "img_path": "images/50ebcbf68fa9ca029504c448894cea4eae5ba43a5b492cad529b8223c936cd13.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Reinforcement Learning (RL): Key Concepts ",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "image",
+        "img_path": "images/b96441863cd732fce432e75d887eaf3ce95ea9cc361c0b7113722deb54f9aa5d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Reinforcement Learning (RL): Key Concepts ",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "image",
+        "img_path": "images/71fa7f2727ebfc7ae1cb5eaa119050e2affe197009d82491f998b0b9e7fcc41f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Reinforcement Learning (RL): Key Concepts ",
+        "text_level": 1,
+        "page_idx": 16
+    },
+    {
+        "type": "image",
+        "img_path": "images/b30645f172b95a2617056adcda67693df3e77b868437c53882bd9bb1743a0b91.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Defining the Q-function ",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Total reward, $R _ { t }$ ,is the discounted sum of all rewards obtained from time t ",
+        "page_idx": 17
+    },
+    {
+        "type": "equation",
+        "img_path": "images/2bf2ee45a2d56ce4110882d5a4befc5ee58290c62f0800339a1c885cfa87d103.jpg",
+        "text": "$$\nQ ( s _ { t } , a _ { t } ) = \\mathbb { E } [ R _ { t } | s _ { t } , a _ { t } ]\n$$",
+        "text_format": "latex",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "The Q-function captures the expected total future reward an agent in state,s,can receive by executing a certain action, a ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "How to take actions given a Q-function? ",
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "img_path": "images/5e20ee719fa67e6511840b36b515ad8d254379b18cb8e393d146569090abd5dd.jpg",
+        "text": "$$\n\\begin{array} { r l } & { Q ( s _ { t } , a _ { t } ) = \\mathbb E [ R _ { t } | s _ { t } , a _ { t } ] } \\\\ & { \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad } \\\\ & { ( \\mathrm { s t a t e } , \\mathrm { a c t i o n } ) } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Ultimately, theagent needsapolicy $\\pmb { \\pi } ( \\pmb { s } )$ ,to infer the best action to take at its state, s ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Strategy: the policy should choose an action that maximizes future reward ",
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "img_path": "images/4e6e7a175597325bd702019f2bd7da9c397f2d07c1f0d34798144a140ecd81f1.jpg",
+        "text": "$$\n\\pi ^ { * } ( s ) = \\operatorname { a r g m a x } _ { a } Q ( s , a )\n$$",
+        "text_format": "latex",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Deep Reinforcement Learning Algorithms ",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Value Learning ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Policy Learning ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Find Q(s,a) ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Find π(s) ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "a = argmaxQ(s,a) ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Sample a\\~π(s) ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Deep Reinforcement Learning Algorithms ",
+        "text_level": 1,
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Value Learning ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "PolicyLearning ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Find Q(s,a) ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "a = argmaxQ(s,a) ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Find π(s) ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Sample a\\~π(s) ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Digging deeper into the Q-function ",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Example:Atari Breakout ",
+        "page_idx": 21
+    },
+    {
+        "type": "image",
+        "img_path": "images/5812026c74fdcb1e2e51007828038a6a947ecea0eefd6be3a0ee25e3617d5dac.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "It can be very difficult for humans to accurately estimate Q-values ",
+        "page_idx": 21
+    },
+    {
+        "type": "image",
+        "img_path": "images/dc1828ae781ebc4910a91b6e91b45da84345a5309759ada37fbecc2e27311f1a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Digging deeper into the Q-function ",
+        "text_level": 1,
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Example:Atari Breakout-Middle ",
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "images/4f4ff67f6cdd7a3cec86f0d9372422fcdf186e3a1df2dc64e7dd63ebdf86a56e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "It can be very difficult for humans to accurately estimate Q-values ",
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "images/c3fdf4a0e6b475c8b81cdabd2f78e1f9efc0e997d45d639727f1668545c62bc5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Digging deeper into the Q-function ",
+        "text_level": 1,
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Example:Atari Breakout - Side ",
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "images/a40bf6397519b78f8461fe5cb7c860b46ac61662c3a50571f185a76e95c66afe.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "It can be very difficult for humans to accurately estimate Q-values ",
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "images/01a7eeab63d97c84845f0014e72a212c2f0de596381cc010a93b0ec3d57b4996.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Deep Q Networks (DQN) ",
+        "text_level": 1,
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "How can we use deep neural networks to model Q-functions? ",
+        "page_idx": 24
+    },
+    {
+        "type": "image",
+        "img_path": "images/39b2132c7cd08b0c1a59a3f79534cd69697ba9622f649e97c34f0f5d5123f15f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Deep Q Networks (DQN) ",
+        "text_level": 1,
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "How can we use deep neural networks to model Q-functions? ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Action+ State→ State→Expected Return for Each Action Expected Return   \nstate,s Deep Q(s,a) Deep $\\begin{array} { r } { \\left\\{ { \\begin{array} { l } { \\rho ( s , a _ { 1 } ) } \\\\ { \\rho ( s , a _ { 2 } ) } \\\\ { \\rho ( s , a _ { n } ) } \\end{array} } \\right. } \\end{array}$ NN   \n\"move state,s   \naction, a   \nInput Agent Output Input Agent Output ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Deep Q Networks (DQN):Training ",
+        "text_level": 1,
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "How can we use deep neural networks to model Q-functions? ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Action+State→ State→Expected Return for Each Action Expected Return   \nstate,s Deep NN Q(s，a) Deep $\\begin{array} { r } { \\{ { \\begin{array} { l } { { \\vec { \\mathbf { \\sigma } } } Q ( s , a _ { 1 } ) } \\\\ { \\qquad Q ( s , a _ { 2 } ) } \\\\ { \\qquad } \\\\ { \\qquad \\{ { \\begin{array} { l } { \\qquad } \\\\ { \\qquad } \\\\ { \\qquad } \\end{array} }  } \\end{array} } } \\end{array}$ NN   \n\"move   \nright\" state,s   \naction,a   \nInput Agent Output Input Agent Output ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Vhathappens if we takeall thebest actions? Maximize target return→train theagent ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Deep Q Networks (DQN):Training ",
+        "text_level": 1,
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "How can we use deep neural networks to model Q-functions? ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Action+ State→ State→Expected Return for Each Action Expected Return   \nstate,s Deep NN Q(s,a) Deep $\\begin{array} { r } { \\left\\{ { \\begin{array} { l } { \\rho ( s , a _ { 1 } ) } \\\\ { \\rho ( s , a _ { 2 } ) } \\\\ { \\rho ( s , a _ { n } ) } \\end{array} } \\right. } \\end{array}$ NN   \n\"move 6 state,s   \naction,a   \nInput Agent Output Input Agent Output N target (r +y max Q(s',a)) Tae llthe es ations ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Deep Q Networks (DQN):Training ",
+        "text_level": 1,
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "How can we use deep neural networks to model Q-functions? ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Action+State→ State→Expected Return for EachAction Expected Return   \nstate,s Deep Q(s,a） Deep $\\begin{array} { r } { \\{ { \\begin{array} { l } { { \\vec { \\mathbf { \\sigma } } } Q ( s , a _ { 1 } ) } \\\\ { \\qquad Q ( s , a _ { 2 } ) } \\\\ { \\qquad } \\\\ { \\qquad \\{ { \\begin{array} { l } { \\qquad } \\\\ { \\qquad } \\\\ { \\qquad } \\end{array} }  } \\end{array} } } \\end{array}$ NN   \n\"move 6 state,s   \naction,a   \nInput Agent Output Input Agent Output MT target predicted Network (r+ymaxQ(s',a')) Q(s,a) prediction ",
+        "page_idx": 28
+    },
+    {
+        "type": "text",
+        "text": "Deep Q Networks (DQN):Training ",
+        "text_level": 1,
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "How can we use deep neural networks to model Q-functions? ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Action+ State→ State→Expected Return for Each Action Expected Return   \nstate,s Deep NN Q(s,a) Deep $\\begin{array} { r } { \\{ { \\begin{array} { l } { { \\vec { \\mathbf { \\sigma } } } Q ( s , a _ { 1 } ) } \\\\ { \\qquad Q ( s , a _ { 2 } ) } \\\\ { \\qquad } \\\\ { \\qquad \\{ { \\begin{array} { l } { \\qquad } \\\\ { \\qquad } \\\\ { \\qquad } \\end{array} }  } \\end{array} } } \\end{array}$ NN   \n\"move   \nright\" state,s   \naction,a   \nInput Agent Output Input Agent Output NY target predicted 人 (+( Q-Loss ",
+        "page_idx": 29
+    },
+    {
+        "type": "text",
+        "text": "Deep Q Network Summary ",
+        "text_level": 1,
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "Jse NN to learn Q-function and then use to infer the optimal policy, $\\pi ( s )$ ",
+        "page_idx": 30
+    },
+    {
+        "type": "image",
+        "img_path": "images/6b0fc213744216229caff2604f4968789b4c258c2f59b4cb206fd0aa617ce93b.jpg",
+        "image_caption": [
+            "Send action back to environment and receive next state "
+        ],
+        "image_footnote": [],
+        "page_idx": 30
+    },
+    {
+        "type": "text",
+        "text": "DQN Atari Results ",
+        "text_level": 1,
+        "page_idx": 31
+    },
+    {
+        "type": "image",
+        "img_path": "images/0ad51ca6ad235cdf3acd41ff51943affc5a06538bfd335b393284bd993ea55ae.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 31
+    },
+    {
+        "type": "text",
+        "text": "DQN Atari Results ",
+        "text_level": 1,
+        "page_idx": 32
+    },
+    {
+        "type": "image",
+        "img_path": "images/7a32c0452de6b913106fab6827a539c84237d823b1dfd99b7fed451396b6f1ab.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 32
+    },
+    {
+        "type": "text",
+        "text": "Downsides of Q-learning ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Complexity: ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "· Can model scenarios where the action space is discrete and smal ·Cannot handle continuous action spaces ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Flexibility: ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "·Policyis deterministicallycomputed from the Qfunction by maximizing the reward→cannot learn stochastic policies ",
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "To address these,consider a new class of RL training algorithms: Policy gradient methods ",
+        "text_level": 1,
+        "page_idx": 33
+    },
+    {
+        "type": "text",
+        "text": "Deep Reinforcement Learning Algorithms ",
+        "text_level": 1,
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Policy Learning ",
+        "page_idx": 34
+    },
+    {
+        "type": "image",
+        "img_path": "images/084e33cb501fab922fd60be9b6291b3f786c834fbabd9da9427d68b2cd90228c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Find π(s) Sample a\\~π(s) ",
+        "page_idx": 34
+    },
+    {
+        "type": "text",
+        "text": "Deep Q Networks (DQN) ",
+        "text_level": 1,
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "DQN: Approximate Q-function and use to infer the optimal policy， $\\pi ( s )$ ",
+        "page_idx": 35
+    },
+    {
+        "type": "image",
+        "img_path": "images/b378a238eecfab3437d4773e07954ff311f7341605e38ff8268a6de75220eb73.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 35
+    },
+    {
+        "type": "text",
+        "text": "Policy Gradient (PG): Key Idea ",
+        "text_level": 1,
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "DQN: Approximate Q-function and use to infer the optimal policy， π(s)",
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Policy Gradient: Directly optimize the policy $\\pi ( s )$ ",
+        "page_idx": 36
+    },
+    {
+        "type": "image",
+        "img_path": "images/7793a2505b9811fd5c623c6dfc638b34d2e8c30b9a48550b1cfb4c0810b9e1af.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 36
+    },
+    {
+        "type": "text",
+        "text": "Discrete vs Continuous Action Spaces ",
+        "text_level": 1,
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Discrete action space: which direction should 丨 move? ",
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "←x→ ",
+        "page_idx": 37
+    },
+    {
+        "type": "image",
+        "img_path": "images/f1eda3f72f2ea62a540841aeb0821e3b60e9e97a8114bfc86c597c8a312f59d1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 37
+    },
+    {
+        "type": "text",
+        "text": "Discrete vs Continuous Action Spaces ",
+        "text_level": 1,
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Discrete action space: which direction should l move? ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Continuousaction space: how fast should lmove? ",
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "0.m/s ",
+        "page_idx": 38
+    },
+    {
+        "type": "image",
+        "img_path": "images/0a688618a8a03e51c2dbe32e681a89b9e3d46f70b53449dfc65a041c21e9fc24.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 38
+    },
+    {
+        "type": "text",
+        "text": "Policy Gradient (PG): Key Idea ",
+        "text_level": 1,
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Policy Gradient: Enables modeling of continuous action space ",
+        "page_idx": 39
+    },
+    {
+        "type": "image",
+        "img_path": "images/0ef1a57a9139d2785a9acbb8ab97b274044a8b03b014bca75f06c30ede992b4e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 39
+    },
+    {
+        "type": "text",
+        "text": "Training Policy Gradients: Case Study ",
+        "text_level": 1,
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Reinforcement Learning Loop: ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Case Study- Self-Driving Cars ",
+        "page_idx": 40
+    },
+    {
+        "type": "image",
+        "img_path": "images/1834e039bb7eb9c23a86f4b332a9f03f1d9948cd2159c9fb3029058a0f8d4323.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Agent: vehicle ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "State: camera,lidar, etc ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Action:steering wheel angle ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Reward:distance traveled ",
+        "page_idx": 40
+    },
+    {
+        "type": "text",
+        "text": "Training Policy Gradients ",
+        "text_level": 1,
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Training Algorithm ",
+        "text_level": 1,
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "I. Initialize the agent 2. Run a policy until termination 3. Record all states,actions, rewards 4. Decrease probability of actions that resulted in lowreward 5. Increase probability of actions that resulted in high reward ",
+        "page_idx": 41
+    },
+    {
+        "type": "image",
+        "img_path": "images/4d38c05d1a139cc29ffe565fa0bcf74b72bea4f7c8a71c53c4fbd4a88bd9559c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 41
+    },
+    {
+        "type": "text",
+        "text": "Training Policy Gradients ",
+        "text_level": 1,
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Training Algorithm ",
+        "text_level": 1,
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "I. Initialize the agent 2. Run a policy until termination 3. Record all states,actions,rewards 4. Decrease probability of actions that resulted in lowreward 5. Increase probability of actions that resulted in high reward ",
+        "page_idx": 42
+    },
+    {
+        "type": "image",
+        "img_path": "images/bd4702d2c40cddae2b5aa27cc711a26fef7da945892a8b60b8a702950412feff.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 42
+    },
+    {
+        "type": "text",
+        "text": "Training Policy Gradients ",
+        "text_level": 1,
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Training Algorithm ",
+        "text_level": 1,
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "I. Initialize the agent 2. Run a policy until termination 3. Record all states,actions, rewards 4. Decrease probability of actions that resulted in lowreward 5. Increase probability of actions that resulted in high reward ",
+        "page_idx": 43
+    },
+    {
+        "type": "text",
+        "text": "Training Policy Gradients ",
+        "text_level": 1,
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Training Algorithm ",
+        "text_level": 1,
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "I. Initialize the agent ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "2. Run a policy until termination ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "3. Record all states,actions,rewards ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "4. Decrease probability of actions that resulted in lowreward 5. Increase probability of actions that resulted in high reward ",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "11111 1-- 1111- 1111111一",
+        "page_idx": 44
+    },
+    {
+        "type": "text",
+        "text": "Training Policy Gradients ",
+        "text_level": 1,
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Training Algorithm ",
+        "text_level": 1,
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "I. Initialize the agent ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "2. Run a policy until termination ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "3. Record all states,actions,rewards ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "4. Decrease probability of actions that resulted in low reward 5. Increase probability of actions that resulted in high reward ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "log-likelihoodofaction ",
+        "page_idx": 45
+    },
+    {
+        "type": "equation",
+        "img_path": "images/2080cd4332f8d7c81b073c5d0eb5799d9cc21cc1a799131def8a46596ba76b7f.jpg",
+        "text": "$$\n{ \\mathbf l o s } s = - \\log { \\mathrm P ( a _ { t } | s _ { t } ) } R _ { t }\n$$",
+        "text_format": "latex",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "reward ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Gradient descent update: w'=w-Vloss w'= w +VlogP(atlst) Rt Policy gradient! ",
+        "page_idx": 45
+    },
+    {
+        "type": "text",
+        "text": "Reinforcement Learning in Real Life ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Training Algorithm ",
+        "text_level": 1,
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "I. Initialize the agent ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "2. Run a policy until termination ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "3. Record all states,actions,rewards ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "4. Decrease probability of actions that resulted in lowreward ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "5. Increase probability of actions that resulted in high reward ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "A9 ",
+        "page_idx": 46
+    },
+    {
+        "type": "text",
+        "text": "Data-driven Simulation for Autonomous Vehicles ",
+        "text_level": 1,
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "VISTA: Photorealistic and high-fidelity simulator for training and testing self-driving cars ",
+        "page_idx": 47
+    },
+    {
+        "type": "image",
+        "img_path": "images/14707bf50a5f20231e32c90d52584ebf73a30f567d7cc432c1d600fc1d419b2f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 47
+    },
+    {
+        "type": "text",
+        "text": "Deploying End-to-End RL for Autonomous Vehicles ",
+        "text_level": 1,
+        "page_idx": 48
+    },
+    {
+        "type": "image",
+        "img_path": "images/b297b30075eded7d7778d51e686150fc9db33683026df0d1b7fe5183ea4dcae2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Policy Gradient RLagent trained entirelywithin VISTAsimulator ",
+        "page_idx": 48
+    },
+    {
+        "type": "image",
+        "img_path": "images/aa4a2fba181023ae6524391ec33a91382c464b02c8ef5a20a86a2a101b7c6dde.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "End-to-end agent directly deployed into the real-world ",
+        "page_idx": 48
+    },
+    {
+        "type": "image",
+        "img_path": "images/235ded7a5d0e996383439caa2917012ec6778ef38110c24245c4eaf9ff5f9019.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Firstfull-scaleautonomous vehicle trained using RL entirely in simulationand deployed inreal life! ",
+        "page_idx": 48
+    },
+    {
+        "type": "text",
+        "text": "Deep Reinforcement Learning Applications ",
+        "text_level": 1,
+        "page_idx": 49
+    },
+    {
+        "type": "text",
+        "text": "Reinforcement Learning and the Game of Go ",
+        "text_level": 1,
+        "page_idx": 50
+    },
+    {
+        "type": "image",
+        "img_path": "images/bfd1484a3990e4a23f7a9571692f08b2c9f3368e53bfd52d8cf00e15a07a8559.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 50
+    },
+    {
+        "type": "text",
+        "text": "The Game of Go ",
+        "text_level": 1,
+        "page_idx": 51
+    },
+    {
+        "type": "text",
+        "text": "Aim: Get more board territory than your opponent. ",
+        "page_idx": 51
+    },
+    {
+        "type": "image",
+        "img_path": "images/2ace7c31af44d098325ce24683af4f0b99d58b6565934ca4caa004e7aa407588.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 51
+    },
+    {
+        "type": "table",
+        "img_path": "images/2647d683abf1f3417fd231e2079204e821a162bc7d105c7ba025a2b9b06563b4.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Board Size nxn</td><td>Positions 3n²</td><td>% Legal</td><td>Legal Positions</td></tr><tr><td></td><td>3</td><td>33.33%</td><td></td></tr><tr><td>2×2</td><td>81</td><td>70.37%</td><td>57</td></tr><tr><td>3×3</td><td>19.683</td><td>64.40%</td><td>12.675</td></tr><tr><td>4x4</td><td>43,046,721</td><td>56.49%</td><td>24,318,165</td></tr><tr><td>5×5</td><td>847,288,609,443</td><td>48.90%</td><td>414,295,148.741</td></tr><tr><td>9×9</td><td>4.434264882×1038</td><td>23.44%</td><td>1.03919148791×1038</td></tr><tr><td>13×13</td><td>4.300233593×1080</td><td>8.66%</td><td>3.72497923077×1079</td></tr><tr><td>19×19</td><td>1.740896506×10172</td><td>1.20%</td><td>2.08168199382×10170</td></tr></table>",
+        "page_idx": 51
+    },
+    {
+        "type": "text",
+        "text": "Greater number of legal board positions than atoms in the universe. ",
+        "page_idx": 51
+    },
+    {
+        "type": "text",
+        "text": "AlphaGo Beats Top Human Player at Go ",
+        "text_level": 1,
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "Human expert Supervised Learning RL positions policynetwork policy network Self-play data Valuenetwork 一送 Self Self 一送 Play Play MIT IT 6 ",
+        "page_idx": 52
+    },
+    {
+        "type": "text",
+        "text": "AlphaGo Beats Top Human Player at Go ",
+        "text_level": 1,
+        "page_idx": 53
+    },
+    {
+        "type": "image",
+        "img_path": "images/e2eebf7f512b5492cb8bc6781bc0a805d6d72e2aea72707d53f116edd4d106aa.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 53
+    },
+    {
+        "type": "text",
+        "text": "AlphaGo Beats Top Human Player at Go ",
+        "text_level": 1,
+        "page_idx": 54
+    },
+    {
+        "type": "text",
+        "text": "Humanexpert Supervised Learning RL positions policynetwork policynetwork Self-play data Valuenetwork Classification Regression X Sel Play Self I) Initial training:humandata 2) Self-play and reinforcement learning →super-human performance ",
+        "page_idx": 54
+    },
+    {
+        "type": "text",
+        "text": "AlphaGo Beats Top Human Player at Go ",
+        "text_level": 1,
+        "page_idx": 55
+    },
+    {
+        "type": "image",
+        "img_path": "images/79e43d4f08fc22b01d5c6b17615e062d1b23ab8441e3f45455af945b0f947be6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 55
+    },
+    {
+        "type": "text",
+        "text": "AlphaZero: RL from Self-Play ",
+        "text_level": 1,
+        "page_idx": 56
+    },
+    {
+        "type": "text",
+        "text": "5kT 9 ? 4k s19 3k 0 2k AlphaZero M 1k 0 0 100k 200k 300k 400k 500k 600k 700k Training Steps ",
+        "page_idx": 56
+    },
+    {
+        "type": "text",
+        "text": "Deep Reinforcement Learning: Summary ",
+        "text_level": 1,
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "Foundations ",
+        "text_level": 1,
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "Q-Learning ",
+        "text_level": 1,
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "Policy Gradients ",
+        "text_level": 1,
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "·Agents acting in environment   \n·State-action pairs→ maximize futurerewards   \n·Discounting ",
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "·Qfunction:expected total reward givens,a ·Policy determined by selectingaction that maximizes Q function ",
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "8 ·Learn and optimize the policy directly Applicable to continuousaction spaces ",
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 57
+    },
+    {
+        "type": "image",
+        "img_path": "images/1c11e4efbff9e8d49bce47bd577551180693126f6221e745ed47692636d54eb0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 57
+    },
+    {
+        "type": "text",
+        "text": "? ",
+        "page_idx": 57
+    },
+    {
+        "type": "image",
+        "img_path": "images/688e222a68081373cce34819edc424c587f3996572fcf407ae647ece3dd1e331.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 58
+    },
+    {
+        "type": "text",
+        "text": "T-Shirts Coming Tomorrow! ",
+        "text_level": 1,
+        "page_idx": 58
+    },
+    {
+        "type": "text",
+        "text": "SYLLABUS: bit.ly/6sl91-syllabus ",
+        "page_idx": 58
+    },
+    {
+        "type": "text",
+        "text": "1.Project sign-ups dueTMRW I/9 II:59pm ET ",
+        "page_idx": 58
+    },
+    {
+        "type": "text",
+        "text": "2. Lab competitionsand prizes! EXTENDED DEADLINE: Friday I/10 I1:00am ET ",
+        "page_idx": 58
+    },
+    {
+        "type": "text",
+        "text": "3.Project and lab submission links on syllabus! ",
+        "page_idx": 58
+    },
+    {
+        "type": "text",
+        "text": "4.RESUMEDROP to sponsoring companies! introtodeeplearning.com/jobs.html ",
+        "page_idx": 58
+    }
+]

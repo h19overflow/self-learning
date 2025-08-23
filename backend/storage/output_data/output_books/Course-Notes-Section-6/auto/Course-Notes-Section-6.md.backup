@@ -1,0 +1,117 @@
+# 365VDataScience
+
+# MACHINE LEARNING
+
+COURSE NOTES – SECTION 6
+
+# IT’S TIME TO DIG DEEPER
+
+An initial linear combination and the added non-linearity form a layer. The layer is the building block of neural networks.
+
+# Minimal example (a simple neural network)
+
+# Neural networks
+
+![](images/1517e3f8f96e99d742875dd593c8235d4422e41dbbe1a7d4eb659a21f65484dc.jpg)
+
+![](images/d4f922adae1da83cebae0de5083a16830bbdf187d3cb5c717fbe94214037686e.jpg)
+
+In the minimal example we trained a neural network which had no depth. There were solely an input layer and an output layer. Moreover, the output was simply a linear combination of the input.
+
+Neural networks step on linear combinations, but add a nonlinearity to each one of them. Mixing linear combinations and non-linearities allows us to model arbitrary functions.
+
+This is a deep neural network (deep net) with 5 layers.
+
+Input layer
+
+Hidden layer 1 Hidden layer 2 Hidden layer 3
+
+How to read this diagram:
+
+A layer
+
+A unit (a neuron)
+
+# Output laye X X V 双 双 KX X XX M A XX AT X N 1
+
+Arrows represent mathematical transformations
+
+Hidden layer 1 Hidden layer 2 Hidden layer 3
+
+The width of a layer is the number of units in that layer
+
+The width of the net is the number of units of the biggest layer
+
+The depth of the net is equal to the number of layers or the number of hidden layers. The term has different definitions. More often than not, we are interested in the number of hidden layers (as there are always input and output layers).
+
+# Width
+
+# put layer Output layer 双 双 大 ? Depth
+
+The width and the depth of the net are called hyperparameters. They are values we manually chose when creating the net.
+
+# Why we need non-linearities to stack layers
+
+You can see a net with no non-linearities: just linear combinations.
+
+Two consecutive linear transformations are equivalent to a single one.
+
+![](images/d45be95cef588137fb90d3bde45e4912b3e426137d9b0447dd760e695f59e57f.jpg)![](images/517e01150d3df8a46b35effe0cd454dd0acaa903b15593d997e3acb9946efa68.jpg)
+
+# Input
+
+![](images/3193d105de722342850676737ce63b75c71ccd835b30c4ed89946c6148429f57.jpg)
+
+In the respective lesson, we gave an example of temperature change. The temperature starts decreasing (which is a numerical change). Our brain is a kind of an ‘activation function’. It tells us whether it is cold enough for us to put on a jacket.
+
+Putting on a jacket is a binary action: 0 (no jacket) or 1 ( jacket).
+
+This is a very intuitive and visual (yet not so practical) example of how activation functions work.
+
+Activation functions (non-linearities) are needed so we can break the linearity and represent more complicated relationships.
+
+Moreover, activation functions are required in order to stack layers.
+
+Activation functions transform inputs into outputs of a different kind.
+
+![](images/2b4ac723b27ef8b3d6eab16a7f8e0c29b67cb1380a365dcc5935b7233ae05755.jpg)
+
+# Common activation functions
+
+<table><tr><td>Name</td><td>Formula</td><td>Derivative</td><td>Graph</td><td>Range</td></tr><tr><td>sigmoid (logistic function)</td><td>σ(a) = 1+-a</td><td>σ(@=σ(@（1-g(@））</td><td>1 0.5- 0 0</td><td>(0,1)</td></tr><tr><td>(hyperbTain tangent)</td><td>e-e-a tanh(@)=a+e-a</td><td>tan@=+-a)</td><td>1 01 0 £ -1</td><td> (-1,1)</td></tr><tr><td>(rectified inea unt)</td><td> relu(a) = max(0,a)</td><td>ro@_{.if≤0</td><td>▲</td><td>（0,8）</td></tr><tr><td> softmax</td><td>g(@）=</td><td></td><td>0 0</td><td>(0,1)</td></tr></table>
+
+All common activation functions are: monotonic, continuous, and differentiable. These are important properties needed for the optimization.
+
+# Input layer
+
+![](images/afae07826051cb4bf429bf6452d0500a9511473f7bf8d04932fa3a85a113d5f3.jpg)
+
+The softmax activation transforms a bunch of arbitrarily large or small numbers into a valid probability distribution.
+
+While other activation functions get an input value and transform it, regardless of the other elements, the softmax considers the information about the whole set of numbers we have.
+
+The values that softmax outputs are in the range from 0 to 1 and their sum is exactly 1 (like probabilities).
+
+# Example:
+
+$\pmb { \mathrm { a } } = [ - 0 . 2 1 , 0 . 4 7 , 1 . 7 2 ]$   
+$\mathsf { S o f t m a x } \left( \mathsf { a } \right) = \frac { e ^ { a _ { i } } } { \sum _ { j } e ^ { a _ { j } } }$   
+$\textstyle \sum _ { j } e ^ { a _ { j } } = e ^ { - 0 . 2 1 } + e ^ { 0 . 4 7 } + e ^ { 1 . 7 2 } = 8$   
+$\mathsf { s o f t m a x } \left( \mathsf { a } \right) = \bigl [ \frac { e ^ { - 0 . 2 1 } } { 8 } , \frac { e ^ { 0 . 4 7 } } { 8 } , \frac { e ^ { 1 . 7 2 } } { 8 } \bigr ]$   
+$y = [ 0 . 1 , 0 . 2 , 0 . 7 ] $ probability distribution
+
+The property of the softmax to output probabilities is so useful and intuitive that it is often used as the activation function for the final (output) layer.
+
+However, when the softmax is used prior to that (as the activation of a hidden layer), the results are not as satisfactory. That’s because a lot of the information about the variability of the data is lost.
+
+![](images/ff1036e239b63670b30a96faeafed6c62a6840ff5d26c48dcc8d84715f3fd305.jpg)
+
+Forward propagation is the process of pushing inputs through the net. At the end of each epoch, the obtained outputs are compared to targets to form the errors.
+
+Backpropagation of errors is an algorithm for neural networks using gradient descent. It consists of calculating the contribution of each parameter to the errors. We backpropagate the errors through the net and update the parameters (weights and biases) accordingly.
+
+![](images/adfd4c6cc847d1e5d60528724af78fa78af286c1cbffd1372d9c0e8d8812ffb9.jpg)
+
+$\begin{array} { r } { \frac { \partial L } { \partial w _ { i j } } = \delta _ { j } x _ { i } \mathrm { , w h e r e } \delta _ { j } = \sum _ { k } \delta _ { k } w _ { j k } y _ { j } \big ( 1 } \end{array}$ − ????
+
+If you want to examine the full derivation, please make use of the PDF we made available in the section: Backpropagation. A peek into the Mathematics of Optimization.

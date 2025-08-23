@@ -1,0 +1,765 @@
+![](images/92af9896b7afbc3899e270df3361c54f97abbeddea043d0df77c18d810603e20.jpg)
+
+# Deep Sequence Modeling
+
+Ava Amini MIT Introduction to Deep Learning January 6,2025
+
+# Given an image of a ball, can you predict where it will go next?
+
+# Given an image of a ball, can you predict where it will go next?
+
+![](images/929a6322a0ae1475d8f6ad08bfdb1c81e808b07ed87f02516cc550e339e48d14.jpg)
+
+# Given an image of a ball, can you predict where it will go next?
+
+#
+
+# Given an image of a ball, can you predict where it will go next?
+
+# 一
+
+# Sequences in the Wild
+
+![](images/00dc36d5fc938646c269e808d5248bcc1a74495659acebf6a666dc012c92ca9d.jpg)
+
+# Sequences in the Wild
+
+![](images/852a6d5f346fe86318a68737a0558922a5aad0a5013f0afc9be14c9f039ad0d6.jpg)
+
+# Sequence Modeling Applications
+
+![](images/41de7ffdd602f2d2d2e32704585cc30ecc99cefee6b64a2d8ad3fc9602da3a7e.jpg)
+
+# Neurons with Recurrence
+
+# The Perceptron Revisited
+
+![](images/712195b45870c54d156ed05a0d871b35b5a97e7c1a8aa05618f4b961128a95d6.jpg)
+
+# Feed-Forward Networks Revisited
+
+![](images/f20f7f846f76aa688ad4e093517935079613bc74ceda1c64bf0ec920389fc6b4.jpg)  
+xERm   
+yeRn
+
+# Feed-Forward Networks Revisited
+
+![](images/97f8340f1912c099d937054c57e931d72ba003e659d625794266999a24334800.jpg)  
+ytERn
+
+xtERm
+
+# Handling Individual Time Steps
+
+![](images/f9e4b76662801c078d6d621f07932bd9c66322dd53e33291db71f7ceaa49e03c.jpg)
+
+# Neurons with Recurrence
+
+![](images/6216ce94bca82b8e56191bca7061fc3d8ea8fd544340b3375db81fa183e1a19d.jpg)
+
+# Neurons with Recurrence
+
+![](images/118a936610fdb2df1e1f6dee7f0424ae9e1074e67104f4dd583830b836096d9c.jpg)
+
+# Recurrent Neural Networks (RNNs)
+
+# Recurrent Neural Networks (RNNs)
+
+![](images/1c3cfdbd514abed38e941d361033aa36852b890a2f35c2f547a99fe953f5fa34.jpg)
+
+Apply a recurrence relation at every time step to process a sequence:
+
+ht fw [xt ht-1   
+cell state function input old state with weights W
+
+Note: the same function and set of parameters are used at every time step
+
+RNNs have a state, $h _ { t }$ ,that is updated at each time stepas asequence is processed
+
+# RNN Intuition
+
+![](images/e42a57c07e1853e303409705ab2845f71a0ab53c3b74c05cb0b38ba1bd8b6252.jpg)
+
+# RNN Intuition
+
+my_rnn=RNN() hidden_state=[0,0,0，0]
+
+sentence=["I","love","recurrent"，"neural"]
+
+forword in sentence： prediction,hidden_state=my_rnn(word,hidden_state)
+
+next_word_prediction=prediction #>>>"networks!"
+
+# RNN Intuition
+
+my_rnn=RNN() output vector yt   
+hidden_state=[0,0，0，0]   
+sentence=["I","love"，"recurrent"，"neural"]   
+for word in sentence: RNN prediction,hidden_state=my_rnn(word,hidden_state) recurrentcell ht 4   
+next_wordprediction=prediction   
+#>>>"networks!" input vector xt
+
+# RNN State Update and Output
+
+output vector yt RNN 6.S191 ht   
+input vector Xt
+
+# RNN State Update and Output
+
+![](images/21df61502bb75bb263733c41dc7f7249d50869628f250271a75dd27fd6a9348c.jpg)
+
+Input Vector
+
+# RNN State Update and Output
+
+# Update Hidden State
+
+![](images/ecdd1cfe1ca2f3352705e22a41ab05ea297c2644c233c54975ecc9e21402bbeb.jpg)
+
+ht=tanh(Whht-1+Wxhxt）
+
+Input Vector
+
+# RNN State Update and Output
+
+Output Vector $\hat { y } _ { t } = W _ { h y } ^ { T } h _ { t }$
+
+![](images/a1fc697d7c3a1850d156bc8381530919658238a5507e79ef21106ed2dbaff488.jpg)
+
+Update Hidden State
+
+$$
+h _ { t } = \operatorname { t a n h } ( W _ { h h } ^ { T } h _ { t - 1 } + W _ { x h } ^ { T } x _ { t } )
+$$
+
+Input Vector
+
+# RNNs: Computational Graph Across Time
+
+Yt   
+RNN Represent as computational graph unrolled across time M   
+xt
+
+# RNNs: Computational Graph Across Time
+
+![](images/a4a5d54dfb7219b5dadf5b37178b6cfe2d0ecb72e1e7ea7c830418de3604c2b0.jpg)
+
+# RNNs from Scratch in TensorFlow
+
+class MyRNNCell(tf.keras.layers.Layer)： def init(self,rnn_units，input_dim,output_dim)： super(MyRNNCell,self)._init_()
+
+# Initialize weight matrices self.W_xh=self.add_weight([rnn_units,input_dim]) self.W_hh=self.add_weight([rnn_units,rnn_units]) self.W_hy=self.add_weight([output_dim,rnn_units]）
+
+# Initialize hidden state to zeros self.h=tf.zeros([rnn_units,1]）
+
+defcall(self,x)：
+
+Update the hidden state self.h=tf.math.tanh(self.w_hh\*self.h+self.W_xh\*x
+
+Compute the output output=self.W_hy\*self.h
+
+Return the current output and hidden state returnoutput,self.h
+
+![](images/248c7dbf0ce044105348b0f734138aa5907ad086be6d82441fd1719519b09b43.jpg)
+
+# RNN Implementation:TensorFlow& PyTorch
+
+from tf.keras.layers import SimpleRNN model = SimpleRNN(rnn_units)
+
+![](images/80033421b7960f977c7b4731378c2b63eb5c7a40d9ccfd2bea73377eb6ecdb7c.jpg)
+
+from torch.nn import RNN model = RNN(input_size,rnn_units)
+
+![](images/7cbfe0462a5b585b80ffc3465e926efcad5d3ab18a7dc97d2cad4e49051e3fb3.jpg)
+
+# RNNs for Sequence Modeling
+
+![](images/a133b1b7797fd9b66e9ab04791365eb187fefbb3e14112748307a8fbf8a22b06.jpg)
+
+![](images/9e601dc16469feafc5b3b40240699a28057da9ead69cdb409337539813ff85b9.jpg)
+
+![](images/f6eec27d3d7b7cb3d70695c6ecc66cbec6aebf332fd76201f0c892a7bd96aa58.jpg)
+
+![](images/119df517bf89f3eaf231907323dc69ff73601d718cc5683e5b8df1ac62205806.jpg)
+
+One to One   
+"Vanilla"NN   
+Binaryclassification
+
+Many to One Sentiment Classification
+
+One to Many Text Generation Image Captioning
+
+Many to Many Translation&Forecasting MusicGeneration
+
+... and many other architectures and applications
+
+# 6.S191 Lab!
+
+# Sequence Modeling: Design Criteria
+
+To model sequences,we need to:
+
+I．Handle variable-length sequences 2.Track long-term dependencies 3.Maintain information about order 4.Share parameters across the sequence
+
+![](images/18a81f8ce1668f47066363d124ecb074c4ca8e373838553f285a40c10a8285ee.jpg)
+
+Recurrent Neural Networks (RNNs) meet these sequence modeling design criteria
+
+# A Sequence Modeling Problem: Predict the Next Word
+
+# A Sequence Modeling Problem: Predict the Next Word
+
+"This morning ltook my cat for a walk"
+
+# A Sequence Modeling Problem: Predict the Next Word
+
+"This morning l took my cat for a walk" given these words
+
+# A Sequence Modeling Problem: Predict the Next Word
+
+"This morning l took my cat for a walk"
+
+given these words
+
+predict the nextword
+
+# A Sequence Modeling Problem: Predict the Next Word
+
+"This morning l took my cat for a walk"
+
+given these words
+
+predict the nextword
+
+Representing Language to a Neural Network
+
+“deep” "learning" Neural networks cannot interpret words
+
+<
+
+[0.1] [0.9] 0.8 0.2 [0.6] [0.4]
+
+Neural networks require numerical inputs
+
+# Encoding Language for a Neural Network
+
+![](images/7e7010c4b30ad3f65dec11968de91dda24f7af5468ea1b20bb2e069aed286ca9.jpg)
+
+[0.1] [0.9] 0.8 0.2 [0.6] [0.4]
+
+Neural networks require numerical inputs
+
+# Embedding: transform indexes into a vector of fixed size.
+
+this cat for my took 一 walk a morning
+
+![](images/877a70d269621b51f7be042f556fa8eae819ee04c906cb31a56ee95e88ea7120.jpg)
+
+One-hot embedding Learned embedding "cat" $=$ [0,1,0,0,0.0] run walk dogcat ↑ day happy i-th index sun sad
+
+1.Vocabulary: Corpus of words
+
+2. Indexing: Word to index
+
+# 3.Embedding:
+
+Indexto fixed-sized vector
+
+# Handle Variable Sequence Lengths
+
+The food was great
+
+VS.
+
+We visited a restaurant for lunch
+
+VS.
+
+We were hungry but cleaned the house before eating
+
+# Model Long-Term Dependencies
+
+"France is where l grew up,but I now live in Boston.I speak fluent_
+
+J'aime 6.S191!
+
+We need information from the distant past to accurately predict the correct word.
+
+# Capture Differences in Sequence Order
+
+The food was good, not bad at ll.
+
+VS.
+
+The food was bad, not good at all.
+
+# Sequence Modeling: Design Criteria
+
+To model sequences,we need to:
+
+I．Handle variable-length sequences 2.Track long-term dependencies 3.Maintain information about order 4.Share parameters across the sequence
+
+![](images/a423a5ced561f0b8afb09b56b8a9d948f24814696bc25d1015f8cef401105e99.jpg)
+
+Recurrent Neural Networks (RNNs) meet these sequence modeling design criteria
+
+# Backpropagation Through Time (BPTT)
+
+# Recall: Backpropagation in Feed Forward Models
+
+![](images/ec0e6ccbe726dabfe19fb6acc8082a6b2c92de3dd35cf545607415f09cab3292.jpg)
+
+# Backpropagation algorithm:
+
+Take the derivative (gradient) of the loss with respect to each parameter 2.Shift parameters in order to minimize loss
+
+# RNNs: Backpropagation Through Time
+
+→Forward pass LO L1 G- L3 ↑ ↑ yt D2 yt Wny Wry Wny Wny RNN N Whh Whh Whh Wxh Wxh Wxh↑ xt x0 x1 x2 xt
+
+# RNNs: Backpropagation Through Time
+
+![](images/1d7aa1a0a63475cea20146a3f97b790d4e5be63fa13411aa11861e7c819d610f.jpg)
+
+# Standard RNN Gradient Flow
+
+![](images/61eb75ef6990de87770c165e33a2eaf75ced8b13fe80f643c9b46a44a5908b3e.jpg)
+
+# Standard RNN Gradient Flow
+
+![](images/bd633241c58e8014ba85a3aebe99215d25bf5f82ad5717acd9ff4a6ba0aae282.jpg)
+
+Computing the gradient wrt $h _ { 0 }$ involves many factors of $W _ { h h } +$ repeated gradient computation!
+
+# Standard RNN Gradient Flow: Exploding Gradients
+
+![](images/031344a0e914c7b4fe6cd2e0d32c26ac8b79fcd8d1ad52a4ff8273bf2c3a2e17.jpg)
+
+Computing the gradient wrt $h _ { 0 }$ involves many factors of $W _ { h h } +$ repeated gradient computation!
+
+Many values > I: exploding gradients Gradient clipping to scale big gradients
+
+# Standard RNN Gradient Flow:Vanishing Gradients
+
+![](images/ee1626d6683d34cfbbaec4b277fdf4d3d3b48e5518ccb81ede1dc59a0f172250.jpg)
+
+Computing the gradient wrt $h _ { 0 }$ involves many factors of $W _ { h h } +$ repeated gradient computation!
+
+Many values exploding gradients Gradient clipping to scale big gradients
+
+Many values<l: vanishing gradients 1.Activation function 2. Weight initialization 3. Networkarchitecture
+
+# The Problem of Long-Term Dependencies
+
+Why are vanishing gradients a problem?
+
+Multiply many small numbers together Errors due to further back time steps have smallerand smaller gradients Bias parameters to capture short-term dependencies
+
+# The Problem of Long-Term Dependencies
+
+Why are vanishing gradients a problem?
+
+Multiply many small numbers together
+
+"The cloudsare in the
+
+Errors due to further back time steps have smallerand smaller gradients
+
+Bias parameters to capture short-term dependencies
+
+# The Problem of Long-Term Dependencies
+
+"The cloudsare in the
+
+Why are vanishing gradients a problem?
+
+Multiply many small numbers together
+
+Errors due to further back time steps have smallerand smaller gradients
+
+![](images/220ec6a9fc39d42e0b9e30190efe6be93561cf3fc598742e2632383306b899a1.jpg)
+
+Bias parameters to capture short-term dependencies
+
+# The Problem of Long-Term Dependencies
+
+"The cloudsare in the
+
+Why are vanishing gradients a problem?
+
+Multiply many small numbers together
+
+![](images/65f84aabf9740d8ba4af20688baa55b4762c03a92a2b923af52ecf469a673e1d.jpg)
+
+Errors due to further back time steps have smallerand smaller gradients
+
+“Igrewup inFrance,...andlspeakfluent_ 11
+
+Bias parameters to capture short-term dependencies
+
+# The Problem of Long-Term Dependencies
+
+"The cloudsare in the
+
+Why are vanishing gradients a problem?
+
+Multiply many small numbers together
+
+![](images/da9495b330dc951462f076b3cd6fcea9a4d7aa5c37cf6258f656434219570c53.jpg)
+
+Errors due to further back time steps have smallerand smaller gradients
+
+"Igrew up inFrance,..andlspeakfluent_ 11
+
+Bias parameters to capture short-term dependencies
+
+![](images/bc38aa88166cbc7833705f3860595311723ee8832840cedd2c9eaab91d4b30ac.jpg)
+
+# Gating Mechanisms in Neurons
+
+ldea: use gates to selectively add or remove information within each recurrent unit with
+
+![](images/6a9cb855383a1e6b3b8c8c5132ca696d0fba93a1ef5b13d9f1f90e1961048454.jpg)
+
+Long Short Term Memory (LSTMs) networks rely on a gated cell to track information throughout many time steps.
+
+# RNN Applications & Limitations
+
+# Example Task: Music Generation
+
+![](images/dd24388a5bb86d4e955e14a8b7a2df6099dfebef1c67dc6b7df2e5f0d53c7853.jpg)
+
+Input: sheet music
+
+Output: next character in sheet music
+
+![](images/f47577fff668b0cd81715dd89ac5522aeb92723014020a9e327e671e0e3ea45b.jpg)
+
+# Example Task: Sentiment Classification
+
+![](images/72a6314f579439253cea00a0bf8d6e9a1d52baf55f21c1081ebef8e271488618.jpg)
+
+Input: sequence of words
+
+Output: probability of having positive sentiment
+
+loss=tstmacroseroyiits(yied)
+
+# Example Task: Sentiment Classification
+
+![](images/29d38bc4e5327885e6afacda294cbe59c6d8e7877c3642e9a450a4a39b25acfd.jpg)
+
+# Tweet sentiment classification
+
+lvar Hagendoorn @lvarHagendoorn
+
+![](images/b93565154cf34ec55d89745a00caec858dcdea3e8e4df5e04d20acc434ea08b2.jpg)
+
+The@MIT Introductionto #DeepLearning is definitely one of the best courses of its kind currentlyavailableonline   
+introtodeeplearning.com
+
+12:45 PM - 12 Feb 2018
+
+![](images/76709cc2d564359acc12e46f7e71960c81e20aabcf29f251b6e616b84431417b.jpg)
+
+Angels-Cave @AngelsCave
+
+Replying to @Kazuki2048
+
+lwouldn’tmind a bit of snow right now.We haven'thadany inmybitof theMidlandsthis winter!:(
+
+2:19 AM - 25 Jan 2019
+
+# Limitations of Recurrent Models
+
+![](images/cc662ac3e8c4dff9dc1375ea1838f3d6e77d44d4d564c2af27f29b90501a955d.jpg)
+
+Limitations of RNNs
+
+Y
+
+Encoding bottleneck
+
+![](images/68cf57071ee767968d04ba41aca17bfc8af93342334abf13c0363c35364262ea.jpg)
+
+Slow, no parallelization
+
+Not long memory
+
+# Goal of Sequence Modeling
+
+RNNs:recurrence to model sequence dependencies
+
+Sequence of outputs
+
+Sequence of features
+
+![](images/01406eaf1b9a22d19637993c94fcc0f761ac37cae798625b88f2fc6597adf201.jpg)
+
+Sequence of inputs
+
+![](images/d2cb76ed5f3589e9e5559bba4ef99a8cf07f406823bf9ec8fce6fcae4adbb9e8.jpg)
+
+# Goal of Sequence Modeling
+
+RNNs:recurrence to model sequence dependencies
+
+# Limitations of RNNs
+
+Y
+
+Encoding bottleneck
+
+![](images/9bf11a0f378ec27cb05579b5ad8a759876e5423847cf26da3449f9fce7a72613.jpg)
+
+Slow,no parallelization
+
+![](images/22c810b6ee716bc4e6b35137676ac28f5113acaea51b8ee66476deacd1e5812c.jpg)
+
+Not long memory
+
+# Goal of Sequence Modeling
+
+Can we eliminate the need for recurrence entirely?
+
+Desired Capabilities
+
+Continuous stream
+
+![](images/d797e3cd016e5c4d5a55f15b0814ee3d53bbd1b7b7618a84ccf6c00a58aa7674.jpg)
+
+Parallelization
+
+Long memory
+
+![](images/836c1fc3c85305d3e1667db36626edd4e457ad6651a37f84f5cd5c6bb09010e8.jpg)
+
+# Goal of Sequence Modeling
+
+Can we eliminate the need for recurrence entirely?
+
+Desired Capabilities
+
+Continuous stream
+
+Long memory
+
+![](images/3440c47dd2e67542fd7c8591934fd37fa42c0770b12cb86adde3ae651a1ddae5.jpg)
+
+# Goal of Sequence Modeling
+
+Idea l: Feed everything into densenetwork ν××× No recurrence X Not scalable X No order X No long memory
+
+Can we eliminate the need for recurrence entirely?
+
+![](images/9383ad47e9667bc4c20fe10e9e7cebc44a1cb9c894be8d917da98bf552f7c59d.jpg)
+
+Idea: ldentify and attend to what's important
+
+# Attention Is All You Need
+
+# Intuition Behind Self-Attention
+
+Attending to the most important parts of an input.
+
+![](images/08d82d3a2cc875d4d0701de8f1ee8ee3f8be0f71a6bdfcd0f977d288be620af3.jpg)
+
+# A Simple Example: Search
+
+![](images/c2ded86e04204d9887a0d48e15d0d04377ded54163496750288bf190f16a5e73.jpg)
+
+# Understanding Attention with Search
+
+![](images/e23bc0f376a6f68eb7fec26e4c69e1a64b65a41cea42c132ee67f613fa8ea1e4.jpg)
+
+# Understanding Attention With Search
+
+# YouTube
+
+# deep learning
+
+Query (Q)
+
+GIANT SEA TURTLES·AMAZING CORAL REEFFISH·12 HOURS of THE BESTRELAX MUSIC
+
+MIT6.S191(2020):Introduction toDeep Learning 1M views - 1 year agc
+
+![](images/43f38862de58c832be6ed85cf6b063862bb10cbd3b33fe5b4023a38ffe965e09.jpg)
+
+Alexander Amini
+
+Key (K2)
+
+MIT Introduction to Deep Leaming 6.S191: ILecture 1 Foundations of Deep Learning Lecturer Amini January 2020 For..
+
+Value (M)
+
+2.Extract values based onattention: Return the values highestattention
+
+# Learning Self-Attention with Neural Networks
+
+Goal: identify and attend to most important features in input.
+
+一. Encode position information
+
+2. Extract querykeyluef
+
+3. Compute attention weighting
+
+4.Extract features with high attention
+
+![](images/72c886bfd1a728f87a0d061dd3cb0ed5c6eaf2667aa6760ca3132c0ca63ba4fc.jpg)
+
+Data is fed in all at once! Need to encode position information to understand order.
+
+# Learning Self-Attention With Neural Networks
+
+Goal: identify and attend to most important features in input.
+
+. Encode position information
+
+x He tossed the tennis ball to serve   
+embedding 日0日日日日日 +   
+information position $p _ { 0 }$ $p _ { 1 }$ $p _ { 2 }$ ← $p _ { 3 }$ $p _ { 4 }$ $p _ { 5 }$ $p _ { 6 }$ Position-aware encoding
+
+Data is fed in all at once! Need to encode position information to understand order.
+
+# Learning Self-Attention with Neural Networks
+
+Goal: identify and attend to most important features in input.
+
+1. Encode position information   
+2. Extract query,key,value forarch   
+3. Compute attention weighting   
+4 Extract features with high attention
+
+![](images/639203c4759832844ab94bb2d6d0e799a776d0221429f0540002db132f536603.jpg)
+
+# Learning Self-Attention with Neural Networks
+
+Goal: identify and attend to most important features in input.
+
+I.Encode position information 2. Extract query,key,value forsarch 3. Compute attention weighting
+
+4.Extract features with high attention
+
+Attention score: compute pairwise similarity between each query and key
+
+How to compute similarity between two sets of features?
+
+![](images/8545014ba88f84f5ff5cbdf71374274448860748b3becc03c2a252121f791842.jpg)
+
+Also known as the "cosine similarity"
+
+# Learning Self-Attention with Neural Networks
+
+Goal: identify and attend to most important features in input.
+
+I.Encode position information 2. Extract query,key,value forsarch 3. Compute attention weighting
+
+4.Extract features with high attention
+
+Attention score: compute pairwise similarity between each query and key
+
+How to compute similarity between two sets of features?
+
+![](images/ade16a319dfeb5247bd5cc0a80997c4503c6601dd313e816325c02616e77e9d0.jpg)
+
+Also knownas the"cosine similarity"
+
+# Learning Self-Attention with Neural Networks
+
+Goal: identify and attend to most important features in input.
+
+I.Encode position information 2.Extract query,key,vaue forsarch 3. Compute attention weighting 4 Extract features with high attention
+
+Attention weighting: where to attend to! How similar is the key to the query?
+
+![](images/913ba64b35004356bdb7b774bf62c69e2575d2cfbaf41ff750bc9ad1875225d8.jpg)
+
+(Q·KT softmax (scaling
+
+Attention weighting
+
+# Learning Self-Attention with Neural Networks
+
+Goal: identify and attend to most important features in input.
+
+I.Encode position information 2.Extract query,key,value forarch 3 Compute attention weighting 4.Extract features with high attention
+
+Last step: self-attend to extract features
+
+![](images/02a0ca0f865870cecbf68effb8097e516cd80e8936e0fe14e996a90a3a24d235.jpg)
+
+$$
+{ \ s o f t m a x } \ \left( { \frac { Q \cdot K ^ { T } } { s c a l i n g } } \right) \cdot V = A ( Q , K , V )
+$$
+
+# Learning Self-Attention with Neural Networks
+
+Goal: identify and attend to most important features in input.
+
+I.Encode position information 2.Extractquery,key,value forsarch 3 Compute attention weighting 4.Extract features with high atention
+
+These operations form a self-attention head that can plug into a larger network. Each head attends toa different part of input.
+
+![](images/a694e0e3352411122f9c17b429eac7772ff3c10979f9df42006d6eb009e205ee.jpg)
+
+# Learning Self-Attention with Neural Networks
+
+Goal: identify and attend to most important features in input.
+
+I.Encode position information 2. Extract query,key,value forsarch 3. Compute attention weighting 4.Extract features with high atention
+
+![](images/c0ff45e99d6452a782e14c58e504b5a2ed066e639030546cea658acfd4fb3259.jpg)
+
+Attention is the foundational building block of the Transformer architecture.
+
+# Applying Multiple Self-Attention Heads
+
+![](images/d89affab97565cbe20e27fa78771668c3b3b08ebecf9fcd7c2744cb794ed17ae.jpg)
+
+# Self-Attention Applied
+
+# Language Processing
+
+![](images/bd9a205ea71351a93b462e87836c8d8707cea7819981dbd7fc3ab185dfdcee56.jpg)  
+An armchair in the shape of anavocado
+
+![](images/f2c61b9a0b4485fb409664efe55ff5e7fff1d9b02b63f3482a0c6f7263b1ca21.jpg)
+
+![](images/730463c7add316edeb61f82b10f797257ada9862b2f0434aed27120a4e9f5bd7.jpg)  
+ComputerVision
+
+Biological Sequences
+
+Transformers: BERT,GPT
+
+Devlinetal.,NAACL2019   
+Brownetal.,NeurlPS2020
+
+# 6.S191 Laband Lectures!
+
+# Protein Structure Models
+
+Jumperetal.,Nature 2021   
+Linetal.,Science2023
+
+Vision Transformers Dosovitskiyetal.,IC2020
+
+# Deep Learning for Sequence Modeling: Summary
+
+2.Model sequences via a recurrence relation I.RNNs are well suited for sequence modeling tasks 91   
+3.Training RNNs with backpropagation through time   
+4.Models for music generation,classification,machine translation,and more   
+5. Self-attention to model sequences without recurrence   
+6.Self-attention is the basis for many large language models - stay tuned!
+
+# 6.S19l: Introduction to Deep Learning
+
+Lab I: Deep Learning in Python and Music Generation with RNNs
+
+Link to download labs: http://introtodeeplearning.com#schedule
+
+1.Open the lab in Google Colab Startexecuting code blocks and flling in the #TODOs 3.Need help? Find a TAVinstructor!

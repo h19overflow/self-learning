@@ -1,0 +1,36 @@
+[
+    {
+        "type": "text",
+        "text": "Let’s see the algebraic proof of the notion that selecting $p$ -many elements out of a set of $n$ is the same as omitting n-p many elements. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For starters, recall the combination formula: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/831635bafd3c7c99cc4d12884362d92ad53da98cc4dbc67572aa7c4e0e2111e1.jpg",
+        "text": "$$\nC ( n , p ) = { \\frac { n ! } { ( n - p ) ! p ! } }\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "If we plug in $n - p$ for $p ,$ we get the following: ",
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "img_path": "images/857139aefc55761309f82e37e4d819b61682a39406012fa54f7d59dc5bc4b7ad.jpg",
+        "text": "$$\n\\frac { n ! } { - p ) ) ! ( n - p ) ! } = \\frac { n ! } { ( n - n + p ) ) ! ( n - p ) ! } = \\frac { n ! } { p ! ( n - p ) ! } =\n$$",
+        "text_format": "latex",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Therefore, we can conclude that $\\pmb { C } ( \\pmb { n } , \\pmb { p } ) = \\pmb { C } ( \\pmb { n } , \\pmb { n } - \\pmb { p } )$ . ",
+        "page_idx": 0
+    }
+]

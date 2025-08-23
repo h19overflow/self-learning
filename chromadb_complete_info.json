@@ -1,0 +1,593 @@
+{
+  "extraction_metadata": {
+    "extraction_date": "2025-08-23T12:25:30.229202",
+    "extractor_version": "1.0.0",
+    "collection_analyzed": "academic_papers",
+    "include_full_chunks": false
+  },
+  "collection_overview": {
+    "collection_name": "academic_papers",
+    "total_documents": 9989,
+    "unique_source_files": 27,
+    "total_chunks_verified": 9989,
+    "configuration": {
+      "collection_name": "academic_papers",
+      "embedding_model": "nomic-ai/nomic-embed-text-v1.5",
+      "embedding_device": "cuda",
+      "distance_function": "cosine",
+      "batch_size": 100,
+      "persist_directory": "backend\\storage\\chromadb_storage"
+    }
+  },
+  "sources_summary": {
+    "total_sources": 27,
+    "sources_list": [
+      "6S191_MIT_DeepLearning_L1",
+      "6S191_MIT_DeepLearning_L2",
+      "6S191_MIT_DeepLearning_L3",
+      "6S191_MIT_DeepLearning_L4",
+      "6S191_MIT_DeepLearning_L5",
+      "6S191_MIT_DeepLearning_L6",
+      "Atomic habits ( PDFDrive )",
+      "Attention Is All You Need",
+      "Backpropagation-a-peek-into-the-Mathematics-of-Optimization",
+      "Chain of Thought Monitorability",
+      "Combinations With Repetition",
+      "Communication-Efficient Learning of Deep Networks",
+      "Course Notes - Basic Probability",
+      "Course Notes - Combinatorics",
+      "Course-Notes-Section-6",
+      "Generative AI with LangChain (2024)",
+      "Graph_RAG",
+      "Hierarchical Reasoning Model",
+      "LLMs handson",
+      "Lora",
+      "MOE",
+      "QLORA",
+      "React_paper",
+      "Shortcuts-for-Jupyter",
+      "Small Language Models in the Era of Large",
+      "Symmetry Explained",
+      "ed3book"
+    ],
+    "chunk_distribution": {
+      "6S191_MIT_DeepLearning_L1": 500,
+      "6S191_MIT_DeepLearning_L2": 360,
+      "6S191_MIT_DeepLearning_L3": 284,
+      "6S191_MIT_DeepLearning_L4": 389,
+      "6S191_MIT_DeepLearning_L5": 213,
+      "6S191_MIT_DeepLearning_L6": 496,
+      "Atomic habits ( PDFDrive )": 511,
+      "Attention Is All You Need": 69,
+      "Backpropagation-a-peek-into-the-Mathematics-of-Optimization": 16,
+      "Chain of Thought Monitorability": 42,
+      "Combinations With Repetition": 14,
+      "Communication-Efficient Learning of Deep Networks": 111,
+      "Course Notes - Basic Probability": 12,
+      "Course Notes - Combinatorics": 21,
+      "Course-Notes-Section-6": 46,
+      "Generative AI with LangChain (2024)": 899,
+      "Graph_RAG": 101,
+      "Hierarchical Reasoning Model": 144,
+      "LLMs handson": 1925,
+      "Lora": 128,
+      "MOE": 204,
+      "QLORA": 121,
+      "React_paper": 112,
+      "Shortcuts-for-Jupyter": 29,
+      "Small Language Models in the Era of Large": 499,
+      "Symmetry Explained": 1,
+      "ed3book": 2742
+    }
+  },
+  "detailed_sources_analysis": [
+    {
+      "source_file": "6S191_MIT_DeepLearning_L1",
+      "total_chunks": 500,
+      "chunk_statistics": {
+        "min_length": 736,
+        "max_length": 2701,
+        "avg_length": 1137.434
+      },
+      "sample_metadata": {
+        "chunk_index": 0,
+        "word_count": 153,
+        "total_chunks": 500,
+        "char_count": 1206,
+        "video_id": "6S191_MIT_D",
+        "content_type": "document",
+        "source_file": "6S191_MIT_DeepLearning_L1",
+        "ingestion_timestamp": "2025-08-23T11:55:12.648654"
+      }
+    },
+    {
+      "source_file": "6S191_MIT_DeepLearning_L2",
+      "total_chunks": 360,
+      "chunk_statistics": {
+        "min_length": 416,
+        "max_length": 2163,
+        "avg_length": 1139.6777777777777
+      },
+      "sample_metadata": {
+        "chunk_index": 0,
+        "char_count": 1073,
+        "video_id": "6S191_MIT_D",
+        "total_chunks": 360,
+        "word_count": 132,
+        "content_type": "document",
+        "ingestion_timestamp": "2025-08-23T11:55:12.654157",
+        "source_file": "6S191_MIT_DeepLearning_L2"
+      }
+    },
+    {
+      "source_file": "6S191_MIT_DeepLearning_L3",
+      "total_chunks": 284,
+      "chunk_statistics": {
+        "min_length": 576,
+        "max_length": 2833,
+        "avg_length": 1158.8415492957747
+      },
+      "sample_metadata": {
+        "chunk_index": 0,
+        "word_count": 139,
+        "total_chunks": 284,
+        "source_file": "6S191_MIT_DeepLearning_L3",
+        "video_id": "6S191_MIT_D",
+        "ingestion_timestamp": "2025-08-23T11:55:12.658384",
+        "content_type": "document",
+        "char_count": 1112
+      }
+    },
+    {
+      "source_file": "6S191_MIT_DeepLearning_L4",
+      "total_chunks": 389,
+      "chunk_statistics": {
+        "min_length": 15,
+        "max_length": 1701,
+        "avg_length": 1124.8380462724936
+      },
+      "sample_metadata": {
+        "char_count": 1175,
+        "chunk_index": 0,
+        "total_chunks": 389,
+        "content_type": "document",
+        "video_id": "6S191_MIT_D",
+        "word_count": 151,
+        "source_file": "6S191_MIT_DeepLearning_L4",
+        "ingestion_timestamp": "2025-08-23T11:55:12.660383"
+      }
+    },
+    {
+      "source_file": "6S191_MIT_DeepLearning_L5",
+      "total_chunks": 213,
+      "chunk_statistics": {
+        "min_length": 162,
+        "max_length": 1747,
+        "avg_length": 1135.2394366197184
+      },
+      "sample_metadata": {
+        "chunk_index": 0,
+        "total_chunks": 213,
+        "source_file": "6S191_MIT_DeepLearning_L5",
+        "word_count": 138,
+        "char_count": 1118,
+        "content_type": "document",
+        "video_id": "6S191_MIT_D",
+        "ingestion_timestamp": "2025-08-23T11:55:12.664397"
+      }
+    },
+    {
+      "source_file": "6S191_MIT_DeepLearning_L6",
+      "total_chunks": 496,
+      "chunk_statistics": {
+        "min_length": 912,
+        "max_length": 2324,
+        "avg_length": 1145.6995967741937
+      },
+      "sample_metadata": {
+        "content_type": "document",
+        "chunk_index": 0,
+        "video_id": "6S191_MIT_D",
+        "ingestion_timestamp": "2025-08-23T11:55:12.666400",
+        "char_count": 1110,
+        "word_count": 143,
+        "source_file": "6S191_MIT_DeepLearning_L6",
+        "total_chunks": 496
+      }
+    },
+    {
+      "source_file": "Atomic habits ( PDFDrive )",
+      "total_chunks": 511,
+      "chunk_statistics": {
+        "min_length": 430,
+        "max_length": 3783,
+        "avg_length": 1115.812133072407
+      },
+      "sample_metadata": {
+        "word_count": 174,
+        "ingestion_timestamp": "2025-08-23T11:55:12.671400",
+        "chunk_index": 0,
+        "source_file": "Atomic habits ( PDFDrive )",
+        "char_count": 1099,
+        "total_chunks": 511,
+        "content_type": "document"
+      }
+    },
+    {
+      "source_file": "Attention Is All You Need",
+      "total_chunks": 69,
+      "chunk_statistics": {
+        "min_length": 628,
+        "max_length": 3267,
+        "avg_length": 1144.8260869565217
+      },
+      "sample_metadata": {
+        "ingestion_timestamp": "2025-08-23T11:55:12.677417",
+        "chunk_index": 0,
+        "word_count": 155,
+        "source_file": "Attention Is All You Need",
+        "char_count": 1178,
+        "content_type": "document",
+        "total_chunks": 69
+      }
+    },
+    {
+      "source_file": "Backpropagation-a-peek-into-the-Mathematics-of-Optimization",
+      "total_chunks": 16,
+      "chunk_statistics": {
+        "min_length": 986,
+        "max_length": 1600,
+        "avg_length": 1186.125
+      },
+      "sample_metadata": {
+        "source_file": "Backpropagation-a-peek-into-the-Mathematics-of-Optimization",
+        "video_id": "Backpropaga",
+        "content_type": "document",
+        "chunk_index": 0,
+        "char_count": 1068,
+        "total_chunks": 16,
+        "ingestion_timestamp": "2025-08-23T11:55:12.677417",
+        "word_count": 142
+      }
+    },
+    {
+      "source_file": "Chain of Thought Monitorability",
+      "total_chunks": 42,
+      "chunk_statistics": {
+        "min_length": 69,
+        "max_length": 1541,
+        "avg_length": 1116.8095238095239
+      },
+      "sample_metadata": {
+        "video_id": "Monitorabil",
+        "chunk_index": 0,
+        "ingestion_timestamp": "2025-08-23T11:55:12.678419",
+        "source_file": "Chain of Thought Monitorability",
+        "total_chunks": 42,
+        "word_count": 215,
+        "content_type": "document",
+        "char_count": 1541
+      }
+    },
+    {
+      "source_file": "Combinations With Repetition",
+      "total_chunks": 14,
+      "chunk_statistics": {
+        "min_length": 470,
+        "max_length": 1220,
+        "avg_length": 1035.7142857142858
+      },
+      "sample_metadata": {
+        "word_count": 149,
+        "content_type": "document",
+        "video_id": "Combination",
+        "chunk_index": 0,
+        "source_file": "Combinations With Repetition",
+        "total_chunks": 14,
+        "ingestion_timestamp": "2025-08-23T11:55:12.678419",
+        "char_count": 1032
+      }
+    },
+    {
+      "source_file": "Communication-Efficient Learning of Deep Networks",
+      "total_chunks": 111,
+      "chunk_statistics": {
+        "min_length": 713,
+        "max_length": 3141,
+        "avg_length": 1159.954954954955
+      },
+      "sample_metadata": {
+        "char_count": 1125,
+        "video_id": "Communicati",
+        "source_file": "Communication-Efficient Learning of Deep Networks",
+        "chunk_index": 0,
+        "content_type": "document",
+        "total_chunks": 111,
+        "ingestion_timestamp": "2025-08-23T11:55:12.678419",
+        "word_count": 169
+      }
+    },
+    {
+      "source_file": "Course Notes - Basic Probability",
+      "total_chunks": 12,
+      "chunk_statistics": {
+        "min_length": 152,
+        "max_length": 1232,
+        "avg_length": 1045.0
+      },
+      "sample_metadata": {
+        "content_type": "document",
+        "char_count": 1163,
+        "total_chunks": 12,
+        "ingestion_timestamp": "2025-08-23T11:55:12.679417",
+        "word_count": 157,
+        "source_file": "Course Notes - Basic Probability",
+        "chunk_index": 0,
+        "video_id": "Probability"
+      }
+    },
+    {
+      "source_file": "Course Notes - Combinatorics",
+      "total_chunks": 21,
+      "chunk_statistics": {
+        "min_length": 983,
+        "max_length": 1276,
+        "avg_length": 1105.904761904762
+      },
+      "sample_metadata": {
+        "video_id": "Combinatori",
+        "char_count": 1030,
+        "chunk_index": 0,
+        "content_type": "document",
+        "total_chunks": 21,
+        "word_count": 146,
+        "source_file": "Course Notes - Combinatorics",
+        "ingestion_timestamp": "2025-08-23T11:55:12.679417"
+      }
+    },
+    {
+      "source_file": "Course-Notes-Section-6",
+      "total_chunks": 46,
+      "chunk_statistics": {
+        "min_length": 166,
+        "max_length": 1472,
+        "avg_length": 1122.7173913043478
+      },
+      "sample_metadata": {
+        "word_count": 156,
+        "content_type": "document",
+        "source_file": "Course-Notes-Section-6",
+        "char_count": 1093,
+        "video_id": "Course-Note",
+        "chunk_index": 0,
+        "ingestion_timestamp": "2025-08-23T11:55:12.680417",
+        "total_chunks": 46
+      }
+    },
+    {
+      "source_file": "Generative AI with LangChain (2024)",
+      "total_chunks": 899,
+      "chunk_statistics": {
+        "min_length": 604,
+        "max_length": 12186,
+        "avg_length": 1168.8754171301446
+      },
+      "sample_metadata": {
+        "chunk_index": 0,
+        "word_count": 182,
+        "char_count": 1143,
+        "total_chunks": 899,
+        "content_type": "document",
+        "ingestion_timestamp": "2025-08-23T11:55:12.708465",
+        "source_file": "Generative AI with LangChain (2024)"
+      }
+    },
+    {
+      "source_file": "Graph_RAG",
+      "total_chunks": 101,
+      "chunk_statistics": {
+        "min_length": 1025,
+        "max_length": 6585,
+        "avg_length": 1201.7029702970297
+      },
+      "sample_metadata": {
+        "ingestion_timestamp": "2025-08-23T11:55:12.717476",
+        "total_chunks": 101,
+        "word_count": 140,
+        "source_file": "Graph_RAG",
+        "char_count": 1070,
+        "content_type": "document",
+        "chunk_index": 0
+      }
+    },
+    {
+      "source_file": "Hierarchical Reasoning Model",
+      "total_chunks": 144,
+      "chunk_statistics": {
+        "min_length": 604,
+        "max_length": 1414,
+        "avg_length": 1120.7708333333333
+      },
+      "sample_metadata": {
+        "video_id": "Hierarchica",
+        "content_type": "document",
+        "ingestion_timestamp": "2025-08-23T11:55:12.718477",
+        "word_count": 187,
+        "total_chunks": 144,
+        "char_count": 1194,
+        "source_file": "Hierarchical Reasoning Model",
+        "chunk_index": 0
+      }
+    },
+    {
+      "source_file": "LLMs handson",
+      "total_chunks": 1925,
+      "chunk_statistics": {
+        "min_length": 822,
+        "max_length": 27394,
+        "avg_length": 1161.3787012987013
+      },
+      "sample_metadata": {
+        "content_type": "document",
+        "char_count": 1060,
+        "total_chunks": 1925,
+        "source_file": "LLMs handson",
+        "ingestion_timestamp": "2025-08-23T11:55:12.720474",
+        "chunk_index": 0,
+        "word_count": 147
+      }
+    },
+    {
+      "source_file": "Lora",
+      "total_chunks": 128,
+      "chunk_statistics": {
+        "min_length": 185,
+        "max_length": 3569,
+        "avg_length": 1180.875
+      },
+      "sample_metadata": {
+        "char_count": 1160,
+        "content_type": "document",
+        "ingestion_timestamp": "2025-08-23T11:55:12.738506",
+        "chunk_index": 0,
+        "word_count": 165,
+        "total_chunks": 128,
+        "source_file": "Lora"
+      }
+    },
+    {
+      "source_file": "MOE",
+      "total_chunks": 204,
+      "chunk_statistics": {
+        "min_length": 510,
+        "max_length": 1540,
+        "avg_length": 1116.6568627450981
+      },
+      "sample_metadata": {
+        "word_count": 151,
+        "chunk_index": 0,
+        "content_type": "document",
+        "char_count": 1108,
+        "ingestion_timestamp": "2025-08-23T11:55:12.740507",
+        "source_file": "MOE",
+        "total_chunks": 204
+      }
+    },
+    {
+      "source_file": "QLORA",
+      "total_chunks": 121,
+      "chunk_statistics": {
+        "min_length": 510,
+        "max_length": 3414,
+        "avg_length": 1164.0082644628098
+      },
+      "sample_metadata": {
+        "chunk_index": 0,
+        "content_type": "document",
+        "source_file": "QLORA",
+        "char_count": 1112,
+        "total_chunks": 121,
+        "ingestion_timestamp": "2025-08-23T11:55:12.742506",
+        "word_count": 160
+      }
+    },
+    {
+      "source_file": "React_paper",
+      "total_chunks": 112,
+      "chunk_statistics": {
+        "min_length": 687,
+        "max_length": 4257,
+        "avg_length": 1366.3482142857142
+      },
+      "sample_metadata": {
+        "chunk_index": 0,
+        "total_chunks": 112,
+        "video_id": "React_paper",
+        "ingestion_timestamp": "2025-08-23T11:55:12.743506",
+        "char_count": 1126,
+        "word_count": 168,
+        "source_file": "React_paper",
+        "content_type": "document"
+      }
+    },
+    {
+      "source_file": "Shortcuts-for-Jupyter",
+      "total_chunks": 29,
+      "chunk_statistics": {
+        "min_length": 712,
+        "max_length": 1409,
+        "avg_length": 1143.8620689655172
+      },
+      "sample_metadata": {
+        "total_chunks": 29,
+        "word_count": 161,
+        "ingestion_timestamp": "2025-08-23T11:55:12.744616",
+        "chunk_index": 0,
+        "video_id": "Shortcuts-f",
+        "content_type": "document",
+        "source_file": "Shortcuts-for-Jupyter",
+        "char_count": 1196
+      }
+    },
+    {
+      "source_file": "Small Language Models in the Era of Large",
+      "total_chunks": 499,
+      "chunk_statistics": {
+        "min_length": 115,
+        "max_length": 7518,
+        "avg_length": 1160.2625250501003
+      },
+      "sample_metadata": {
+        "word_count": 147,
+        "chunk_index": 0,
+        "char_count": 1069,
+        "source_file": "Small Language Models in the Era of Large",
+        "content_type": "document",
+        "total_chunks": 499,
+        "ingestion_timestamp": "2025-08-23T11:55:12.744616"
+      }
+    },
+    {
+      "source_file": "Symmetry Explained",
+      "total_chunks": 1,
+      "chunk_statistics": {
+        "min_length": 565,
+        "max_length": 565,
+        "avg_length": 565.0
+      },
+      "sample_metadata": {
+        "ingestion_timestamp": "2025-08-23T11:55:12.749621",
+        "total_chunks": 1,
+        "source_file": "Symmetry Explained",
+        "word_count": 175,
+        "chunk_index": 0,
+        "char_count": 565,
+        "content_type": "document"
+      }
+    },
+    {
+      "source_file": "ed3book",
+      "total_chunks": 2742,
+      "chunk_statistics": {
+        "min_length": 1025,
+        "max_length": 12820,
+        "avg_length": 1160.2228300510576
+      },
+      "sample_metadata": {
+        "ingestion_timestamp": "2025-08-23T11:55:12.680417",
+        "content_type": "document",
+        "source_file": "ed3book",
+        "word_count": 173,
+        "chunk_index": 0,
+        "total_chunks": 2742,
+        "char_count": 1050
+      }
+    }
+  ],
+  "database_statistics": {
+    "embedding_model": "nomic-ai/nomic-embed-text-v1.5",
+    "distance_function": "cosine",
+    "persist_directory": "backend\\storage\\chromadb_storage",
+    "batch_size": 100
+  }
+}

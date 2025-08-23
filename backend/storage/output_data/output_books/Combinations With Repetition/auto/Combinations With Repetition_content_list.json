@@ -1,0 +1,233 @@
+[
+    {
+        "type": "text",
+        "text": "Combinations represent the number of different possible ways we can pick a number of elements. In special cases we can have repetition in combinations and for those we use a different formula. ",
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/5e7ced9f41c299161e98c8b16b5dd118d3c808d6d9ccffd664427356b282f3ad.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Now that you know what the formula looks like, we are going to walk you through the process of deriving this formula from the Combinations without repetition formula. This way you will be able to fully understand the intuition behind and not have to bother memorizing it. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "To understand how combinations with repetition work you need to understand the instances where they occur. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "We use combinations with repetition when the events we are dealing with, have sufficient quantity of each of the distinct values in the sample space. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "One such example is the toppings on a pizza. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "We can order extra of any given topping, so repetition is allowed. However, we do not care about the order in which the toppings are put on top of the pizza, so we cannot use variations. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Similar examples include picking the ice-cream flavours for a Sundae melt or the players for a Fantasy Football Team. ",
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/6371c4dd9aeff62f5a4ad99b4cea42f4d55d6a77dc7b7997a219cd115fb96883.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "To get a better grasp of the number of combinations we have, let us explore a specific example. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "You are ordering a 3-topping pizza from your local pizza place but they only have 6 topping left because its late. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The toppings are as follows:   \ncheddar cheese, onions, green peppers, mushrooms, pepperoni and bacon. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Your pizza can have 3 different toppings, or you can repeat a topping up to 3 times. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "You can either order a pizza with 3 different toppings, a pizza with 3 identical toppings or a pizza with 2 different toppings but having a double dose of one of them. ",
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/121f50eeece0d62f2d88a2e005a7472ae58469e4e213a4544eaebba9443ff679.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The methodology we use for such combinations is rather abstract. We like to represent each type of pizza with a special sequence of 0s and 1s. To do so, we first need to select a specific order for the available ingredients. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "We can reuse the order we wrote down earlier: cheddar cheese, onions, green peppers, mushrooms, pepperoni and bacon. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "For convenience we can refer to each ingredient by the associated letter we have highlighted (e.g “c” means cheese, and “o” means onions). ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "To construct the sequence for each unique type of pizza we follow 2 rules as we go through the ingredients in the order we wrote down earlier. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "If we want no more from a certain topping, we write a 0 and move to the next topping. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "If we want to include a certain topping, we write a 1 and stay on the same topping. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Not going to the next topping allows us to indicate if we want extra by adding another 1, before we move forward. Say, if we want our pizza to have extra cheese, the sequence would begin with “1, 1”. Also, we always apply rule 1 before moving on to another topping, so the sequence will actually start with “1, 1, $0 ^ { \\prime \\prime }$ . ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "If we need to write a $\" 0 \"$ after each topping, then every sequence would consist of 6 zeroes and 3 ones. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let’s look at some pizzas and the sequences they are expressed with. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A pizza with cheese and extra peperoni is represented by the sequence 1,0,0,0,0,1,1,0,0. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A vegan variety pizza with onions, green peppers and mushrooms would be represented by the sequence 0,1,0,1,0,1,0,0,0. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Now, what kind of pizza would the sequence 0,0,1,0,0,0,1,1,0 represent? ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "We can put the sequence into the table and see that it represents a cheese pizza with extra bacon. ",
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/861469359e51e4aa1aba1fc048299d57d579f6b3213c7456d254b9fa77065064.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>C</td><td>0</td><td>G</td><td>M</td><td>P</td><td>B</td></tr><tr><td>1,0</td><td>0</td><td>0</td><td>0</td><td>1,1,00</td><td></td></tr><tr><td>0</td><td>1,0</td><td>1,0</td><td>1,0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>0</td><td>1,0</td><td>0</td><td>0</td><td>1,1,0</td></tr></table>",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Notice how all the sequences we have examined end on a 0: ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "• 1,0,0,0,0,1,1,0,0   \n0,1,0,1,0,1,0,0,0   \n0,0,1,0,0,0,1,1,0 ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "This is no coincidence, since according to rule 1 of our algorithm, we need to add a $\" 0 \"$ at the end of the sequence, regardless of whether we wanted bacon or not. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "That means that only the first 8 elements of the sequence can take different values. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Each pizza is characterized by the positions of the 3 “1”s in the sequence. Since only 8 of the positions in the sequence can take a value of “1”, then the number of different pizzas would be the combination of any 3 of the 8 positions. ",
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/f0dbf3aa1adb1b06c69b4a2c0cbe4e58971a5ad80fbf1ed7c93bf1004ac19a1b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>C</td><td></td><td>G</td><td>M</td><td>P</td><td>B</td></tr><tr><td>1,0</td><td>0</td><td>0</td><td>0</td><td>1,1,0</td><td>0</td></tr><tr><td>0</td><td>1,0</td><td>1,0</td><td>1,0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>0</td><td>1,0</td><td>0</td><td>0</td><td>1,1,0</td></tr></table>",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "As stated before, we have 3 “1s” and 8 different positions. Therefore, the number of pizzas we can get would be the number of combinations of picking 3 elements out of a set of 8. This means we can transform combinations with repetition to combinations without repetition. ",
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "img_path": "images/7191a9e08d3ed43bfc333145b28eec043f79b1447cfecf7ad90920c2dd934389.jpg",
+        "text": "$$\n\\bar { C } ( 6 , 3 ) = \\mathrm { C } ( 8 , 3 )\n$$",
+        "text_format": "latex",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Let’s observe the values 3 and 8 for a moment and try to generalize the formula. $\" 3 \"$ represents the amount of toppings we need to pick, so it is still equivalent to p. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "$\" 8 \"$ represents the number of positions we have available for the ones. We had $3 + 6 ,$ or 9 positions in total, but we knew the last one could not contain a “1”. Thus, we had ${ } ^ { \\prime \\prime } \\mathsf { n } + \\mathsf { p } - \\mathsf { \\mathsf { 1 } } ^ { \\prime \\prime }$ many positions that could contain a 1. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Now that we know the relationship between the number of combinations with and without repetition, we can plug in $\\mathrm { \\hbar } { + } \\mathsf { p } { - } 1 ^ { \\prime \\prime }$ into the combinations without repetitio formula to get: ",
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "img_path": "images/a91025a39d4c0a7fdf01e81bc78be8bb27c6131496117a6b81dc7a7bc5f40a34.jpg",
+        "text": "$$\n\\operatorname { \\mathfrak { I } } ( { \\mathfrak { n } } + { \\mathfrak { p } } - 1 , { \\mathfrak { p } } ) = { \\frac { ( { \\mathfrak { n } } + { \\mathfrak { p } } - 1 ) ! } { ( ( { \\mathfrak { n } } + { \\mathfrak { p } } - 1 ) - { \\mathfrak { p } } ) ! } }\n$$",
+        "text_format": "latex",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "This is the exact same formula we showed you at the beginning.   \nBefore we you continue to the next lecture, let’s make a quick recap of the algorithm and the formula. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1. We started by ordering the possible values and expressing every combinations as a sequence.   \n2. We examined that only certain elements of the sequence may differ.   \n3. We concluded that every unique sequence can be expressed as a combination of the positions of the   \n“1” values.   \n4. We discovered a relationship between the formulas for combinations with and without repetition.   \n5. We used said relationship to create a general formula for combinations with repetition. ",
+        "page_idx": 8
+    }
+]

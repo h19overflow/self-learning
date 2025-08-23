@@ -1,0 +1,151 @@
+@startuml Pipeline_Dataflow
+skinparam backgroundColor #FAFAFA
+skinparam defaultFontName Arial
+skinparam defaultFontSize 10
+title Document Processing Pipeline - Dataflow Architecture
+
+' --- Data Sources ---
+component "PDF Input Directory" as PDFInput
+component "playlist_sources.json" as PlaylistSources
+database "Output Directory" as OutputDir
+database "ChromaDB Storage" as ChromaDB
+file "semantic_chunks.json" as ChunksFile
+
+' --- Stage 1: PDF Processing ---
+rectangle "Stage 1: PDF Processing" {
+  component "process_pdfs_task()" as PDFTask
+  note right of PDFTask
+    Input:
+    - PDF files from input directory
+    - PipelineConfiguration
+
+    Process:
+    - PDFToEnrichedMarkdownPipeline
+    - Converts PDFs to Markdown
+    - Saves .md files
+
+    Output:
+    - PDF processing results
+    - Markdown files
+  end note
+}
+
+' --- Stage 1.5: Video Transcription ---
+rectangle "Stage 1.5: Video Transcription" {
+  component "video_transcription_task()" as VideoTask
+  note right of VideoTask
+    Input:
+    - playlist_sources.json
+    - PipelineConfiguration
+
+    Process:
+    - VideoTranscriptionManager
+    - Extracts transcripts
+    - Creates Markdown files
+
+    Output:
+    - Transcription results
+    - {video_id}.md files
+    - video_transcripts.json
+  end note
+}
+
+' --- Stage 2: VLM Enhancement ---
+rectangle "Stage 2: VLM Enhancement" {
+  component "vlm_enhancement_task()" as VLMTask
+  note right of VLMTask
+    Input:
+    - All .md files
+    - PDF + Video results
+    - PipelineConfiguration
+
+    Process:
+    - VLMPipeline
+    - Enhances images with AI descriptions
+
+    Output:
+    - Enhanced .md files
+    - VLM results
+  end note
+}
+
+' --- Stage 3: Semantic Chunking ---
+rectangle "Stage 3: Semantic Chunking" {
+  component "semantic_chunking_task()" as ChunkTask
+  note right of ChunkTask
+    Input:
+    - All enhanced .md files
+    - VLM results
+    - PipelineConfiguration
+
+    Process:
+    - SemanticChunker
+    - Creates semantic chunks
+
+    Output:
+    - Chunking results
+    - semantic_chunks.json
+  end note
+}
+
+' --- Stage 4: ChromaDB Ingestion ---
+rectangle "Stage 4: ChromaDB RAG Ingestion" {
+  component "chromadb_rag_ingestion_task()" as ChromaTask
+  note right of ChromaTask
+    Input:
+    - semantic_chunks.json
+    - Chunk results
+    - PipelineConfiguration
+
+    Process:
+    - ChromaDBManager
+    - Ingests chunks with metadata
+
+    Output:
+    - Vector database with mixed content
+    - RAG ingestion results
+  end note
+}
+
+' --- Main Pipeline Flow ---
+rectangle "Main Pipeline Flow" {
+  component "document_processing_pipeline()" as MainPipeline
+  note bottom of MainPipeline
+    Flow Orchestration:
+    1. Creates output dirs
+    2. Runs PDF + Video in parallel
+    3. Combines results for VLM
+    4. Chunking on all content
+    5. Ingests into ChromaDB
+
+    Results:
+    - Combined counts
+    - Source metadata preserved
+  end note
+}
+
+' --- Dataflow ---
+PDFInput --> PDFTask : PDF Files
+PlaylistSources --> VideoTask : Playlist URLs
+
+PDFTask --> OutputDir : PDF .md files
+VideoTask --> OutputDir : Video .md files + metadata
+
+OutputDir --> VLMTask : All .md files
+VLMTask --> OutputDir : Enhanced .md files
+
+OutputDir --> ChunkTask : All enhanced .md files
+ChunkTask --> ChunksFile : semantic_chunks.json
+
+ChunksFile --> ChromaTask : Semantic chunks
+ChromaTask --> ChromaDB : Vector embeddings
+
+' --- Results to Main Pipeline ---
+PDFTask --> MainPipeline : pdf_results
+VideoTask --> MainPipeline : video_results
+VLMTask --> MainPipeline : vlm_results
+ChunkTask --> MainPipeline : chunk_results
+ChromaTask --> MainPipeline : rag_results
+MainPipeline --> [Final Results]
+
+@enduml

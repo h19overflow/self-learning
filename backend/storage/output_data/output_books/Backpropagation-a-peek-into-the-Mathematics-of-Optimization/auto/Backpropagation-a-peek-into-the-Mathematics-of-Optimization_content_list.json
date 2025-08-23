@@ -1,0 +1,348 @@
+[
+    {
+        "type": "text",
+        "text": "Backpropagation. A Peek into the Mathematics of Optimization ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/478a8caeccfaf7d8aa980909eefff60b532264d45ab9fa285a9b816acb562bd5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1 Motivation ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In order to get a truly deep understanding of deep neural networks, one must look at the mathematics of it. As backpropagation is at the core of the optimization process, we wanted to introduce you to it. This is definitely not a necessary part of the course, as in TensorFlow, sk-learn, or any other machine learning package (as opposed to simply NumPy), will have backpropagation methods incorporated. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2 The specific net and notation we will examine ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Here’s our simple network: ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/1a6d08ea3053e54ff5e71bcf79c6bea7bb07a52776b725df216f51a48f4c23b7.jpg",
+        "image_caption": [
+            "Figure 1: Backpropagation "
+        ],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We have two inputs: $x _ { 1 }$ and $x _ { 2 }$ . There is a single hidden layer with 3 units (nodes): $h _ { 1 }$ , $h _ { 2 }$ , and $h _ { 3 }$ . Finally, there are two outputs: $y _ { 1 }$ and $y _ { 2 }$ . The arrows that connect them are the weights. There are two weights matrices: w, and $\\mathbf { u }$ . The w weights connect the input layer and the hidden layer. The $\\mathbf { u }$ weights connect the hidden layer and the output layer. We have employed the letters $\\mathbf { w }$ , and $\\mathbf { u }$ , so it is easier to follow the computation to follow. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "You can also see that we compare the outputs $y _ { 1 }$ and $y _ { 2 }$ with the targets $t _ { 1 }$ and $t _ { 2 }$ . ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "There is one last letter we need to introduce before we can get to the computations. Let $a$ be the linear combination prior to activation. Thus, we have: $\\mathbf { a } ^ { ( 1 ) } = \\mathbf { x w } + \\mathbf { b } ^ { ( 1 ) }$ and $\\mathbf { a } ^ { ( 2 ) } = \\mathbf { h } \\mathbf { u } + \\mathbf { b } ^ { ( 2 ) }$ . ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Since we cannot exhaust all activation functions and all loss functions, we will focus on two of the most common. A sigmoid activation and an L2-norm loss. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "With this new information and the new notation, the output $y$ is equal to the activated linear combination. Therefore, for the output layer, we have $\\mathbf { y } = \\boldsymbol { \\sigma } ( \\mathbf { a } ^ { ( 2 ) } )$ , while for the hidden layer: $\\mathbf { h } = \\sigma ( \\mathbf { a } ^ { ( 1 ) } )$ . ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "We will examine backpropagation for the output layer and the hidden layer separately, as the methodologies differ. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3 Useful formulas ",
+        "text_level": 1,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "I would like to remind you that: ",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "img_path": "images/88d4d54dabf159a88cb210265916f5a794dc6463720a6ab02b1f193c7809328a.jpg",
+        "text": "$$\n\\operatorname { L 2 - n o r m } \\operatorname { l o s s } \\colon L = { \\frac { 1 } { 2 } } \\sum _ { i } ( y _ { i } - t _ { i } ) ^ { 2 }\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The sigmoid function is: ",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "img_path": "images/9889cd0e246a7858e86330e1032fc2a77cec7ad36aeb469c47a5253a7071f9fc.jpg",
+        "text": "$$\n\\sigma ( x ) = \\frac { 1 } { 1 + e ^ { - x } }\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "and its derivative is: ",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "img_path": "images/b74cb26d4ee1c54eba3b3882c9db287e3a786c6bd338ee05b87d8afbe93e19cc.jpg",
+        "text": "$$\n\\sigma ^ { \\prime } ( x ) = \\sigma ( x ) ( 1 - \\sigma ( x ) )\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4 Backpropagation for the output layer ",
+        "text_level": 1,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In order to obtain the update rule: ",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "img_path": "images/b4515eb373ed0b453aac5c7bfb701091c37ab1fa33481f849925735edfd9b582.jpg",
+        "text": "$$\n\\mathbf { u }  \\mathbf { u } - \\eta \\nabla _ { \\mathbf { u } } L ( \\mathbf { u } )\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "we must calculate ",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "img_path": "images/e37d10c71635b2f8b130ec0d9c821c272cb44325c71a76f2e065ce6dc1b6ac1a.jpg",
+        "text": "$$\n\\nabla _ { \\mathbf { u } } L ( \\mathbf { u } )\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Let’s take a single weight $u _ { i j }$ . The partial derivative of the loss w.r.t. $u _ { i j }$ equals: ",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "img_path": "images/82cdc94cc40bdf629e55283c431461c5e2627bc22f271b54b14d0a0579b7d58d.jpg",
+        "text": "$$\n\\frac { \\partial L } { \\partial u _ { i j } } = \\frac { \\partial L } { \\partial y _ { j } } \\frac { \\partial y _ { j } } { \\partial a _ { j } ^ { ( 2 ) } } \\frac { \\partial a _ { j } ^ { ( 2 ) } } { \\partial u _ { i j } }\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "where i corresponds to the previous layer (input layer for this transformation) and j corresponds to the next layer (output layer of the transformation). The partial derivatives were computed simply following the chain rule. ",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "img_path": "images/98ad56c03f4af134f19425c3ba355794d5edc9d103ff694c6f968c93be0d84c1.jpg",
+        "text": "$$\n{ \\frac { \\partial L } { \\partial y _ { j } } } = ( y _ { j } - t _ { j } )\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "following the L2-norm loss derivative. ",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/391f4211b78578afabb93ebc0101d54f5411b7c62846466ac2ebac8068bd6ee9.jpg",
+        "text": "$$\n\\frac { \\partial y _ { j } } { \\partial a _ { j } ^ { ( 2 ) } } = \\sigma ( a _ { j } ^ { ( 2 ) } ) ( 1 - \\sigma ( a _ { j } ^ { ( 2 ) } ) ) = y _ { j } ( 1 - y _ { j } )\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "following the sigmoid derivative. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Finally, the third partial derivative is simply the derivative of $\\mathbf { a } ^ { ( 2 ) } = \\mathbf { h } \\mathbf { u } + \\mathbf { b } ^ { ( 2 ) }$ . So, ",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/890c9882ddef8642d486d56c8f20cc1dd1c71174f87dad79872c51737ea3663c.jpg",
+        "text": "$$\n\\frac { \\partial a _ { j } ^ { ( 2 ) } } { \\partial u _ { i j } } = h _ { i }\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Replacing the partial derivatives in the expression above, we get: ",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/e3a2f089d35a8d805cbbcea8e22daf91992802f0c3a60ebf7bb9f26d5790e1a6.jpg",
+        "text": "$$\n\\frac { \\partial L } { \\partial u _ { i j } } = \\frac { \\partial L } { \\partial y _ { j } } \\frac { \\partial y _ { j } } { \\partial a _ { j } ^ { ( 2 ) } } \\frac { \\partial a _ { j } ^ { ( 2 ) } } { \\partial u _ { i j } } = ( y _ { j } - t _ { j } ) y _ { j } ( 1 - y _ { j } ) h _ { i } = \\delta _ { j } h _ { i }\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Therefore, the update rule for a single weight for the output layer is given by: ",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d1a3ed3eb5338093f1fa5332a8ea2877f0c1b450dd8d5eb0e5ecdda65c440c75.jpg",
+        "text": "$$\nu _ { i j }  u _ { i j } - \\eta \\delta _ { j } h _ { i }\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5 Backpropagation of a hidden layer ",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Similarly to the backpropagation of the output layer, the update rule for a single weight, $w _ { i j }$ would depend on: ",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/515c21e6244fa142af070d67dde78cbcb5868d8adfb704b9a7baa4ec58f27ac7.jpg",
+        "text": "$$\n\\frac { \\partial L } { \\partial w _ { i j } } = \\frac { \\partial L } { \\partial h _ { j } } \\frac { \\partial h _ { j } } { \\partial a _ { j } ^ { ( 1 ) } } \\frac { \\partial a _ { j } ^ { ( 1 ) } } { \\partial w _ { i j } }\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "following the chain rule. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Taking advantage of the results we have so far for transformation using the sigmoid activation and the linear model, we get: ",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/d73249b94b9f5d1fd72bfb83609150fc3b8340fe9f1dadd147436d13e55bccd1.jpg",
+        "text": "$$\n\\frac { \\partial h _ { j } } { \\partial a _ { j } ^ { ( 1 ) } } = \\sigma ( a _ { j } ^ { ( 1 ) } ) ( 1 - \\sigma ( a _ { j } ^ { ( 1 ) } ) ) = h _ { j } ( 1 - h _ { j } )\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "and ",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/ba9620c4e97afe3688c4d12f693aa6dad152ff1e2a3819b4a82981be32550793.jpg",
+        "text": "$$\n\\frac { \\partial a _ { j } ^ { ( 1 ) } } { \\partial w _ { i j } } = x _ { i }\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The actual problem for backpropagation comes from the term $\\frac { \\partial L } { \\partial h _ { j } }$ That’s due to the fact that there is no ”hidden” target. You can follow the solution for weight $w _ { 1 1 }$ below. It is advisable to also check Figure 1, while going through the computations. ",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "img_path": "images/49a3c7987aae4507b867967a7424a14e82332b59db31d53538b01da90e720ab2.jpg",
+        "text": "$$\n\\begin{array} { c } { { \\displaystyle \\frac { \\partial { \\cal L } } { \\partial h _ { 1 } } = \\frac { \\partial { \\cal L } } { \\partial y _ { 1 } } \\frac { \\partial y _ { 1 } } { \\partial a _ { 1 } ^ { ( 2 ) } } \\frac { \\partial a _ { 1 } ^ { ( 2 ) } } { \\partial h _ { 1 } } + \\frac { \\partial { \\cal L } } { \\partial y _ { 2 } } \\frac { \\partial y _ { 2 } } { \\partial a _ { 2 } ^ { ( 2 ) } } \\frac { \\partial a _ { 2 } ^ { ( 2 ) } } { \\partial h _ { 1 } } = } } \\\\ { { = ( y _ { 1 } - t _ { 1 } ) y _ { 1 } ( 1 - y _ { 1 } ) u _ { 1 1 } + ( y _ { 2 } - t _ { 2 } ) y _ { 2 } ( 1 - y _ { 2 } ) u _ { 1 2 } } } \\end{array}\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "From here, we can calculate $\\frac { \\partial L } { \\partial w _ { 1 1 } }$ which was what we wanted. The final expression is: ",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "img_path": "images/ecfec5483e8f436f4077e2488f766280eb7bd2827ceef4221b1896387da24e2a.jpg",
+        "text": "$$\n\\frac { \\partial L } { \\partial w _ { 1 1 } } = \\left[ ( y _ { 1 } - t _ { 1 } ) y _ { 1 } ( 1 - y _ { 1 } ) u _ { 1 1 } + ( y _ { 2 } - t _ { 2 } ) y _ { 2 } ( 1 - y _ { 2 } ) u _ { 1 2 } \\right] h _ { 1 } ( 1 - h _ { 1 } ) x _ { 1 }\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The generalized form of this equation is: ",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "img_path": "images/f46d0650a5baec0ff70c6666c04fdde0057933359dfe7e255c9872791351e3f1.jpg",
+        "text": "$$\n\\frac { \\partial L } { \\partial w _ { i j } } = \\sum _ { k } ( y _ { k } - t _ { k } ) y _ { k } ( 1 - y _ { k } ) u _ { j k } h _ { j } ( 1 - h _ { j } ) x _ { i }\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "6 Backpropagation generalization ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Using the results for backpropagation for the output layer and the hidden layer, we can put them together in one formula, summarizing backpropagation, in the presence of L2-norm loss and sigmoid activations. ",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "img_path": "images/6a40bde164d31760c8d4d448a25ef7095a48e2671a2adcf95af02b0f5fc12663.jpg",
+        "text": "$$\n\\frac { \\partial L } { \\partial w _ { i j } } = \\delta _ { j } x _ { i }\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where for a hidden layer ",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "img_path": "images/67d6ecac50395108674b36a7ae9875acf9812559c23366e1d2548ede62b9e8b5.jpg",
+        "text": "$$\n\\delta _ { j } = \\sum _ { k } \\delta _ { k } w _ { j k } y _ { j } ( 1 - y _ { j } )\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Kudos to those of you who got to the end. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Thanks for reading. ",
+        "page_idx": 3
+    }
+]

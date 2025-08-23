@@ -1,0 +1,63 @@
+[project]
+name = "self-learning"
+version = "0.1.0"
+description = "An AI-powered system to find novel connections in multimodal research papers."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    # --- Core AI & Orchestration ---
+    "langchain>=0.3.27", # Foundational library for agents, chains, and RAG components.
+    "langgraph>=0.6.4", # For building the complex, stateful agentic system.
+    # Add your specific LLM provider library here (e.g., openai, anthropic, etc.)
+    "langchain-openai>=0.1.17", # Example for using OpenAI models for generation and embeddings.
+    # --- PyTorch GPU Dependencies (CUDA 12.8) ---
+    # Note: These will be installed from PyTorch nightly with CUDA support
+    "torch>=2.8.0", # Specified without exact version to allow GPU builds
+    "torchvision>=0.19.0", # Computer vision library for PyTorch
+    "torchaudio>=2.4.0", # Audio processing library for PyTorch
+    # --- Document Ingestion & Processing (DocumentIngestion_Service) ---
+    "mineru[core]>=2.1.10", # For high-quality PDF parsing into multimodal markdown.
+    "pillow>=10.4.0", # Needed for handling and processing images for the VLM enhancement step.
+    "pydantic-ai>=0.7.0", # Useful for structured data extraction from text if needed.
+    # --- Database & Vector Store (Connecting to PostgreSQL) ---
+    "SQLAlchemy>=2.0.31", # The best ORM for managing tables and data in PostgreSQL.
+    "psycopg2-binary>=2.9.9", # Standard PostgreSQL database driver for Python.
+    "pgvector>=0.2.5", # The client library for using the pgvector extension in Python.
+    "alembic>=1.13.2", # For handling database schema migrations gracefully.
+    # --- API Framework (For all services: AgenticSystem, SearchEngine, etc.) ---
+    "fastapi>=0.111.1", # To create fast, modern APIs for all your services.
+    "uvicorn[standard]>=0.30.1", # The server that will run your FastAPI applications.
+    "python-multipart>=0.0.9", # Necessary for handling PDF file uploads in FastAPI.
+    # --- Asynchronous Task Queue (For the Ingestion Pipeline) ---
+    "celery>=5.4.0", # To run the heavy document ingestion pipeline asynchronously.
+    "redis>=5.0.7", # Often used as the message broker and backend for Celery.
+    # --- Utilities ---
+    "httpx>=0.27.0", # A modern HTTP client for services to communicate with each other.
+    "pydantic-settings>=2.3.4", # For managing configuration and environment variables cleanly.
+    "dotenv>=0.9.9",
+    "pydantic>=2.11.7",
+    "sentence-transformers>=5.1.0",
+    "google>=3.0.0",
+    "transformers>=4.55.1",
+    "huggingface-hub>=0.34.4",
+    "plotly>=6.3.0",
+    "streamlit>=1.48.1",
+    "gradio>=5.42.0",
+    "lightrag-hku[api]>=1.4.6",
+    "nest-asyncio>=1.6.0",
+    "prefect>=3.4.13",
+    "semantic-chunkers>=0.1.1",
+    "semantic-chunker>=0.2.0",
+    "langchain-experimental>=0.3.4",
+    "weave>=0.51.56",
+    "chromadb>=1.0.20",
+    "youtube-transcript-api>=1.2.2",
+    "einops>=0.8.1",
+]
+
+# PyTorch GPU configuration for CUDA 12.8
+[[tool.uv.index]]
+name = "pytorch-nightly"
+url = "https://download.pytorch.org/whl/nightly/cu128"
+explicit = true
+

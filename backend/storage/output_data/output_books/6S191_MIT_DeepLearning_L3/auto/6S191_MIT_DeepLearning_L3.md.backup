@@ -1,0 +1,617 @@
+![](images/4fc7668b12332ba47330381375693f4edec5e5ad912ae6d6163ed5673748384a.jpg)
+
+# Deep Computer Vision
+
+AlexanderAmini MIT Introduction to Deep Learning January 7,2025
+
+![](images/c5b63a8adb9ca404d739e3a3a6282f93fd98dbe65e5d75b2039d2587fd170c0c.jpg)
+
+“To know what is where by looking."
+
+To discover from images what is present in the world,where things are, what actions are taking place, to predict and anticipate events in the world
+
+![](images/be618dcae1c52ac3b069358b7393a74e06cfa34e91b919d8959e725572fbbb28.jpg)
+
+# The rise and impact of computer vision
+
+Robotics
+
+Accessibility
+
+Biology&Medicine
+
+![](images/6832584e194d8134246ab2fe786f32ef60ea7376885634d1b63fccdd94b729c2.jpg)
+
+![](images/d14f2313d6ab5ad9cd824adebd26669190924505a906e0a22446201691ec65dc.jpg)  
+Mobile computing
+
+![](images/718f863fbad1ed257bdd2ca8b8cac6e498fd5f49ed20e90cfd543cce062b947b.jpg)
+
+# Impact: Facial Detection & Recognition
+
+![](images/67a26c8e1acb40834b785c89921a0ef67287e0049dc3c39bad6e7d456af0c665.jpg)
+
+# Impact: Self-Driving Cars
+
+![](images/1c28b7cb9d02fac00f2c69f169b717e1502477f5548266bd98b8769633ed0412.jpg)
+
+![](images/099125ddcf2acb0c00dead5a0b8ed3e49b42dd1b8c91dd1a86151edcd8604c68.jpg)
+
+# Impact: Medicine,Biology, Healthcare
+
+Breast cancer COVID-19 □ A Skin cancer 1
+
+![](images/2db547dd9737ca8c9a4de434b05c5da4a7ac526453489b096c3ac6a51db4d134.jpg)
+
+# Impact: Accessibility
+
+![](images/a430fde351c50061670786ebbf72faaabc70fc1a1e1280541e00651008d18605.jpg)
+
+# What Computers "See”
+
+# Images are Numbers
+
+6.S19
+
+# Images are Numbers
+
+157153174168150152129151172161155156   
+155182163 74 75 62 33 17 110210180154   
+180180 50 14 34 6 10 33 48 105159181   
+206109 5 124131111120204166 15 56180   
+194 68137251 237299239 228227 87 71201   
+172105207233233214220239228 9874206   
+188 179209185215211158139 75 20169   
+189 97165 84 1016813411316222168   
+19916819119315822717814318210535190   
+205174155252236231 149178228 4395234   
+190216116149236187 85150 79 38218241   
+190224147108227210127102 35101255224   
+190214173 66103143 95 50 2109249215   
+187 196235 75 1 81 47 6 217255211   
+13 202237145 12108200138243236   
+195206 206123207177 121 123200175 1 95218
+
+# Images are Numbers
+
+157 153 174168 150 152 129 151 172 161 155156   
+155182163 74 75 62 33 17 110 210 180 154   
+180 180 50 14 84 6 10 33 48 105 159181   
+206 109 5 124191 111 120 204 166 15 56180   
+194 68 137 251 297 299 239 228 227 87 71 201   
+172106207 233 233 214 220 239228 98 74206   
+188 88179209 185215211 158 139 75 20 169   
+189 97165 84 10 168 134 11 31 62 22148   
+199168191 153 158227178 143 182 105 36190   
+205174155252 236 231 149178 228 43 95234   
+160 216116149236 187 85 150 79 38218241   
+190224147 108227 210 127 102 35 101255224   
+190214173 66 103143 95 50 2 109249215   
+187 196235 75 81 47 217255 211   
+13 202237145 12108 200138243236   
+195 206123207 177 121 123 200 175 13 96218
+
+![](images/d030ba362d02b4578f244a18e9443bd2d26c34978af1b4258e1f69768eb4fd61.jpg)
+
+# What the computer sees
+
+157 153 174 168 150 152 129 151 172 161 155 156   
+155182163 7 75 62 33 17110 210180154   
+180180 50 14 34 6 10 3 48 106159 181   
+206 109 5124 131 11 120204166 15 56 180   
+194 68 137251 237 239 239 228 227 87 201   
+172 105207233 233 214220239 228 98 74206   
+188 88179 209 185215211 158139 75 20 169   
+189 97165 84 10168134 1 31 62 22148   
+199168191 193158227178143182106 36190   
+206174155252236231 149178228 43 95234   
+190216116149236187 86150 79 38218241   
+190224 147 108227 210 127102 36101 224   
+190214173 66103143 50 2109 249 215   
+187196235 75 1 81 47 0 6217255211   
+183202237145 12108200138243236   
+195206123207177 121 123200 175 13 96 218
+
+An image is just a matrixof numbers [0,255]! i.e., $1 0 8 0 \times 1 0 8 0 \times 3$ foran RGB image
+
+# Tasks in Computer Vision
+
+![](images/3a705daa57473924aad628aab03b62d43286c2a788ec3bd78bc7520a8a7fc196.jpg)
+
+-Regression: output variable takes continuous value -Classification:output variable takes class label.Can produce probability of belonging toa particular class
+
+# High Level Feature Detection
+
+Let's identify key features in each image category
+
+![](images/127fdde54a7a665b3ba956aac828c43fef4c78f2455f57fc261e534cd0a3f963.jpg)
+
+![](images/e39e795ccfd27c4b2707bd86841e54d8b1904f37e6395d28c09c161b549e595b.jpg)
+
+![](images/874ed503f1b869faa60a9828566e7af6643db9ec6765b7a569325394654071ab.jpg)
+
+Nose, Eyes, Mouth
+
+Wheels, License Plate, Headlights
+
+Door, Windows, Steps
+
+# Manual Feature Extraction
+
+Problems?
+
+# Manual Feature Extraction
+
+![](images/b492639fc9fa0e8b748df19bdbf814f765f77f7407117e3d2879b374f6daa0c5.jpg)
+
+# Manual Feature Extraction
+
+![](images/e621e8c89a893aff8f52efb30b982f693a48072e45f30795b8f8390c36f7e790.jpg)
+
+# Learning Feature Representations
+
+Can we learn a hierarchy of features directly from the data instead of hand engineering?
+
+Mid level features
+
+![](images/893b4c7826d5c193ce7da90b5424fb80663113102085060669bdb07a8396a44c.jpg)  
+Low level features   
+Edges,dark spots
+
+![](images/3a52deb6680205f07290796058ca074c43e975ac3c7c53963a22915bc7b2a15f.jpg)  
+High level features   
+Facial structure
+
+![](images/88a43210b26c8320bbb6f4124fc0af0a8e64041d56c1c6969a684d858cbde5f3.jpg)  
+Eyes,ears, nose
+
+# Learning Visual Features
+
+# Fully Connected Neural Network
+
+O0000o000 ....... 9
+
+# Fully Connected Neural Network
+
+# Input:
+
+·2Dimage ·Vector of pixel values
+
+![](images/bb8710dffc23b62db2400b9b5f5573b2a0cd5fb002b7a1b11689dd8322386315.jpg)
+
+# Fully Connected:
+
+Connect neuron in hidden layer to all neurons in input layer No spatial information! And many,many parameters!
+
+# Fully Connected Neural Network
+
+# Input:
+
+·2Dimage ·Vector of pixel values
+
+![](images/a33719365e3701cc0125f702ef1084a52f0a6a3201e3ffbf3ebdc5481ae0f76f.jpg)
+
+# Fully Connected:
+
+Connect neuron in hidden layer to all neurons in input layer No spatial information! And many, many parameters!
+
+How can we use spatial structure in the input to inform the architecture of the network?
+
+# Using Spatial Structure
+
+Input: 2D image. Array of pixel values
+
+Idea: connect patches of input to neurons in hidden layer. Neuron connected to region of input.Only "sees"thesevalues.
+
+# Using Spatial Structure
+
+![](images/baad310308bfe09c4568c5c512b62034dae0109639fd0640d66bd9c6e350aa26.jpg)
+
+Connect patch in input layer to a single neuron in subsequent layer. Usea sliding window to define connections. How can we weight the patch to detect particular features?
+
+# Feature Extraction with Convolution
+
+![](images/82713b4961373813eb7a90e8f9f696acbf2c00f7473d3456fbf3550ca7a4b73f.jpg)
+
+Filter of size 4x4:I6 different weights Apply this same filter to 4x4 patches in input Shift by2 pixels for next patch
+
+This"patchy"operation is convolution
+
+I)Apply a set of weights-a filter-to extract local features
+
+2) Use multiple filters to extract different features
+
+3) Spatiallyshare parameters of each fiter
+
+# Feature Extraction and Convolution A Case Study
+
+Xor X?
+
+1-1-1-1-1-1-1-1-1 ？ -1-1-1-1-1-1-1-1 -1   
+-1 1111111 1 -1 -1 -1 1 -1 1 -1 -1   
+111111111 -1 1 -1-1 -1 11 -1 -1 -1   
+11 11101111 聘 -1 -1 -1   
+1111111-1-1 -1 1 1 1-1 -1 -1   
+-1 110101010 -1 1 1 -1 -1   
+111-1-1-11-1-1 -1 -1 -1-1 1 -1   
+-1 1 1-1-1-1-11 -1 -1 1 -1 -1 -1 -1 -1 -1   
+-1-111-1-11-1-1 -1 -1-1-1 -1 -1-1 -1 -1
+
+Image is representedas matrixof pixel values..and computersare literal! We want to beabletoclassify an $\times$ asan $\times$ even if it'ssfted,shrunk,rotated,deormed.
+
+# Features of X
+
+![](images/293b2b7838468087fcc7bbc864f2c643c786d2e5cd3c0d85419a0ecff8c1fc78.jpg)
+
+# Filters to Detect X Features
+
+filters
+
+![](images/e4652e681716558f047958fbf9641eac76e7162c2872d53efd9dfe1365458f88.jpg)
+
+# The Convolution Operation
+
+-1-1 X □ =1 19 element wise   
+-1 □ multiply add outputs -1 -1-1 1 1 -1 -1 -1 1 1 -1 1 -1 -1 1 1 -1 1 -1 1 -1 -1 1 1 1 -1 1 -1 1 -1 -1 -1 -1 -1 -1|-1 1 -1 -1 -1 -1 1 1 1 9 -1 -1 -1 1 -1 1 -1 -1 -1 -1 -1 1 -1 1 -1 1 -1 -1 1 1 1 1 -1 -1 -1 -1 -1 1 1 -1-1-1-1-1-1-1-1-1
+
+# The Convolution Operation
+
+Suppose we want to compute the convolution ofa 5x5 image and a $3 { \times } 3$ filter:
+
+1 1 1 0 0   
+0 1 1 1 0 1 0 1   
+0 0 1 1 1 0 1 0   
+0 0 1 1 0 1 0 1   
+0 1 1 0 0 filter   
+image
+
+We slide the $3 { \times } 3$ fiter over the input image,element-wise multiplyand add the outputs.
+
+# The Convolution Operation
+
+We slide the $3 { \times } 3$ fiter over the input image,element-wise multiplyandadd the outputs:
+
+1 1 0 0   
+01 30 1 0 1 0 1 4   
+02 1 11 X 0 1 0   
+0 0 1 1 0 1 0 1   
+0 1 1 0 0 filter feature map
+
+# The Convolution Operation
+
+We slide the $3 { \times } 3$ fiter over the input image,element-wise multiplyandadd theoutputs:
+
+1 11   
+10 1 0 1 43   
+0 101 10 0 1 0   
+0 0 11 1 1 0 1   
+0 1 0 0 fiter feature map
+
+# The Convolution Operation
+
+We slide the $3 { \times } 3$ fiter over the input image,element-wise multiplyandadd theoutputs:
+
+![](images/83bb365549d9dc4aecac37f4e1b4517e53112397025906c02eed40cb87a7209c.jpg)
+
+# The Convolution Operation
+
+We slide the $3 { \times } 3$ fiter over the input image,element-wise multiplyandadd theoutputs:
+
+![](images/8f583413e2f5db80477a9b13fadde3fb187578a6a1d47d9ddbb0e4b6ebd22d4d.jpg)
+
+# The Convolution Operation
+
+We slide the 3x3 flterover the input image,element-wise multiplyandadd the outputs:
+
+1 1 1 0 0   
+0 11 1 1 0 1 4 3 4   
+0 1 1 1 0 1 0 2 4   
+0 101 0 1 0 1   
+0 1 1 0 0 filter feature map
+
+# The Convolution Operation
+
+We slide the $3 { \times } 3$ fiter over the input image,element-wise multiplyandadd theoutputs:
+
+![](images/ff3b501dacc5f0bb0ada39f4329b59fecd2b250def3debc307311ed112403572.jpg)
+
+# The Convolution Operation
+
+We slide the 3x3 flterover the input image,element-wise multiply,andadd the outputs:
+
+![](images/028c5ba211e642b8765f821efa5190cda4b61743647cb6128c72ab56d28f44c6.jpg)
+
+# The Convolution Operation
+
+We slide the $3 { \times } 3$ fiter over the input image,element-wise multiplyandadd theoutputs:
+
+1 1 11 0 0   
+1 1 0 1 0 1 4 3 4   
+0 011 1 0 1 0 2 4 3   
+0 0110 1 0 1 2 3   
+0 1,10 0 filter feature map
+
+# The Convolution Operation
+
+We slide the $3 { \times } 3$ fiter over the input image,element-wise multiplyandadd theoutputs:
+
+![](images/45a0db83586ba8c179ecc918f56aa07e45c72dd62502d82721327bf00e1d9006.jpg)
+
+# Producing Feature Maps
+
+![](images/6523d2b8ebfbb0a066ac10e9d7af75c9b6439574dee939514393df8aee89e91f.jpg)  
+Original
+
+![](images/6314ee7454005d33cbca845faf1fcba6a5b8ead84738f9ca52908a4ecd24f9fe.jpg)  
+Sharpen
+
+![](images/85b69113e72b9bfb432f0d98daa322529f412241bf3a1173de72224fa36e35e8.jpg)  
+Edge Detect
+
+![](images/2efdc237ce392c8036c0351f10dfc6113cccdf0fa5f783c35ec142a35dec74b8.jpg)  
+"Strong" Edge Detect
+
+# Feature Extraction with Convolution
+
+![](images/d9814c28740a70bad4c261b1e15acd5d9bbac291dff7f33067d108901d7b18c9.jpg)
+
+I) Apply a set of weights -a filter-to extract local features 2) Use multiple filters to extract diferent features 3) Spatially share parameters of each filter
+
+# Convolutional Neural Networks (CNNs)
+
+# CNNs for Classification
+
+![](images/964295e2a660694a126141fc2ff81192966c514d696dda3ea3b7a9dbc52b2436.jpg)
+
+tf.keras.layers.Conv2D
+
+I. Convolution: Apply fiters to generate feature maps.
+
+tf.keras.activations.\*
+
+2. Non-linearity: Often ReLU.
+
+torch.nn.Conv2d   
+torch.nn.ReLU..   
+torch.nn.MaxPool2d
+
+tf.keras.layers.MaxPool2D
+
+3.Pooling: Downsampling operation on each feature map.
+
+Train model with image data. Learn weights of filters in convolutional layers.
+
+# Convolutional Layers: Local Connectivity
+
+![](images/682b0e662659bd55792e9f13425fda1a2fe0fbe270e2a896e506b742a2bf7a4f.jpg)
+
+1Ftf.keras.layers.Conv2D torch.nn.Conv2d
+
+# For a neuron in hidden layer:
+
+Take inputs from patch Compute weighted sum Apply bias
+
+# Convolutional Layers: Local Connectivity
+
+1Ftf.keras.layers.Conv2D torch.nn.Conv2d
+
+# For a neuron in hidden layer:
+
+Take inputs from patch Compute weighted sum Apply bias
+
+4   
+4x4 filter:matrix MM   
+of weights Wij WijXi+p,j+q+b forneuron (p.q) inhidden layer
+
+l) applying a window of weights 2) computing linear combinations 3) activating with non-linear function
+
+# CNNs: Spatial Arrangement of Output Volume
+
+![](images/25679bfb37b0c8ecdc1b5b2fd6ba70643e60df6f48fefa4964a8722aad445b30.jpg)
+
+Layer Dimensions: $h x \ w x d$
+
+where h and ware spatial dimensions d (depth) $=$ number of filters
+
+Stride: Filter step size
+
+# Receptive Field:
+
+Locations in input image that a nodeispath connected to
+
+# Introducing Non-Linearity
+
+-Applyafter every convolution operation (i.e.,after convolutional layers)   
+-ReLU: pixel-by-pixel operation that replaces all negative values by zero.Non-linear operation!
+
+![](images/9b32a4a840d67cd4b0c19a1498b06af7f8875b2cc7d665a3bfc54533c4369a47.jpg)
+
+Rectified Linear Unit (ReLU)
+
+![](images/966a7f7af4e842f18aabf0521801508433bad569cac70f51ee83bdfd89415e9b.jpg)
+
+# Pooling
+
+![](images/0f8eed8afaad70e0328c33f3cac8dd18bc48711887cd6cfd4756865215c138ea.jpg)
+
+<table><tr><td>1</td><td>1</td><td>2</td><td>4</td></tr><tr><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>3</td><td>2</td><td>1</td><td>0</td></tr><tr><td>1</td><td>2</td><td>3</td><td>4</td></tr></table>
+
+max pool with 2x2 filters and stride 2
+
+tf.keras.layers.MaxPool2D(pool_size=(2,2)，strides=21F  
+torch.nn.MaxPool2d(kernel_size=(2,2)，stride-2
+
+6 8   
+3 4
+
+I） Reduced dimensionality 2) Spatial invariance
+
+y
+
+How else can we downsample and preserve spatial invariance?
+
+# Representation Learning in Deep CNNs
+
+![](images/3602e58eb1e9f44dd6f45ff96881b700673f3ef88debc1bfc8ea7279e600a8f9.jpg)
+
+# CNNs for Classfication: Feature Learning
+
+！ CAR TRUCK VAN BICYCLE INPUT CONVOLUTION+RELU POOLING FEATURELEARNING CLASSIFICATION
+
+I.Learn features in input image through convolution 2.Introduce non-linearity through activation function (real-world data is non-linear!) 3.Reduce dimensionality and preserve spatial invariance with pooling
+
+# CNNs for Classification: Class Probabilities
+
+![](images/30f54a38b319bdb6ccf3489db8515b0681404ce1e1df3c2bd6166ec1d6efc5fe.jpg)
+
+CONVand POOL layers output high-level features of input Fully connected layer uses these features for classifying input image Express outputas probability of image belonging toaparticularclass
+
+eyi softmax(yi)= £ey
+
+# Putting it all together: CNN inTensorFlow1F
+
+import tensorflowastf def generate_model()： model-tf.keras.Sequential( #first convolutional layer tf.keras.layers.Conv2D(32,filter_size=3,activation-'relu') tf.keras.layers.MaxPool2D(pool_size-2,strides=2),
+
+second convolutional layer tf.keras.layers.Conv2D(64,filter_size=3,activation-'relu') tf.keras.layers.MaxPool2D(pool_size-2,strides=2),
+
+H H V- SOTRAX KTID FLATURE LIARNINO CLASSIFICATION
+
+# fully connected classifier   
+tf.keras.layers.Flatten(),   
+tf.keras.layers.Dense(l024,activation-'relu'),   
+tf.keras.layers.Dense(10,activation-softmax')#10 outputs
+
+# Puting it all together: CNN in PyTorch
+
+import torch
+
+defgenerate_model()： model nn.Sequential([ #first and second convolutional layer
+
+torch.nn.Conv2d(in_channels3,out_channels32,filter_size3),   
+torch.nn.ReLU(),   
+torch.nn.MaxPool2d(kernel_size-2,stride-2),   
+torch.nn.Conv2d(in_channels-32,out_channels-64,filter_size-3)，   
+torch.nn.ReLU()，   
+torch.nn.MaxPool2d(kernel_size-2,stride-2),   
+# fully connected classifier   
+torch.nn.Flatten(),   
+torch.nn.Linear(64\*6\*6,1024),# flattened dim after 2 conv layers   
+torch.nn.ReLU(),   
+torch.nn.Linear（1024,10),#10outputs
+
+![](images/63274c7fa1f94df3305a89b009402e60597bf0bf8766490607fecbb66927cf3a.jpg)
+
+# An Architecture for Many Applications
+
+# An Architecture for Many Applications
+
+![](images/8a4ccd9c69b1b6a14ca3cd7214c305bae1a7d145f1bc15082514a2bae40b26e0.jpg)
+
+# Classification: Breast Cancer Screening
+
+International evaluation ofan Al systemfor breastcancer screening nature
+
+![](images/1469da835384391db2029a5d2e31b01252cd4601a47db699ced6f99b641418ee.jpg)  
+CNN-based system outperformed expert radiologistsat detecting breast cancer from mammograms
+
+![](images/ab09a025b0ae8f42ce99affb23ef3b94450da5649553cda58abb50a176f85eb5.jpg)  
+Breast cancer case missed by radiologist but detected by Al
+
+# Object Detection
+
+![](images/26e25a7ed4b54e61e4f03f7992c0ca49a410150bc2e82bc8914cb2b3d1b5b891.jpg)
+
+# Object Detection
+
+![](images/4a20ef35d25d3b43ec4a688cd9cedeb6209c5210a912be3f0d2a70c773953045.jpg)  
+Image x
+
+# Naive Solution to Object Detection
+
+![](images/314ec2ae6d0cc99adfbf2d1a0f8895d10312c1eca9843a3dc160560f20089545.jpg)
+
+Problem: Way too manyinputs! This results in too many scales,positions, sizes!
+
+# Object Detection with R-CNNs
+
+R-CNN algorithm: Find regions that we think have objects. Use CNN to classify.
+
+![](images/15ab3b37d9e21b1b68b328d00b18dd32be43e5e13093b8aacae78a00684f4f8e.jpg)
+
+warped region aeroplane? no. 44 →person？yes. CNN tvmonitor? no.   
+2. Extract region 3. Compute 4. Classify   
+proposals (\~2k) CNN features regions
+
+1. Input image
+
+Problems: 1) Slow! Many regions; time intensive inference. 2) Brittle! Manually defined region proposals.
+
+# Faster R-CNN Learns Region Proposals
+
+Feature extractionover proposed regions
+
+Image input directly into convolutional featureextractor Fast! Only input image once!
+
+![](images/5b4801228e903ce62f2a31abe62b1a8d8bb99b278847d20d4406da85036f9659.jpg)
+
+Classification of regions→ object detection
+
+Region proposal network to learncandidateregions Learned,data-driven
+
+# Semantic Segmentation: Fully Convolutional Networks
+
+FCN: Fully Convolutional Network. Network designed withall convolutional layers, with downsampling and upsampling operations
+
+![](images/d9661b8d0c7f2bb5178b1be60855a1db46634def6f1dbd5db20b041c449ac611.jpg)
+
+Predictions: HxW
+
+# Continuous Control: Navigation from Vision
+
+![](images/7ee8c505c4d313f5b3a017bcec673797325112ae9e226c62d2a3818b4588ff6a.jpg)
+
+# End-to-End Framework for Autonomous Navigation
+
+Entire model is trained end-to-end without any human labelling or annotations
+
+![](images/1fd035ba12f8a03977af779a220b20df7a5d2465e497d38f8c6c099630208b5c.jpg)
+
+![](images/1e37458a83d46d66db80faca3940d9696d54f8a0adfeba3fa44983eb31990eb9.jpg)
+
+# Deep Learning for ComputerVision: Impact
+
+![](images/5bc5e314a577db69d315acc522e60c8be7161e95413e222ed6dfd1ac73bcf3f4.jpg)
+
+# Deep Learning for Computer Vision: Summary
+
+# Foundations
+
+# CNNs
+
+# Applications
+
+·Why computer vision? ·Representing images ·Convolutions for feature extraction
+
+·CNN architecture ·Application to classification ImageNet
+
+Segmentation,image captioning, control Security, medicine, robotics
+
+![](images/aea0cb28d0c1878c87ae395ffbc63bdd34e5fcd40aa4c14e7b6e90c637baec6a.jpg)
+
+![](images/2456a1411b7d73f20b10b48c099edf35c4a35335b4d3afce59b0624878adf349.jpg)
+
+![](images/00ae4a7e20e4d70a8ca971bbfea8720f1594bcda96572eb92d9651ef742159a5.jpg)
+
+![](images/eab2a3573dea4942d2fef32f1e4aa1adf57d2024c0c36254f4e50583b96ee7cf.jpg)
+
+MIT 6.S191 Introduction to Deep Learning Lab 2: Facial Detection Systems
+
+Link to download labs: introtodeeplearning.com#schedule github.com/MITDeepLearning/introtodeeplearning
+
+1.Open the lab in Google Colab Start executing code blocksand filing in the #TODOs 3. Need help? Come to 32-123!
+
+![](images/073e72f06c01e562ab4e6cd2697208d883d069005b90788e1e4fe1333801ec3d.jpg)
+
+# Introduction to Deep Learning
+
+# Announcements and Reminders

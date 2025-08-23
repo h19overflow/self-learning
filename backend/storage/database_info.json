@@ -1,0 +1,34 @@
+{
+  "extraction_metadata": {
+    "extraction_date": "2025-08-23T12:14:26.679793",
+    "extractor_version": "1.0.0",
+    "collection_analyzed": "academic_papers",
+    "include_full_chunks": false
+  },
+  "collection_overview": {
+    "collection_name": "academic_papers",
+    "total_documents": 0,
+    "unique_source_files": 0,
+    "total_chunks_verified": 0,
+    "configuration": {
+      "collection_name": "academic_papers",
+      "embedding_model": "nomic-ai/nomic-embed-text-v1.5",
+      "embedding_device": "cuda",
+      "distance_function": "cosine",
+      "batch_size": 100,
+      "persist_directory": "chromadb_storage"
+    }
+  },
+  "sources_summary": {
+    "total_sources": 0,
+    "sources_list": [],
+    "chunk_distribution": {}
+  },
+  "detailed_sources_analysis": [],
+  "database_statistics": {
+    "embedding_model": "nomic-ai/nomic-embed-text-v1.5",
+    "distance_function": "cosine",
+    "persist_directory": "chromadb_storage",
+    "batch_size": 100
+  }
+}

@@ -1,0 +1,179 @@
+[
+    {
+        "type": "text",
+        "text": "Permutations represent the number of different possible ways we can arrange a number of elements. ",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/d1a8dae16ae5389047136ab0335e2bb8b0159c1ceed987997de47828a07c1644.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Characteristics of Permutations: ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "• Arranging all elements within the sample space. • No repetition. • $P ( n ) = n \\times ( n - 1 ) \\times ( n - 2 ) \\times \\cdots \\times 1 = n !$ (Called “n factorial”) ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Example: ",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "• If we need to arrange 5 people, we would have $\\mathsf { P } ( 5 ) = \\mathsf { 1 } 2 0$ ways of doing so. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Factorials express the product of all integers from 1 to n and we denote them with the “!” symbol. ",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "img_path": "images/1f2927a3ea0aa5c449a17baf4b832f0c3f4fa4682e5a2ab7898f4b0574173f01.jpg",
+        "text": "$$\nn ! = n \\times ( n - 1 ) \\times ( n - 2 ) \\times \\cdots \\times 1\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Key Values: ",
+        "text_level": 1,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "• $0 ! = 1 .$ . If $\\mathsf { n } { < } 0 ,$ n! does not exist. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Rules for factorial multiplication. (For $\\mathsf { n } { \\geqslant } 0$ and $\\mathsf { n } { \\boldsymbol { \\mathbf { \\mathit { \\varepsilon } } } } \\mathsf { k } )$ ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "$( n + k ) ! = n ! \\times ( n + 1 ) \\times \\cdots \\times ( n + k )$ $( n - k ) ! = { \\frac { n ! } { ( n - k + 1 ) \\times \\cdots \\times ( n - k + k ) } } = { \\frac { n ! } { ( n - k + 1 ) \\times \\cdots \\times n } }$ $\\begin{array} { r } { { \\frac { n ! } { k ! } } = { \\frac { k ! \\times ( k + 1 ) \\times \\cdots \\times n } { k ! } } = ( k + 1 ) \\times \\cdots \\times n } \\\\ { k ! } \\end{array}$ ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Examples: $\\mathsf { n } = 7 , \\mathsf { k } = 4$ • $( 7 + 4 ) ! = 1 1 ! = 7 ! \\times 8 \\times 9 \\times 1 0 \\times 1 1$ $\\begin{array} { l } { { \\cdot \\ ( 7 - 4 ) ! = 3 ! = \\frac { 7 ! } { 4 \\times 5 \\times 6 \\times \\times 7 } } } \\\\ { { \\cdot \\ \\frac { 7 ! } { 4 ! } = \\ 5 \\times 6 \\times 7 } } \\end{array}$ ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Variations represent the number of different possible ways we can pick and arrange a number of elements. ",
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/f824843696b13afc2e59f63721025a345437681cf633d9b866d56f5e9519e7e7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind the formula. (With Repetition) ",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• We have n-many options for the first element. We still have n-many options for the second element because repetition is allowed. We have n-many options for each of the pmany elements. $n \\times n \\times n \\dots n = n ^ { p }$ ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind the formula. (Without Repetition) ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• We have n-many options for the first element. We only have (n-1)-many options for the second element because we cannot repeat the value for we chose to start with. We have less options left for each additional element.   \n• $\\begin{array} { r } { n \\times ( n - 1 ) \\times ( n - 2 ) \\ldots ( n - p + 1 ) = { \\frac { n ! } { ( n - p ) ! } } } \\end{array}$ ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Combinations represent the number of different possible ways we can pick a number of elements. ",
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/dcd6d691a348c167ac93cd4a1c93796f8bdd17c81fe7e7a0906433a3034e071e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Characteristics of Combinations: ",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Takes into account double-counting. (Selecting Johny, Kate and Marie is the same as selecting Marie, Kate and Joh   \n• All the different permutations of a single combination are different variations. $C = { \\frac { V } { P } } = { \\frac { n ! / ( n - p ) ! } { p ! } } \\ = { \\frac { n ! } { ( n - p ) ! p ! } }$   \n• Combinations are symmetric, so $C _ { p } ^ { n } = C _ { n - p } ^ { n } ,$ since selecting p elements is the same as omitting n-p elements. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Combinations represent the number of different possible ways we can pick a number of elements. ",
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/4e37dda9ffe7088ca09b91a248d6456f20baf7bef71138d80a73d5a48a13acbe.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Characteristics of Combinations with separate sample spaces: ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "• The option we choose for any element does not affect the number of options for the other elements.   \n• The order in which we pick the individual elements is arbitrary.   \n• We need to know the size of the sample space for each individual element. $( n _ { 1 } , n _ { 2 } \\ldots n _ { p } )$ ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "To win the lottery, you need to satisfy two distinct independent events: ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "• Correctly guess the “Powerball” number. (From 1 to 26) • Correctly guess the 5 regular numbers. (From 1 to 69) ",
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/592dbb7044b2e2a7320b0c14c8aa71c1e896951213603fd9d9539a245dd66a35.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Intuition behind the formula: ",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "• We consider the two distinct events as a combination of two elements with different sample sizes. • One event has a sample size of 26, the other has a sample size of $C _ { 5 } ^ { 6 9 }$ .   \n• Using the “favoured over all” formula, we find the probability of any single ticket winning equals $1 / ( \\frac { 6 9 ! } { 6 4 ! 5 ! } \\times 2 6 )$ . ",
+        "page_idx": 5
+    }
+]
