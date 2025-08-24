@@ -1,0 +1,382 @@
+@startuml ChromaDB_Retrieval_Architecture_Accurate
+!theme plain
+allowmixing
+skinparam backgroundColor #FAFAFA
+skinparam defaultFontName Arial
+skinparam defaultFontSize 9
+skinparam class {
+  BackgroundColor #E3F2FD
+  BorderColor #1976D2
+  FontSize 10
+  FontStyle bold
+}
+skinparam package {
+  BackgroundColor #F5F5F5
+  BorderColor #757575
+  FontStyle bold
+}
+skinparam database {
+  BackgroundColor #E8F5E8
+  BorderColor #388E3C
+}
+skinparam component {
+  BackgroundColor #FFF3E0
+  BorderColor #F57C00
+}
+skinparam note {
+  BackgroundColor #FFFDE7
+  BorderColor #FBC02D
+  FontSize 8
+}
+
+title **ChromaDB Retrieval Architecture - Accurate Implementation**\n//Based on Real Codebase Analysis//
+
+' --- Core Manager Layer ---
+package "**Core Management Layer**" {
+  class ChromaDBManager {
+    - config: ChromaConfig
+    - _ingestion_engine: Optional[ChromaIngestionEngine]
+    - _retriever: Optional[ChromaRetriever]
+    - logger: Logger
+    --
+    **Properties (Lazy Loading):**
+    + ingestion_engine: ChromaIngestionEngine
+    + retriever: ChromaRetriever
+    --
+    **Search Operations:**
+    + search(query: str, retrieval_config: RetrievalConfig = None) -> RetrievalResults
+    + search_by_source(query: str, source: str, retrieval_config: RetrievalConfig = None) -> RetrievalResults
+    --
+    **Collection Management:**
+    + get_collection_info() -> Dict[str, Any]
+    + list_source_files() -> List[str]
+    + get_chunks_from_source(source_file: str) -> List[Dict[str, Any]]
+    --
+    **Data Operations:**
+    + ingest_chunks(chunks: List[Dict[str, Any]]) -> bool
+    + ingest_chunks_from_file(file_path: str) -> bool
+    + reset_collection() -> bool
+  }
+  
+  note right of ChromaDBManager
+    **Unified Interface:**
+    - Lazy initialization of components
+    - Centralized error handling
+    - Configuration management
+    - Simplified API for pipeline integration
+  end note
+}
+
+' --- Component Layer ---
+package "**Component Layer**" {
+  class ChromaRetriever {
+    - config: ChromaConfig
+    - chroma_client: chromadb.PersistentClient
+    - collection: chromadb.Collection
+    - embedding_manager: EmbeddingManager
+    - reranker: CrossEncoderReranker
+    - formatter: SearchResultFormatter
+    - logger: Logger
+    --
+    **Initialization:**
+    + __init__(config: ChromaConfig)
+    - _initialize_chromadb()
+    --
+    **Core Search Methods:**
+    + search(query: str, retrieval_config: RetrievalConfig = None) -> RetrievalResults
+    + search_by_source(query: str, source_file: str, retrieval_config: RetrievalConfig = None) -> RetrievalResults
+    + get_similar_chunks(content: str, retrieval_config: RetrievalConfig = None) -> RetrievalResults
+    --
+    **Collection Operations:**
+    + get_collection_stats() -> Dict[str, Any]
+    + list_source_files() -> List[str]
+    + get_chunks_from_source(source_file: str) -> List[Dict[str, Any]]
+    --
+    **Internal Methods:**
+    - _prepare_search_params(config: RetrievalConfig) -> Dict[str, Any]
+    + finalize() -> None
+  }
+  
+  class ChromaIngestionEngine {
+    - config: ChromaConfig
+    - chroma_client: chromadb.PersistentClient
+    - collection: chromadb.Collection
+    - embedding_model: SentenceTransformer
+    - logger: Logger
+    --
+    **Initialization:**
+    + __init__(config: ChromaConfig)
+    - _initialize_chromadb()
+    - _initialize_embedding_model()
+    --
+    **File-based Ingestion:**
+    + ingest_chunks_from_file(file_path: str) -> bool
+    + ingest_chunks_batch(chunks: List[Dict[str, Any]]) -> bool
+    --
+    **Collection Operations:**
+    + reset_collection() -> bool
+    + get_collection_info() -> Dict[str, Any]
+    --
+    **Internal Processing:**
+    - _process_chunk_batch(chunk_batch: List[Dict[str, Any]]) -> Tuple[List[str], List[str], List[List[float]], List[Dict[str, Any]]]
+    - _create_chunk_id(chunk: Dict[str, Any]) -> str
+    - _validate_chunk(chunk: Dict[str, Any]) -> bool
+    - _extract_metadata(chunk: Dict[str, Any]) -> Dict[str, Any]
+  }
+  
+  class EmbeddingManager {
+    - config: ChromaConfig
+    - embedding_model: SentenceTransformer
+    - logger: Logger
+    --
+    **Initialization:**
+    + __init__(config: ChromaConfig)
+    - _initialize_embedding_model()
+    --
+    **Encoding Operations:**
+    + encode_query(query: str) -> List[float]
+    + encode_documents(documents: List[str]) -> List[List[float]]
+    + encode_batch(texts: List[str], batch_size: int = 32) -> List[List[float]]
+    --
+    **Model Management:**
+    + is_available() -> bool
+    + get_embedding_dimension() -> int
+    + get_model_info() -> Dict[str, Any]
+    + finalize() -> None
+  }
+  
+  class CrossEncoderReranker {
+    - config: ChromaConfig
+    - reranker: Optional[CrossEncoder]
+    - embedding_model: Optional[SentenceTransformer]
+    - logger: Logger
+    --
+    **Initialization:**
+    + __init__(config: ChromaConfig)
+    - _initialize_reranker()
+    --
+    **Reranking Operations:**
+    + rerank_results(query: str, raw_results: Dict[str, Any], config: RetrievalConfig) -> Dict[str, Any]
+    + calculate_retrieval_k(config: RetrievalConfig) -> int
+    --
+    **Diversity & Filtering:**
+    + apply_diversity_filter(results: List[Tuple], config: RetrievalConfig) -> List[Tuple]
+    - _calculate_diversity_scores(embeddings: List[List[float]]) -> List[float]
+    --
+    **Utility Methods:**
+    + is_available() -> bool
+    + finalize() -> None
+  }
+  
+  class SearchResultFormatter {
+    - logger: Logger
+    --
+    **Result Formatting:**
+    + format_search_results(raw_results: Dict[str, Any], config: RetrievalConfig, limit_to_top_k: bool = True) -> List[SearchResult]
+    + create_retrieval_results(query: str, search_results: List[SearchResult], retrieval_time_ms: float, collection_name: str, config: RetrievalConfig, additional_metadata: Dict[str, Any] = None) -> RetrievalResults
+    --
+    **Internal Processing:**
+    - _create_search_result(document: str, metadata: Dict[str, Any], distance: float, document_id: str, config: RetrievalConfig) -> SearchResult
+    - _convert_distance_to_score(distance: float) -> float
+    - _apply_score_threshold(results: List[SearchResult], threshold: float) -> List[SearchResult]
+    - _calculate_statistics(results: List[SearchResult]) -> Dict[str, Any]
+  }
+}
+
+' --- Data Models ---
+package "**Data Models**" {
+  class ChromaConfig {
+    + persist_directory: Path
+    + collection_name: str
+    + embedding_model: str
+    + embedding_device: str
+    + distance_function: str
+    + batch_size: int
+    + enable_reranking_by_default: bool
+    + rerank_model: str
+    + rerank_model_cache_dir: Optional[Path]
+    + rerank_device: str
+    --
+    + model_validate(data: Dict[str, Any]) -> ChromaConfig
+    + to_dict() -> Dict[str, Any]
+  }
+
+  class RetrievalConfig {
+    + top_k: int = 5
+    + score_threshold: Optional[float] = None
+    + query_expansion: bool = False
+    + include_metadata: bool = True
+    + include_embeddings: bool = False
+    + source_filter: Optional[str] = None
+    + metadata_filters: Optional[Dict[str, Any]] = None
+    + enable_reranking: bool = True
+    + rerank_top_k_multiplier: int = 3
+    + max_rerank_candidates: int = 100
+    + enable_diversity: bool = False
+    + diversity_threshold: float = 0.7
+    --
+    + model_validate(data: Dict[str, Any]) -> RetrievalConfig
+  }
+
+  class SearchResult {
+    + content: str
+    + document_id: str
+    + score: float
+    + source_file: str
+    + chunk_index: int
+    + page_index: Optional[int] = None
+    + word_count: Optional[int] = None
+    + char_count: Optional[int] = None
+    + metadata: Optional[Dict[str, Any]] = None
+    + embedding: Optional[List[float]] = None
+    --
+    + to_dict() -> Dict[str, Any]
+    + get_preview(max_length: int = 100) -> str
+  }
+
+  class RetrievalResults {
+    + query: str
+    + results: List[SearchResult]
+    + total_results: int
+    + retrieval_time_ms: float
+    + collection_name: str
+    + config_used: RetrievalConfig
+    + metadata: Dict[str, Any]
+    --
+    + has_results: bool
+    + average_score: float
+    + top_sources: List[str]
+    + to_dict() -> Dict[str, Any]
+    + filter_by_threshold(threshold: float) -> RetrievalResults
+    + get_results_by_source(source_file: str) -> List[SearchResult]
+  }
+}
+
+' --- External Dependencies ---
+package "**External Dependencies**" {
+  database "ChromaDB Persistent Storage" as ChromaStorage {
+    component "Vector Index" as VectorIndex
+    component "Metadata Store" as MetadataStore
+    component "Collection Registry" as CollectionRegistry
+  }
+  
+  class SentenceTransformer {
+    + encode(texts: List[str]) -> List[List[float]]
+    + encode_batch(texts: List[str], batch_size: int) -> List[List[float]]
+    + get_sentence_embedding_dimension() -> int
+  }
+  
+  class CrossEncoder {
+    + predict(sentence_pairs: List[Tuple[str, str]]) -> List[float]
+    + rank(query: str, docs: List[str]) -> List[int]
+  }
+  
+  component "External Models" as ExternalModels {
+    note bottom
+      Supported Models:
+      - BAAI/bge-large-en-v1.5 (embeddings)
+      - ms-marco-MiniLM-L-6-v2 (reranking)
+      - Custom sentence transformers
+    end note
+  }
+}
+
+' --- Actual Search Flow ---
+package "**Search Flow Process**" {
+  rectangle "Search Process Flow" as SearchFlow {
+    component "1. Query Processing" as Step1
+    component "2. Embedding Generation" as Step2
+    component "3. Vector Search" as Step3
+    component "4. Reranking (Optional)" as Step4
+    component "5. Result Formatting" as Step5
+    component "6. Response Creation" as Step6
+  }
+  
+  note right of SearchFlow
+    **Actual Implementation Flow:**
+    1. Query received by ChromaRetriever.search()
+    2. EmbeddingManager.encode_query() creates vector
+    3. ChromaDB collection.query() performs search
+    4. CrossEncoderReranker.rerank_results() (if enabled)
+    5. SearchResultFormatter.format_search_results()
+    6. RetrievalResults object returned
+  end note
+}
+
+' --- Test Integration ---
+package "**Testing & Validation**" {
+  component "test_retriever.py" as TestRetriever
+  
+  note bottom of TestRetriever
+    **Test Coverage:**
+    - Basic search functionality
+    - Reranking validation  
+    - Collection statistics
+    - Source file filtering
+    - Performance metrics
+    
+    **Test Methods:**
+    - test_basic_retrieval()
+    - config_setup()
+    - results_validation()
+  end note
+}
+
+' --- Relationships & Data Flow ---
+
+' Manager to Components
+ChromaDBManager --> ChromaIngestionEngine : lazy_loads
+ChromaDBManager --> ChromaRetriever : lazy_loads
+
+' Retriever Internal Components
+ChromaRetriever --> EmbeddingManager : uses
+ChromaRetriever --> CrossEncoderReranker : uses
+ChromaRetriever --> SearchResultFormatter : uses
+
+' Configuration
+ChromaDBManager --> ChromaConfig : configured_by
+ChromaRetriever --> ChromaConfig : configured_by
+ChromaIngestionEngine --> ChromaConfig : configured_by
+EmbeddingManager --> ChromaConfig : configured_by
+CrossEncoderReranker --> ChromaConfig : configured_by
+
+' Data Models
+ChromaRetriever --> RetrievalConfig : accepts
+SearchResultFormatter --> SearchResult : creates
+SearchResultFormatter --> RetrievalResults : creates
+RetrievalResults --> SearchResult : contains
+
+' External Dependencies
+ChromaRetriever --> ChromaStorage : queries
+ChromaIngestionEngine --> ChromaStorage : stores_data
+EmbeddingManager --> SentenceTransformer : uses
+CrossEncoderReranker --> CrossEncoder : uses
+CrossEncoderReranker --> SentenceTransformer : uses_for_diversity
+
+VectorIndex --> ChromaStorage : part_of
+MetadataStore --> ChromaStorage : part_of
+CollectionRegistry --> ChromaStorage : part_of
+
+SentenceTransformer --> ExternalModels : implements
+CrossEncoder --> ExternalModels : implements
+
+' Detailed Search Flow
+Step1 --> Step2 : query
+Step2 --> Step3 : embeddings
+Step3 --> Step4 : raw_results
+Step4 --> Step5 : reranked_results
+Step5 --> Step6 : formatted_results
+
+ChromaRetriever --> Step1 : initiates
+EmbeddingManager --> Step2 : performs
+ChromaStorage --> Step3 : executes
+CrossEncoderReranker --> Step4 : performs
+SearchResultFormatter --> Step5 : performs
+SearchResultFormatter --> Step6 : creates
+
+' Test Integration
+TestRetriever --> ChromaRetriever : validates
+TestRetriever --> RetrievalConfig : configures
+TestRetriever --> RetrievalResults : verifies
+
+@enduml

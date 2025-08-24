@@ -1,0 +1,75 @@
+@startuml agentic_system_overview
+
+title Agentic LightRAG System - Overview Architecture
+
+' Define main components
+package "Agentic LightRAG System" as AgenticSystem {
+    
+    ' User Interface Layer
+    component "Gradio Interface" as GradioUI {
+    }
+    
+    ' Core Workflow Engine
+    component "UltraFast Workflow" as Workflow {
+    }
+    
+    ' AI Agents
+    package "AI Agents" as Agents {
+        component "Query Agent" as QueryAgent
+        component "Answering Agent" as AnsweringAgent
+        component "VLM Agent" as VLMAgent
+        component "Corrective Agent" as CorrectiveAgent
+    }
+    
+    ' Processing Nodes
+    package "Processing Nodes" as Nodes {
+        component "Parameter Selection Node" as ParamNode
+        component "Fast Retrieval Node" as RetrievalNode
+        component "Answering Node" as AnswerNode
+    }
+    
+    ' State Management
+    component "AgenticLightRAGState" as State {
+        note bottom : Manages question, answer,\nquery_analysis, context, sources,\nmessages, session_id
+    }
+    
+    ' External Systems
+    component "ChromaDB System" as ChromaDB
+    component "Document Processing Pipeline" as DocPipeline
+}
+
+' User interactions
+actor User
+
+' Define relationships
+User --> GradioUI : "Ask questions"
+GradioUI --> Workflow : "Process questions"
+Workflow --> State : "Manages state"
+
+' Workflow to nodes
+Workflow --> ParamNode : "1. Parameter Selection"
+Workflow --> RetrievalNode : "2. Fast Retrieval"
+Workflow --> AnswerNode : "3. Answer Generation"
+
+' Nodes to agents
+ParamNode --> QueryAgent : "Query analysis\n(optional)"
+RetrievalNode --> ChromaDB : "Vector search"
+AnswerNode --> AnsweringAgent : "Educational answers"
+
+' Additional agent usage
+CorrectiveAgent --> ChromaDB : "Query refinement"
+VLMAgent --> DocPipeline : "Image analysis"
+
+' Data flow
+ChromaDB --> RetrievalNode : "Context & sources"
+RetrievalNode --> State : "Updates context"
+AnswerNode --> State : "Updates answer"
+State --> GradioUI : "Response to user"
+
+' Notes
+note top of AgenticSystem
+    Ultra-fast educational question answering system
+    using LangGraph workflow with AI agents
+end note
+
+@enduml

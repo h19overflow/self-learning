@@ -13,12 +13,10 @@ from dotenv import load_dotenv
 import sys
 
 # Import models
-sys.path.append(str(Path(__file__).parent.parent))
 from models import ImageContext, DescriptionResult
 
 # Import VLM Agent
-sys.path.append(str(Path(__file__).parent.parent.parent.parent.parent))
-from agentic_lightrag.agents.vlm_agent.vlm_agent import VLMAgent
+from backend.agentic_system.agentic_lightrag.agents.vlm_agent import VLMAgent
 
 
 class GeminiDescriber:

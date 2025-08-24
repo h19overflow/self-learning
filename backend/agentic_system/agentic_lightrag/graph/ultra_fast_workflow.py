@@ -76,15 +76,11 @@ class UltraFastAgenticLightRAGWorkflow:
             # Run through the graph
             final_state = await self.graph.ainvoke(initial_state)
             
-            print("\n" + "=" * 50)
-            print("⚡ ULTRA-FAST COMPLETE")
-            print("=" * 50)
             
             return final_state
             
         except Exception as e:
             print(f"\n❌ ULTRA-FAST ERROR: {type(e).__name__}: {e}")
-            # Return error state
             error_state = AgenticLightRAGState(
                 question=question,
                 answer=f"I encountered an error: {str(e)}. Please try rephrasing your question.",
@@ -102,12 +98,6 @@ class UltraFastAgenticLightRAGWorkflow:
         Yields:
             Dict[str, Any]: Streaming updates with partial results
         """
-        print("=" * 50)
-        print(f"🌊 STREAMING LANGGRAPH WORKFLOW")
-        print("=" * 50)
-        print(f"📝 Question: {question}")
-        print("-" * 50)
-        
         try:
             # Initialize state
             initial_state = AgenticLightRAGState(question=question, messages=[])

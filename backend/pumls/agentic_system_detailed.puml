@@ -1,0 +1,145 @@
+@startuml agentic_system_detailed
+
+title Agentic LightRAG System - Detailed Architecture
+
+' User Interface Layer
+package "User Interface" as UILayer {
+    component "GradioInterface" as Gradio {
+    }
+}
+
+' Core Workflow Engine
+package "LangGraph Workflow Engine" as WorkflowEngine {
+    component "UltraFastAgenticLightRAGWorkflow" as UltraFast {
+    }
+    
+    component "AgenticLightRAGState" as State {
+    }
+}
+
+' Processing Nodes
+package "Processing Nodes" as ProcessingNodes {
+    component "ParameterSelectionNode" as ParamNode {
+    }
+    
+    component "FastRetrievalNode" as FastRetrieval {
+    }
+    
+    component "AnsweringNode" as AnswerNode {
+    }
+    
+    component "RetrievalNode" as RetrievalNode {
+    }
+}
+
+' AI Agents
+package "AI Agents" as AIAgents {
+    component "QueryAgent" as QueryAgent {
+    }
+    
+    component "AnsweringAgent" as AnsweringAgent {
+    }
+    
+    component "CorrectiveAgent" as CorrectiveAgent {
+    }
+    
+    component "VLMAgent" as VLMAgent {
+    }
+}
+
+' Agent Schemas
+package "Agent Schemas" as Schemas {
+    component "QuerySchema" as QuerySchema {
+    }
+    
+    component "AnsweringSchema" as AnsweringSchema {
+    }
+    
+    component "CorrectiveSchema" as CorrectiveSchema {
+    }
+    
+    component "VLMSchema" as VLMSchema {
+    }
+}
+
+' External Systems
+package "External Systems" as External {
+    component "ChromaDB System" as ChromaDB {
+    }
+    
+    component "Document Pipeline" as DocPipeline {
+    }
+    
+    component "Chat History" as ChatHistory {
+    }
+}
+
+' Configuration
+package "Configuration" as Config {
+    component "RetrievalConfig" as RetConfig {
+    }
+    
+    component "PipelineConfig" as PipeConfig {
+    }
+}
+
+' User interactions
+actor User
+
+' Main flow connections
+User --> Gradio : "Submit questions"
+Gradio --> UltraFast : "process_question()"
+UltraFast --> State : "State management"
+
+' Linear workflow
+UltraFast --> ParamNode : "1. parameter_selection"
+ParamNode --> FastRetrieval : "2. fast_retrieval"
+FastRetrieval --> AnswerNode : "3. answer_generation"
+
+' Node to agent connections
+ParamNode ..> QueryAgent : "Optional query analysis"
+FastRetrieval --> ChromaDB : "Vector search"
+AnswerNode --> AnsweringAgent : "Generate educational answer"
+
+' Agent schema connections
+QueryAgent --> QuerySchema : "Uses schemas"
+AnsweringAgent --> AnsweringSchema : "Uses schemas"
+CorrectiveAgent --> CorrectiveSchema : "Uses schemas"
+VLMAgent --> VLMSchema : "Uses schemas"
+
+' Configuration usage
+ParamNode --> RetConfig : "Creates config"
+FastRetrieval --> RetConfig : "Uses config"
+
+' External system connections
+ChromaDB <--> DocPipeline : "Document ingestion"
+Gradio <--> ChatHistory : "Session tracking"
+VLMAgent --> DocPipeline : "Image processing"
+CorrectiveAgent --> ChromaDB : "Query refinement"
+
+' State updates
+FastRetrieval --> State : "Updates context, sources"
+AnswerNode --> State : "Updates answer, messages"
+ParamNode --> State : "Updates query_analysis, messages"
+
+' Response flow
+State --> UltraFast : "Final state"
+UltraFast --> Gradio : "Response data"
+Gradio --> User : "Display answer"
+
+' Alternative flows
+RetrievalNode -.-> ChromaDB : "Alternative retrieval"
+RetrievalNode -.-> State : "Fallback context"
+
+' Notes
+note top of AIAgents
+    All agents use Pydantic AI framework
+    with Gemini models for processing
+end note
+
+note top of ProcessingNodes
+    Nodes implement clean separation
+    of concerns in LangGraph workflow
+end note
+
+@enduml

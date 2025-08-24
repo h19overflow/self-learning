@@ -136,25 +136,52 @@ class SimplifiedWorkflowManager:
         
         try:
             print(f"🔍 Processing question synchronously: {question[:100]}...")
+            print(f"🔍 [DEBUG] Input question length: {len(question)} characters")
             
             # Get workflow instance
             workflow = self.get_workflow()
+            print(f"🔍 [DEBUG] Workflow instance obtained: {type(workflow)}")
             
             # Call async workflow using persistent event loop
+            print(f"🔍 [DEBUG] Calling workflow.process_question...")
             result_state = self._run_async_task(workflow.process_question(question))
+            print(f"🔍 [DEBUG] Workflow completed, result_state type: {type(result_state)}")
+            print(f"🔍 [DEBUG] result_state attributes: {dir(result_state) if result_state else 'None'}")
             
-            # Extract the answer and sources
-            if hasattr(result_state, 'answer') and result_state.answer:
-                response = result_state.answer
+            # Extract the answer and sources - handle both dict and object types
+            if isinstance(result_state, dict):
+                print(f"🔍 [DEBUG] result_state is a dict with keys: {list(result_state.keys())}")
+                answer = result_state.get('answer')
+                sources = result_state.get('sources')
+            else:
+                print(f"🔍 [DEBUG] result_state is an object with attributes")
+                answer = getattr(result_state, 'answer', None)
+                sources = getattr(result_state, 'sources', None)
+            
+            print(f"🔍 [DEBUG] Extracted answer: {repr(answer)}")
+            print(f"🔍 [DEBUG] Extracted sources: {repr(sources)}")
+            
+            if answer:
+                response = answer
+                print(f"🔍 [DEBUG] Base answer length: {len(response)} characters")
+                print(f"🔍 [DEBUG] Answer preview: {response[:200]}...")
                 
                 # Add source information if available
-                if hasattr(result_state, 'sources') and result_state.sources:
+                if sources:
+                    print(f"🔍 [DEBUG] Found {len(sources)} sources")
                     sources_text = "\n\n---\n**📚 Sources:**\n"
-                    for i, source in enumerate(result_state.sources, 1):
+                    for i, source in enumerate(sources, 1):
                         sources_text += f"{i}. {source}\n"
                     response += sources_text
+                    print(f"🔍 [DEBUG] Final response with sources length: {len(response)} characters")
+                else:
+                    print(f"🔍 [DEBUG] No sources found in result_state")
             else:
+                print(f"🔍 [DEBUG] No answer in result_state or answer is empty")
+                print(f"🔍 [DEBUG] answer value: {repr(answer)}")
                 response = "I apologize, but I couldn't generate an answer for your question."
+            
+            print(f"🔍 [DEBUG] Final response length before return: {len(response)} characters")
             
             # Update stats
             processing_time = time.time() - start_time
@@ -168,9 +195,12 @@ class SimplifiedWorkflowManager:
                 
         except Exception as e:
             print(f"❌ Error processing question: {e}")
+            print(f"❌ [DEBUG] Error type: {type(e).__name__}")
             import traceback
             traceback.print_exc()
-            return f"Sorry, I encountered an error: {str(e)}. Please try rephrasing your question."
+            error_response = f"Sorry, I encountered an error: {str(e)}. Please try rephrasing your question."
+            print(f"❌ [DEBUG] Error response length: {len(error_response)} characters")
+            return error_response
 
     async def stream_question(self, question: str):
         """Process question with streaming updates for real-time responses."""
@@ -192,6 +222,20 @@ class SimplifiedWorkflowManager:
                 
                 # Update node status
                 node_status[node_name] = "completed"
+                
+                # Create status update
+                status_text = f"🔄 **Processing Steps:**\n"
+                steps = {
+                    "parameter_selection": "⚡ Parameter Selection",
+                    "fast_retrieval": "🚄 Knowledge Retrieval", 
+                    "answer_generation": "🎓 Answer Generation"
+                }
+                
+                for step_key, step_name in steps.items():
+                    if step_key in node_status:
+                        status_text += f"✅ {step_name}\n"
+                    else:
+                        status_text += f"⏳ {step_name}\n"
                 
                 # If we have an answer, include it
                 if "answer" in node_state and node_state["answer"]:
@@ -251,11 +295,15 @@ def process_message(message, history):
     """
     try:
         print(f"🚀 GRADIO: Processing question: {message[:100]}...")
+        print(f"🚀 [DEBUG] Input message length: {len(message)} characters")
+        print(f"🚀 [DEBUG] History type: {type(history)}, length: {len(history) if history else 0}")
         
         # Use the simplified synchronous method
         response = workflow_manager.process_question(message)
         
         print(f"✅ GRADIO: Answer generated - {len(response)} characters")
+        print(f"✅ [DEBUG] Response type: {type(response)}")
+        print(f"✅ [DEBUG] Response preview: {response[:200]}..." if len(response) > 200 else f"✅ [DEBUG] Full response: {response}")
         
         return response
         
@@ -263,9 +311,12 @@ def process_message(message, history):
         error_msg = f"I apologize, but I encountered an error while processing your question: {str(e)}"
         print(f"❌ GRADIO: Error processing message: {e}")
         print(f"❌ GRADIO: Error type: {type(e).__name__}")
+        print(f"❌ [DEBUG] Error message length: {len(error_msg)} characters")
         
         # Return a user-friendly error message
-        return f"{error_msg}. Please try rephrasing your question or provide more context."
+        full_error_response = f"{error_msg}. Please try rephrasing your question or provide more context."
+        print(f"❌ [DEBUG] Full error response length: {len(full_error_response)} characters")
+        return full_error_response
 
 
 async def stream_message(message, history):
@@ -368,68 +419,37 @@ def create_interface():
         # Event handlers
         def respond(message, history):
             """Process user message and return chat history."""
+            print(f"📝 [DEBUG] respond() called with message: '{message[:100]}...'")
+            print(f"📝 [DEBUG] Input history length: {len(history) if history else 0}")
+            
             if not message.strip():
+                print(f"📝 [DEBUG] Empty message, returning unchanged history")
                 return history, ""
             
+            # Ensure history is a list
+            if history is None:
+                history = []
+            
             # Add user message to history (OpenAI format)
-            history.append({"role": "user", "content": message})
+            user_msg = {"role": "user", "content": message}
+            history.append(user_msg)
+            print(f"📝 [DEBUG] Added user message to history, new length: {len(history)}")
             
             # Get AI response
             response = process_message(message, history)
+            print(f"📝 [DEBUG] Got response from process_message, length: {len(response)}")
             
             # Add AI response to history (OpenAI format)
-            history.append({"role": "assistant", "content": response})
-            
-            return history, ""
-        
-        def stream_respond(message, history):
-            """Process user message with streaming updates."""
-            if not message.strip():
-                return history, ""
-            
-            # Add user message to history (OpenAI format)
-            history.append({"role": "user", "content": message})
-            
-            # Start with empty assistant response
-            history.append({"role": "assistant", "content": ""})
-            
-            # Use the existing event loop to run async streaming
-            import asyncio
-            
-            # Create a simple wrapper to handle streaming
-            def run_streaming():
-                try:
-                    # Get the event loop from workflow manager
-                    loop = workflow_manager.loop
-                    if loop is None:
-                        return "Error: Event loop not available"
-                    
-                    # Run the streaming coroutine
-                    async def stream_coro():
-                        final_response = ""
-                        async for chunk in workflow_manager.stream_question(message):
-                            final_response = chunk
-                        return final_response
-                    
-                    future = asyncio.run_coroutine_threadsafe(stream_coro(), loop)
-                    return future.result()
-                    
-                except Exception as e:
-                    print(f"❌ Streaming error: {e}")
-                    return f"Sorry, I encountered an error: {str(e)}. Please try rephrasing your question."
-            
-            # Get streaming response
-            response = run_streaming()
-            
-            # Update the last message in history
-            history[-1]["content"] = response
+            assistant_msg = {"role": "assistant", "content": response}
+            history.append(assistant_msg)
+            print(f"📝 [DEBUG] Added assistant message to history, final length: {len(history)}")
+            print(f"📝 [DEBUG] Final history structure: {[msg['role'] for msg in history]}")
             
             return history, ""
         
         # Connect events
         msg_input.submit(respond, [msg_input, chatbot], [chatbot, msg_input])
         submit_btn.click(respond, [msg_input, chatbot], [chatbot, msg_input])
-        stream_btn.click(stream_respond, [msg_input, chatbot], [chatbot, msg_input])
         refresh_btn.click(refresh_sources, outputs=sources_display)
     
     return interface

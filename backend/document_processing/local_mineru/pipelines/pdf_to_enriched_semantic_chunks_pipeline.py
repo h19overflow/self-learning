@@ -26,9 +26,9 @@ from typing import List
 current_dir = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(current_dir))
 
-from utils.file_management_utils import FileManagementUtils, find_pdf_files
-from utils.mineru_processing_utils import MinerUProcessingUtils, cleanup_intermediate_files
-from utils.vlm_enhancement_utils import VLMEnhancementUtils
+from backend.utils.file_management_utils import FileManagementUtils, find_pdf_files
+from backend.utils.mineru_processing_utils import MinerUProcessingUtils, cleanup_intermediate_files
+from backend.utils.vlm_enhancement_utils import VLMEnhancementUtils
 
 
 class PDFToEnrichedMarkdownPipeline:

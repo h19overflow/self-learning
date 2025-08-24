@@ -49,7 +49,7 @@ async def main():
     # Create configuration with absolute paths
     config = PipelineConfiguration(
         pdf_input_directory=script_dir / "local_mineru" / "books",
-        output_directory=script_dir / "output_books", 
+        output_directory=project_root / "backend" / "storage" / "output_data" / "output_books", 
         chunked_output_file=script_dir / "chunked_output_books" / "semantic_chunks.json",
         enable_vlm_enhancement=True,
         enable_rag_ingestion=True,
@@ -71,9 +71,9 @@ async def resume_from_vlm_example():
     """Example of resuming pipeline from VLM enhancement stage."""
     script_dir = Path(__file__).parent
     
-    # Resume from VLM enhancement stage after disconnection
+    # Resume from RAG ingestion stage after disconnection
     results = await run_pipeline_from_stage(
-        stage='vlm',
+        stage='rag',
         pdf_directory=str(script_dir / "local_mineru" / "books"),
         output_directory=str(script_dir / "output_books"),
         enable_vlm=True,
@@ -89,12 +89,13 @@ async def resume_from_vlm_example():
 async def resume_from_chunking_example():
     """Example of resuming pipeline from semantic chunking stage."""
     script_dir = Path(__file__).parent
+    project_root = script_dir.parent.parent
     
     # Resume from chunking stage
     results = await run_pipeline_from_stage(
         stage='chunking',
         pdf_directory=str(script_dir / "local_mineru" / "books"),
-        output_directory=str(script_dir / "output_books"),
+        output_directory=str(project_root / "backend" / "storage" / "output_data" / "output_books"),
         enable_rag=True
     )
     
@@ -123,17 +124,18 @@ async def rag_only_example():
 if __name__ == "__main__":
     import sys
     
-    if len(sys.argv) > 1:
-        stage = sys.argv[1].lower()
-        if stage == 'help':
-            print_stage_help()
-        elif stage == 'vlm':
-            asyncio.run(resume_from_vlm_example())
-        elif stage == 'chunking':
-            asyncio.run(resume_from_chunking_example())
-        elif stage == 'rag':
-            asyncio.run(rag_only_example())
-        else:
-            asyncio.run(main())
-    else:
-        asyncio.run(main())
+    # Create configuration for chunking stage
+    script_dir = Path(__file__).parent
+    project_root = script_dir.parent.parent
+    
+    config = PipelineConfiguration(
+        pdf_input_directory=script_dir / "local_mineru" / "books",
+        output_directory=project_root / "backend" / "storage" / "output_data" / "output_books",
+        chunked_output_file=script_dir / "chunked_output_books" / "semantic_chunks.json",
+        enable_vlm_enhancement=True,
+        enable_rag_ingestion=True,
+        enable_video_transcription=True,
+        max_concurrent_vlm_requests=5
+    )
+    
+    asyncio.run(run_from_chunking_stage(config))

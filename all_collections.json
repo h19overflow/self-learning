@@ -1,0 +1,51 @@
+{
+  "extraction_metadata": {
+    "extraction_date": "2025-08-24T07:55:08.899726",
+    "extractor_version": "2.0.0",
+    "extraction_scope": "all_collections",
+    "collections_analyzed": [
+      "academic_papers"
+    ],
+    "include_full_chunks": false
+  },
+  "database_overview": {
+    "persist_directory": "backend\\storage\\chromadb_storage",
+    "total_collections": 1,
+    "collections_list": [
+      "academic_papers"
+    ],
+    "total_documents": 0,
+    "total_sources": 0,
+    "total_chunks": 0
+  },
+  "collections": {
+    "academic_papers": {
+      "collection_overview": {
+        "collection_name": "academic_papers",
+        "total_documents": 0,
+        "unique_source_files": 0,
+        "total_chunks_verified": 0,
+        "configuration": {
+          "collection_name": "academic_papers",
+          "embedding_model": "BAAI/bge-large-en-v1.5",
+          "embedding_device": "cuda",
+          "distance_function": "cosine",
+          "batch_size": 100,
+          "persist_directory": "backend\\storage\\chromadb_storage"
+        }
+      },
+      "sources_summary": {
+        "total_sources": 0,
+        "sources_list": [],
+        "chunk_distribution": {}
+      },
+      "detailed_sources_analysis": [],
+      "database_statistics": {
+        "embedding_model": "BAAI/bge-large-en-v1.5",
+        "distance_function": "cosine",
+        "persist_directory": "backend\\storage\\chromadb_storage",
+        "batch_size": 100
+      }
+    }
+  }
+}
