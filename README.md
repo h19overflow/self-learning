@@ -1,119 +1,92 @@
-﻿#  Self-Learning RAG Pipeline
+# Self-Learning RAG Pipeline
 
-### *Where Knowledge Meets Intelligence - An Enterprise-Grade Document Understanding System*
-
-<div align="center">
+**Agentic document processing and intelligent question answering system**
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector%20Database-green.svg)
-![LangChain](https://img.shields.io/badge/LangChain-AI%20Framework-orange.svg)
+![LangGraph](https://img.shields.io/badge/LangGraph-Workflow%20Engine-purple.svg)
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)
 
-* Transform Documents  Extract Knowledge  Generate Intelligence*
+## Architecture Overview
 
-</div>
+### Document Processing Pipeline
 
----
-
-##  What Makes This Special?
-
-> **"The future belongs to systems that can understand, not just search."**
-
-This isn't just another RAG system. It's a **complete knowledge transformation pipeline** that turns your documents into an intelligent, conversational knowledge assistant. Built with enterprise-grade architecture and powered by cutting-edge AI.
-
-###  Key Superpowers
-
- **Multi-Modal Intelligence** - Understands text, images, and diagrams  
- **Ultra-Fast Retrieval** - Sub-second responses with 9,989+ knowledge chunks  
- **Agentic Processing** - AI agents that think, analyze, and reason  
- **Enterprise Ready** - Scalable, monitored, and production-tested  
- **Academic Foundation** - Built on 27+ research papers and textbooks  
-
----
-
-##  System Architecture
-
-###  Document Processing Pipeline
-
-`mermaid
+```mermaid
 graph TD
-    A[PDF Input Directory] --> B[PDF Processing]
-    C[playlist_sources.json] --> D[Video Transcription]
+    A[PDF Input Directory] --> B[PDF Processing Task]
+    C[playlist_sources.json] --> D[Video Transcription Task]
     
     B --> E[Output Directory]
-    D --> E
+    D --> E[Video Transcripts]
     
-    E --> F[VLM Enhancement]
-    F --> G[Semantic Chunking]
+    E --> F[VLM Enhancement Task]
+    F --> G[Semantic Chunking Task]
     G --> H[semantic_chunks.json]
-    H --> I[ChromaDB Ingestion]
+    H --> I[ChromaDB RAG Ingestion Task]
     I --> J[Vector Database]
     
-    subgraph "Stage 1: Content Extraction"
-        B
-        D
-    end
-    
-    subgraph "Stage 2: AI Enhancement"
-        F
-    end
-    
-    subgraph "Stage 3: Knowledge Structuring"
-        G
-        I
-    end
-`
+    style B fill:#e1f5fe
+    style D fill:#e1f5fe
+    style F fill:#f3e5f5
+    style G fill:#e8f5e8
+    style I fill:#e8f5e8
+```
 
-###  Agentic Query Processing
+### Agentic Query System
 
-`mermaid
+```mermaid
 graph LR
-    A[User Query] --> B[Query Analysis Agent]
-    B --> C[Parameter Selection]
-    C --> D[Fast Retrieval Agent]
-    D --> E[Context Assembly]
-    E --> F[Answer Generation Agent]
-    F --> G[Response Validation]
-    G --> H[Final Answer]
+    A[User] --> B[Gradio Interface]
+    B --> C[UltraFast Workflow]
+    C --> D[Parameter Selection Node]
+    C --> E[Fast Retrieval Node]  
+    C --> F[Answering Node]
     
-    subgraph "Intelligence Layer"
-        B
-        F
-    end
+    D --> G[Query Agent]
+    E --> H[ChromaDB System]
+    F --> I[Answering Agent]
     
-    subgraph "Retrieval Layer"
-        D
-        E
-    end
-`
+    J[VLM Agent] --> K[Document Processing Pipeline]
+    L[Corrective Agent] --> H
+    
+    M[AgenticLightRAGState] --> C
+    
+    style C fill:#fff3e0
+    style G fill:#e3f2fd
+    style I fill:#e3f2fd
+```
 
----
+## Key Features
 
-##  Performance at Scale
+- **Multi-Modal Processing**: PDFs, videos, and images with AI enhancement
+- **Agentic Workflow**: Query analysis, retrieval optimization, and answer generation agents  
+- **Fast Retrieval**: ChromaDB vector database with semantic chunking
+- **State Management**: Session-aware conversation handling
+- **Educational Focus**: Specialized for learning and knowledge extraction
 
-|  Metric |  Performance |  Impact |
-|-----------|----------------|-----------|
-| **Knowledge Base** | 9,989 chunks | Comprehensive coverage |
-| **Query Speed** | < 2 seconds | Lightning fast |
-| **Accuracy** | 95%+ relevance | Production ready |
-| **Sources** | 27 academic materials | Research-grade quality |
+## Performance Metrics
 
----
+| Component | Performance |
+|-----------|-------------|
+| Knowledge Base | 9,989+ semantic chunks |
+| Query Response | < 2 seconds average |
+| Source Materials | 27 academic documents |
+| Processing Pipeline | Parallel PDF + Video ingestion |
 
-##  Quick Start Guide
+## Quick Start
 
-###  Prerequisites
+### Prerequisites
 
-`ash
- Python 3.8+
- UV package manager
- 8GB+ RAM recommended
-`
+```bash
+# Python 3.8+
+# UV package manager
+# 8GB+ RAM recommended
+```
 
-###  Installation
+### Installation
 
-`ash
-# Clone the repository
+```bash
+# Clone repository
 git clone https://github.com/h19overflow/self-learning.git
 cd self-learning
 
@@ -125,49 +98,51 @@ uv sync
 .venv\Scripts\activate
 # Linux/Mac:
 source .venv/bin/activate
-`
+```
 
-###  Launch Commands
+### Usage
 
-`ash
+```bash
 # Explore knowledge base
 python -m backend.storage.chromadb_info_extractor --summary
 
-# Start the interface
+# Start interface
 python -m backend.agentic_system.agentic_lightrag.gradio_interface_simplified
 
 # Monitor pipelines
 prefect server start
-`
+```
+
+## System Components
+
+### Document Pipeline Tasks
+
+- **PDF Processing**: Converts PDFs to enriched Markdown
+- **Video Transcription**: Extracts YouTube video transcripts
+- **VLM Enhancement**: AI-powered image and diagram analysis
+- **Semantic Chunking**: Creates meaningful text segments
+- **ChromaDB Ingestion**: Stores vectors with metadata
+
+### Agentic Workflow Nodes
+
+- **Parameter Selection**: Optimizes retrieval parameters
+- **Fast Retrieval**: Vector search with context assembly
+- **Answering**: Educational response generation with source citations
+
+### AI Agents
+
+- **Query Agent**: Analyzes and categorizes user questions
+- **Answering Agent**: Generates educational responses
+- **VLM Agent**: Processes visual content
+- **Corrective Agent**: Refines search queries
+
+## Example Queries
+
+- "Explain the attention mechanism in transformers"
+- "How does LoRA improve fine-tuning efficiency?"
+- "Compare different RAG architectures"
+- "What are the key principles of atomic habits?"
 
 ---
 
-##  What You Can Ask
-
-###  Example Queries
-
--  "Explain the attention mechanism in transformers"
--  "How does LoRA improve fine-tuning efficiency?"
--  "Compare different RAG architectures"
--  "What are the key principles of atomic habits?"
-
----
-
-##  Performance Benchmarks
-
-|  Metric |  Target |  Achieved |
-|-----------|-----------|-------------|
-| Query Latency | < 3s | **2.1s avg** |
-| Chunk Processing | 400/min | **500/min** |
-| Memory Efficiency | < 5GB | **4.2GB** |
-| Retrieval Accuracy | 90%+ | **95%+** |
-
----
-
-<div align="center">
-
-**Built with  by AI Researchers, for the Future of Knowledge**
-
-* Research   Innovation   Intelligence*
-
-</div>
+**Built for educational AI research and knowledge extraction**
